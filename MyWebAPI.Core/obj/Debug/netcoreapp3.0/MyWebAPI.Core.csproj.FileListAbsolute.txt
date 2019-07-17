@@ -1,0 +1,9 @@
+C:\Users\陈彦森\Desktop\MyGitHub\MyWebAPI\MyWebAPI\MyWebAPI.Core\bin\Debug\netcoreapp3.0\MyWebAPI.Core.deps.json
+C:\Users\陈彦森\Desktop\MyGitHub\MyWebAPI\MyWebAPI\MyWebAPI.Core\bin\Debug\netcoreapp3.0\MyWebAPI.Core.dll
+C:\Users\陈彦森\Desktop\MyGitHub\MyWebAPI\MyWebAPI\MyWebAPI.Core\bin\Debug\netcoreapp3.0\MyWebAPI.Core.pdb
+C:\Users\陈彦森\Desktop\MyGitHub\MyWebAPI\MyWebAPI\MyWebAPI.Core\obj\Debug\netcoreapp3.0\MyWebAPI.Core.csprojAssemblyReference.cache
+C:\Users\陈彦森\Desktop\MyGitHub\MyWebAPI\MyWebAPI\MyWebAPI.Core\obj\Debug\netcoreapp3.0\MyWebAPI.Core.csproj.CoreCompileInputs.cache
+C:\Users\陈彦森\Desktop\MyGitHub\MyWebAPI\MyWebAPI\MyWebAPI.Core\obj\Debug\netcoreapp3.0\MyWebAPI.Core.AssemblyInfoInputs.cache
+C:\Users\陈彦森\Desktop\MyGitHub\MyWebAPI\MyWebAPI\MyWebAPI.Core\obj\Debug\netcoreapp3.0\MyWebAPI.Core.AssemblyInfo.cs
+C:\Users\陈彦森\Desktop\MyGitHub\MyWebAPI\MyWebAPI\MyWebAPI.Core\obj\Debug\netcoreapp3.0\MyWebAPI.Core.dll
+C:\Users\陈彦森\Desktop\MyGitHub\MyWebAPI\MyWebAPI\MyWebAPI.Core\obj\Debug\netcoreapp3.0\MyWebAPI.Core.pdb

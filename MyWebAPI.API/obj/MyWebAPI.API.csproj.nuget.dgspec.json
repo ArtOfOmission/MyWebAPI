@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\陈彦森\\Desktop\\MyGitHub\\MyWebAPI\\MyWebAPI\\MyWebAPI.API\\MyWebAPI.API.csproj": {}
+    "C:\\Users\\陈彦森\\Desktop\\MyGitHub\\MyWebAPI\\MyWebAPI.API\\MyWebAPI.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\陈彦森\\Desktop\\MyGitHub\\MyWebAPI\\MyWebAPI\\MyWebAPI.API\\MyWebAPI.API.csproj": {
+    "C:\\Users\\陈彦森\\Desktop\\MyGitHub\\MyWebAPI\\MyWebAPI.API\\MyWebAPI.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\陈彦森\\Desktop\\MyGitHub\\MyWebAPI\\MyWebAPI\\MyWebAPI.API\\MyWebAPI.API.csproj",
+        "projectUniqueName": "C:\\Users\\陈彦森\\Desktop\\MyGitHub\\MyWebAPI\\MyWebAPI.API\\MyWebAPI.API.csproj",
         "projectName": "MyWebAPI.API",
-        "projectPath": "C:\\Users\\陈彦森\\Desktop\\MyGitHub\\MyWebAPI\\MyWebAPI\\MyWebAPI.API\\MyWebAPI.API.csproj",
+        "projectPath": "C:\\Users\\陈彦森\\Desktop\\MyGitHub\\MyWebAPI\\MyWebAPI.API\\MyWebAPI.API.csproj",
         "packagesPath": "C:\\Users\\陈彦森\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\陈彦森\\Desktop\\MyGitHub\\MyWebAPI\\MyWebAPI\\MyWebAPI.API\\obj\\",
+        "outputPath": "C:\\Users\\陈彦森\\Desktop\\MyGitHub\\MyWebAPI\\MyWebAPI.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -32,11 +32,11 @@
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "C:\\Users\\陈彦森\\Desktop\\MyGitHub\\MyWebAPI\\MyWebAPI\\MyWebAPI.Core\\MyWebAPI.Core.csproj": {
-                "projectPath": "C:\\Users\\陈彦森\\Desktop\\MyGitHub\\MyWebAPI\\MyWebAPI\\MyWebAPI.Core\\MyWebAPI.Core.csproj"
+              "C:\\Users\\陈彦森\\Desktop\\MyGitHub\\MyWebAPI\\MyWebAPI.Core\\MyWebAPI.Core.csproj": {
+                "projectPath": "C:\\Users\\陈彦森\\Desktop\\MyGitHub\\MyWebAPI\\MyWebAPI.Core\\MyWebAPI.Core.csproj"
               },
-              "C:\\Users\\陈彦森\\Desktop\\MyGitHub\\MyWebAPI\\MyWebAPI\\MyWebAPI.Infrastructure\\MyWebAPI.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\陈彦森\\Desktop\\MyGitHub\\MyWebAPI\\MyWebAPI\\MyWebAPI.Infrastructure\\MyWebAPI.Infrastructure.csproj"
+              "C:\\Users\\陈彦森\\Desktop\\MyGitHub\\MyWebAPI\\MyWebAPI.Infrastructure\\MyWebAPI.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\陈彦森\\Desktop\\MyGitHub\\MyWebAPI\\MyWebAPI.Infrastructure\\MyWebAPI.Infrastructure.csproj"
               }
             }
           }
@@ -81,14 +81,14 @@
         }
       }
     },
-    "C:\\Users\\陈彦森\\Desktop\\MyGitHub\\MyWebAPI\\MyWebAPI\\MyWebAPI.Core\\MyWebAPI.Core.csproj": {
+    "C:\\Users\\陈彦森\\Desktop\\MyGitHub\\MyWebAPI\\MyWebAPI.Core\\MyWebAPI.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\陈彦森\\Desktop\\MyGitHub\\MyWebAPI\\MyWebAPI\\MyWebAPI.Core\\MyWebAPI.Core.csproj",
+        "projectUniqueName": "C:\\Users\\陈彦森\\Desktop\\MyGitHub\\MyWebAPI\\MyWebAPI.Core\\MyWebAPI.Core.csproj",
         "projectName": "MyWebAPI.Core",
-        "projectPath": "C:\\Users\\陈彦森\\Desktop\\MyGitHub\\MyWebAPI\\MyWebAPI\\MyWebAPI.Core\\MyWebAPI.Core.csproj",
+        "projectPath": "C:\\Users\\陈彦森\\Desktop\\MyGitHub\\MyWebAPI\\MyWebAPI.Core\\MyWebAPI.Core.csproj",
         "packagesPath": "C:\\Users\\陈彦森\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\陈彦森\\Desktop\\MyGitHub\\MyWebAPI\\MyWebAPI\\MyWebAPI.Core\\obj\\",
+        "outputPath": "C:\\Users\\陈彦森\\Desktop\\MyGitHub\\MyWebAPI\\MyWebAPI.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -140,14 +140,14 @@
         }
       }
     },
-    "C:\\Users\\陈彦森\\Desktop\\MyGitHub\\MyWebAPI\\MyWebAPI\\MyWebAPI.Infrastructure\\MyWebAPI.Infrastructure.csproj": {
+    "C:\\Users\\陈彦森\\Desktop\\MyGitHub\\MyWebAPI\\MyWebAPI.Infrastructure\\MyWebAPI.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\陈彦森\\Desktop\\MyGitHub\\MyWebAPI\\MyWebAPI\\MyWebAPI.Infrastructure\\MyWebAPI.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\陈彦森\\Desktop\\MyGitHub\\MyWebAPI\\MyWebAPI.Infrastructure\\MyWebAPI.Infrastructure.csproj",
         "projectName": "MyWebAPI.Infrastructure",
-        "projectPath": "C:\\Users\\陈彦森\\Desktop\\MyGitHub\\MyWebAPI\\MyWebAPI\\MyWebAPI.Infrastructure\\MyWebAPI.Infrastructure.csproj",
+        "projectPath": "C:\\Users\\陈彦森\\Desktop\\MyGitHub\\MyWebAPI\\MyWebAPI.Infrastructure\\MyWebAPI.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\陈彦森\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\陈彦森\\Desktop\\MyGitHub\\MyWebAPI\\MyWebAPI\\MyWebAPI.Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\陈彦森\\Desktop\\MyGitHub\\MyWebAPI\\MyWebAPI.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -168,8 +168,8 @@
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "C:\\Users\\陈彦森\\Desktop\\MyGitHub\\MyWebAPI\\MyWebAPI\\MyWebAPI.Core\\MyWebAPI.Core.csproj": {
-                "projectPath": "C:\\Users\\陈彦森\\Desktop\\MyGitHub\\MyWebAPI\\MyWebAPI\\MyWebAPI.Core\\MyWebAPI.Core.csproj"
+              "C:\\Users\\陈彦森\\Desktop\\MyGitHub\\MyWebAPI\\MyWebAPI.Core\\MyWebAPI.Core.csproj": {
+                "projectPath": "C:\\Users\\陈彦森\\Desktop\\MyGitHub\\MyWebAPI\\MyWebAPI.Core\\MyWebAPI.Core.csproj"
               }
             }
           }

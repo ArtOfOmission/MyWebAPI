@@ -15,4 +15,8 @@
     <ProjectReference Include="..\MyWebAPI.Infrastructure\MyWebAPI.Infrastructure.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
 </Project>

@@ -18,12 +18,22 @@ namespace MyWebAPI.API
             //注册Mvc
             services.AddMvc();
 
-            //注册https
+            //注册https重定向
             services.AddHttpsRedirection(options =>
             {
                 options.RedirectStatusCode = StatusCodes.Status307TemporaryRedirect;
                 options.HttpsPort = 5001;
 
+            });
+
+            //注册HSTS
+            services.AddHsts(options =>
+            {
+                options.Preload = true;
+                options.IncludeSubDomains = true;
+                options.MaxAge = TimeSpan.FromDays(60);
+                options.ExcludedHosts.Add("example.com");
+                options.ExcludedHosts.Add("www.example.com");
             });
 
         }

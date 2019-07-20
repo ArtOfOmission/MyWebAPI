@@ -22,3 +22,5 @@ C:\Users\陈彦森\Desktop\MyGitHub\MyWebAPI\MyWebAPI.Infrastructure\obj\Debug\n
 C:\Users\陈彦森\Desktop\MyGitHub\MyWebAPI\MyWebAPI.Infrastructure\obj\Debug\netcoreapp2.2\MyWebAPI.Infrastructure.csproj.CopyComplete
 C:\Users\陈彦森\Desktop\MyGitHub\MyWebAPI\MyWebAPI.Infrastructure\obj\Debug\netcoreapp2.2\MyWebAPI.Infrastructure.dll
 C:\Users\陈彦森\Desktop\MyGitHub\MyWebAPI\MyWebAPI.Infrastructure\obj\Debug\netcoreapp2.2\MyWebAPI.Infrastructure.pdb
+C:\Users\陈彦森\Desktop\MyGitHub\MyWebAPI\MyWebAPI.Infrastructure\bin\Debug\netcoreapp2.2\MyWebAPI.Infrastructure.runtimeconfig.json
+C:\Users\陈彦森\Desktop\MyGitHub\MyWebAPI\MyWebAPI.Infrastructure\bin\Debug\netcoreapp2.2\MyWebAPI.Infrastructure.runtimeconfig.dev.json

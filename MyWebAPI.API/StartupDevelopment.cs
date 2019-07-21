@@ -13,6 +13,13 @@ using Microsoft.Extensions.Configuration;
 using MyWebAPI.Core.Interfaces.IRepositories;
 using MyWebAPI.Infrastructure.Repositories;
 using MyWebAPI.Core.Interfaces;
+using Microsoft.AspNetCore.Diagnostics;
+using Microsoft.Extensions.Logging;
+using MyWebAPI.API.Extensions;
+using AutoMapper;
+using FluentValidation;
+using MyWebAPI.Infrastructure.Resources;
+using Microsoft.AspNetCore.Mvc.Formatters;
 
 namespace MyWebAPI.API
 {
@@ -30,7 +37,11 @@ namespace MyWebAPI.API
         public void ConfigureServices(IServiceCollection services)
         {
             //注册Mvc
-            services.AddMvc();
+            services.AddMvc(options =>
+            {
+                options.ReturnHttpNotAcceptable = true;
+                options.OutputFormatters.Add(new XmlDataContractSerializerOutputFormatter());
+            });
 
             services.AddDbContext<MyContext>(options =>
             {
@@ -48,12 +59,21 @@ namespace MyWebAPI.API
             services.AddScoped<IPostRepository, PostRepository>();
             services.AddScoped<IUnitOfWork, UnitOfWork>();
 
+            services.AddAutoMapper(typeof(MappingProfile));
+
+            #region 验证器注册
+
+            services.AddTransient<IValidator<PostResource>, PostResourceValidater>();
+
+            #endregion
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app)
+        public void Configure(IApplicationBuilder app, ILoggerFactory loggerFactory)
         {
-            app.UseDeveloperExceptionPage();
+            //app.UseDeveloperExceptionPage();
+
+            app.UseMyExceptionHandler(loggerFactory);
 
             app.UseHttpsRedirection();//https重定向
 

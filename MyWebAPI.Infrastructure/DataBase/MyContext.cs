@@ -17,7 +17,6 @@ namespace MyWebAPI.Infrastructure.DataBase
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            //base.OnModelCreating(modelBuilder);
             modelBuilder.ApplyConfiguration(new PostConfiguration());
         }
 

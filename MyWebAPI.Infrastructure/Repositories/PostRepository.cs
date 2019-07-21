@@ -10,6 +10,9 @@ using System.Threading.Tasks;
 
 namespace MyWebAPI.Infrastructure.Repositories
 {
+    /// <summary>
+    /// 文章仓储
+    /// </summary>
     public class PostRepository : IPostRepository
     {
         private readonly MyContext _myContext;
@@ -20,7 +23,7 @@ namespace MyWebAPI.Infrastructure.Repositories
         }
 
         /// <summary>
-        /// 获取所有推文
+        /// 获取所有文章
         /// </summary>
         /// <returns></returns>
         public async Task<IEnumerable<Post>> GetAllPostsAsync()
@@ -29,11 +32,22 @@ namespace MyWebAPI.Infrastructure.Repositories
         }
 
         /// <summary>
-        /// 添加推文
+        /// 根据id获取文章
+        /// </summary>
+        /// <returns></returns>
+        public async Task<Post> GetPostByIdAsync(int id)
+        {
+            return await this._myContext.Posts.FindAsync(id);
+        }
+
+        /// <summary>
+        /// 添加文章
         /// </summary>
         /// <param name="post"></param>
         public void AddPost(Post post) {
             this._myContext.Posts.Add(post);
         }
+
+
     }
 }

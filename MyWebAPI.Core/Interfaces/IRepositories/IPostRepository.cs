@@ -1,4 +1,5 @@
 ﻿using MyWebAPI.Core.Entities;
+using MyWebAPI.Core.EntityParameters;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -11,7 +12,7 @@ namespace MyWebAPI.Core.Interfaces.IRepositories
     /// </summary>
     public interface IPostRepository
     {
-        Task<IEnumerable<Post>> GetAllPostsAsync();
+        Task<PaginatedList<Post>> GetAllPostsAsync(PostParameter postParameters);
         Task<Post> GetPostByIdAsync(int id);
         void AddPost(Post post);
     }

@@ -15,4 +15,3 @@ C:\Users\陈彦森\Desktop\MyGitHub\MyWebAPI\MyWebAPI.Core\obj\Debug\netcoreapp2
 C:\Users\陈彦森\Desktop\MyGitHub\MyWebAPI\MyWebAPI.Core\obj\Debug\netcoreapp2.2\MyWebAPI.Core.AssemblyInfo.cs
 C:\Users\陈彦森\Desktop\MyGitHub\MyWebAPI\MyWebAPI.Core\obj\Debug\netcoreapp2.2\MyWebAPI.Core.dll
 C:\Users\陈彦森\Desktop\MyGitHub\MyWebAPI\MyWebAPI.Core\obj\Debug\netcoreapp2.2\MyWebAPI.Core.pdb
-C:\Users\陈彦森\Desktop\MyGitHub\MyWebAPI\MyWebAPI.Core\obj\Debug\netcoreapp2.2\MyWebAPI.Core.csprojAssemblyReference.cache

@@ -438,3 +438,254 @@ FROM [Posts] AS [p]
 2019-07-21 17:20:30.389 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[MyWebAPI.Infrastructure.Resources.PostResource, MyWebAPI.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
 2019-07-21 17:20:30.391 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) in 10.3298ms
 2019-07-21 17:20:30.392 +08:00 [INF] Request finished in 13.7493ms 200 application/xml; charset=utf-8
+2019-07-21 20:43:44.627 +08:00 [INF] User profile is available. Using 'C:\Users\陈彦森\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-07-21 20:43:45.787 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/  
+2019-07-21 20:43:45.875 +08:00 [INF] Request finished in 89.7512ms 404 
+2019-07-21 20:43:45.937 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/favicon.ico  
+2019-07-21 20:43:45.938 +08:00 [INF] Request finished in 1.3436ms 404 
+2019-07-21 20:44:44.083 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/Posts?pageindex=1&pagesize=10  
+2019-07-21 20:44:44.132 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API)
+2019-07-21 20:44:44.523 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) with arguments (["MyWebAPI.Core.EntityParameters.PostParameters"]) - Validation state: "Valid"
+2019-07-21 20:44:44.970 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-07-21 20:44:45.535 +08:00 [INF] Executed DbCommand (88ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [x].[Id], [x].[Author], [x].[Body], [x].[LastModified], [x].[Title]
+FROM [Posts] AS [x]
+ORDER BY [x].[Id]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2019-07-21 20:44:45.693 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1154.8842ms.
+2019-07-21 20:44:45.704 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[MyWebAPI.Infrastructure.Resources.PostResource, MyWebAPI.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-07-21 20:44:45.754 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) in 1618.1253000000002ms
+2019-07-21 20:44:45.763 +08:00 [INF] Request finished in 1679.9427ms 200 application/json; charset=utf-8
+2019-07-21 20:45:01.149 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/Posts?pageindex=1&pagesize=5  
+2019-07-21 20:45:01.151 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API)
+2019-07-21 20:45:01.154 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) with arguments (["MyWebAPI.Core.EntityParameters.PostParameters"]) - Validation state: "Valid"
+2019-07-21 20:45:01.156 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-07-21 20:45:01.171 +08:00 [INF] Executed DbCommand (5ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [x].[Id], [x].[Author], [x].[Body], [x].[LastModified], [x].[Title]
+FROM [Posts] AS [x]
+ORDER BY [x].[Id]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2019-07-21 20:45:01.176 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 20.793400000000002ms.
+2019-07-21 20:45:01.178 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[MyWebAPI.Infrastructure.Resources.PostResource, MyWebAPI.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-07-21 20:45:01.188 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) in 35.927800000000005ms
+2019-07-21 20:45:01.190 +08:00 [INF] Request finished in 40.7392ms 200 application/json; charset=utf-8
+2019-07-21 20:45:10.595 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/Posts?pageindex=2&pagesize=5  
+2019-07-21 20:45:10.596 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API)
+2019-07-21 20:45:10.598 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) with arguments (["MyWebAPI.Core.EntityParameters.PostParameters"]) - Validation state: "Valid"
+2019-07-21 20:45:10.600 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-07-21 20:45:10.606 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [x].[Id], [x].[Author], [x].[Body], [x].[LastModified], [x].[Title]
+FROM [Posts] AS [x]
+ORDER BY [x].[Id]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_0 ROWS ONLY
+2019-07-21 20:45:10.611 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 11.0471ms.
+2019-07-21 20:45:10.612 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[MyWebAPI.Infrastructure.Resources.PostResource, MyWebAPI.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-07-21 20:45:10.613 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) in 15.638800000000002ms
+2019-07-21 20:45:10.615 +08:00 [INF] Request finished in 19.8586ms 200 application/json; charset=utf-8
+2019-07-21 21:46:02.888 +08:00 [INF] User profile is available. Using 'C:\Users\陈彦森\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-07-21 21:46:03.731 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/  
+2019-07-21 21:46:03.820 +08:00 [INF] Request finished in 90.7829ms 404 
+2019-07-21 21:46:23.493 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/Posts?pageindex=2&pagesize=5  
+2019-07-21 21:46:23.527 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API)
+2019-07-21 21:46:23.883 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) with arguments (["MyWebAPI.Core.EntityParameters.PostParameters"]) - Validation state: "Valid"
+2019-07-21 21:46:24.324 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-07-21 21:46:25.367 +08:00 [INF] Executed DbCommand (63ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Posts] AS [x]
+2019-07-21 21:46:25.566 +08:00 [INF] Executed DbCommand (47ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [x].[Id], [x].[Author], [x].[Body], [x].[LastModified], [x].[Title]
+FROM [Posts] AS [x]
+ORDER BY [x].[Id]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_0 ROWS ONLY
+2019-07-21 21:46:25.714 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1811.0606ms.
+2019-07-21 21:46:25.726 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[MyWebAPI.Infrastructure.Resources.PostResource, MyWebAPI.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-07-21 21:46:25.740 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) in 2209.1518ms
+2019-07-21 21:46:25.756 +08:00 [INF] Request finished in 2262.8544ms 200 application/json; charset=utf-8
+2019-07-21 21:53:19.956 +08:00 [INF] User profile is available. Using 'C:\Users\陈彦森\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-07-21 21:53:20.784 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/  
+2019-07-21 21:53:20.871 +08:00 [INF] Request finished in 88.3101ms 404 
+2019-07-21 21:53:25.354 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/Posts?pageindex=2&pagesize=5  
+2019-07-21 21:53:25.388 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API)
+2019-07-21 21:53:25.756 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) with arguments (["MyWebAPI.Core.EntityParameters.PostParameters"]) - Validation state: "Valid"
+2019-07-21 21:53:26.205 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-07-21 21:53:26.724 +08:00 [INF] Executed DbCommand (53ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Posts] AS [x]
+2019-07-21 21:53:26.922 +08:00 [INF] Executed DbCommand (46ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [x].[Id], [x].[Author], [x].[Body], [x].[LastModified], [x].[Title]
+FROM [Posts] AS [x]
+ORDER BY [x].[Id]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_0 ROWS ONLY
+2019-07-21 21:53:27.073 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1299.8896ms.
+2019-07-21 21:53:27.085 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[MyWebAPI.Infrastructure.Resources.PostResource, MyWebAPI.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-07-21 21:53:27.100 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) in 1708.1592ms
+2019-07-21 21:53:27.108 +08:00 [INF] Request finished in 1754.1594ms 200 application/json; charset=utf-8
+2019-07-21 22:55:23.732 +08:00 [INF] User profile is available. Using 'C:\Users\陈彦森\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-07-21 22:55:24.828 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/  
+2019-07-21 22:55:24.915 +08:00 [INF] Request finished in 89.2745ms 404 
+2019-07-21 22:55:38.822 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/Posts?pageindex=2&pagesize=5  
+2019-07-21 22:55:38.856 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API)
+2019-07-21 22:55:39.227 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) with arguments (["MyWebAPI.Core.EntityParameters.PostParameter"]) - Validation state: "Valid"
+2019-07-21 22:55:39.685 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-07-21 22:55:40.779 +08:00 [INF] Executed DbCommand (53ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Posts] AS [x]
+2019-07-21 22:55:40.975 +08:00 [INF] Executed DbCommand (46ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [x].[Id], [x].[Author], [x].[Body], [x].[LastModified], [x].[Title]
+FROM [Posts] AS [x]
+ORDER BY [x].[Id]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_0 ROWS ONLY
+2019-07-21 22:55:41.133 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1891.9129ms.
+2019-07-21 22:55:41.145 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[MyWebAPI.Infrastructure.Resources.PostResource, MyWebAPI.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-07-21 22:55:41.159 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) in 2299.4593ms
+2019-07-21 22:55:41.168 +08:00 [INF] Request finished in 2345.4074ms 200 application/json; charset=utf-8
+2019-07-21 22:56:17.973 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/posts?pageIndex=1&pageSize=5  
+2019-07-21 22:56:17.975 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API)
+2019-07-21 22:56:17.978 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) with arguments (["MyWebAPI.Core.EntityParameters.PostParameter"]) - Validation state: "Valid"
+2019-07-21 22:56:17.980 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-07-21 22:56:17.988 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Posts] AS [x]
+2019-07-21 22:56:17.996 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [x].[Id], [x].[Author], [x].[Body], [x].[LastModified], [x].[Title]
+FROM [Posts] AS [x]
+ORDER BY [x].[Id]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2019-07-21 22:56:18.003 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 23.6ms.
+2019-07-21 22:56:18.006 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[MyWebAPI.Infrastructure.Resources.PostResource, MyWebAPI.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-07-21 22:56:18.008 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) in 31.617900000000002ms
+2019-07-21 22:56:18.009 +08:00 [INF] Request finished in 36.016ms 200 application/json; charset=utf-8
+2019-07-21 22:56:55.637 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/posts?pageIndex=3&pageSize=5  
+2019-07-21 22:56:55.638 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API)
+2019-07-21 22:56:55.641 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) with arguments (["MyWebAPI.Core.EntityParameters.PostParameter"]) - Validation state: "Valid"
+2019-07-21 22:56:55.644 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-07-21 22:56:55.646 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Posts] AS [x]
+2019-07-21 22:56:55.650 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [x].[Id], [x].[Author], [x].[Body], [x].[LastModified], [x].[Title]
+FROM [Posts] AS [x]
+ORDER BY [x].[Id]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2019-07-21 22:56:55.654 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 10.5569ms.
+2019-07-21 22:56:55.656 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[MyWebAPI.Infrastructure.Resources.PostResource, MyWebAPI.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-07-21 22:56:55.658 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) in 17.9205ms
+2019-07-21 22:56:55.660 +08:00 [INF] Request finished in 22.9129ms 200 application/json; charset=utf-8
+2019-07-21 22:59:10.725 +08:00 [INF] User profile is available. Using 'C:\Users\陈彦森\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-07-21 22:59:11.577 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/  
+2019-07-21 22:59:11.664 +08:00 [INF] Request finished in 88.1746ms 404 
+2019-07-21 22:59:18.827 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/Posts?pageindex=2&pagesize=5  
+2019-07-21 22:59:18.863 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API)
+2019-07-21 22:59:19.226 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) with arguments (["MyWebAPI.Core.EntityParameters.PostParameter"]) - Validation state: "Valid"
+2019-07-21 22:59:19.679 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-07-21 22:59:20.208 +08:00 [INF] Executed DbCommand (60ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Posts] AS [x]
+2019-07-21 22:59:20.401 +08:00 [INF] Executed DbCommand (43ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [x].[Id], [x].[Author], [x].[Body], [x].[LastModified], [x].[Title]
+FROM [Posts] AS [x]
+ORDER BY [x].[Id]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_0 ROWS ONLY
+2019-07-21 22:59:20.548 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1307.0587ms.
+2019-07-21 22:59:20.569 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[MyWebAPI.Infrastructure.Resources.PostResource, MyWebAPI.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-07-21 22:59:20.583 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) in 1716.5910000000001ms
+2019-07-21 22:59:20.592 +08:00 [INF] Request finished in 1764.7709ms 200 application/json; charset=utf-8
+2019-07-21 22:59:34.485 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/Posts?pageindex=1&pagesize=5  
+2019-07-21 22:59:34.486 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API)
+2019-07-21 22:59:34.490 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) with arguments (["MyWebAPI.Core.EntityParameters.PostParameter"]) - Validation state: "Valid"
+2019-07-21 22:59:34.493 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-07-21 22:59:34.500 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Posts] AS [x]
+2019-07-21 22:59:34.507 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [x].[Id], [x].[Author], [x].[Body], [x].[LastModified], [x].[Title]
+FROM [Posts] AS [x]
+ORDER BY [x].[Id]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2019-07-21 22:59:34.512 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 20.4088ms.
+2019-07-21 22:59:34.516 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[MyWebAPI.Infrastructure.Resources.PostResource, MyWebAPI.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-07-21 22:59:34.517 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) in 28.491400000000002ms
+2019-07-21 22:59:34.519 +08:00 [INF] Request finished in 33.4744ms 200 application/json; charset=utf-8
+2019-07-21 22:59:56.654 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/Posts?pageindex=6&pagesize=5  
+2019-07-21 22:59:56.656 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API)
+2019-07-21 22:59:56.659 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) with arguments (["MyWebAPI.Core.EntityParameters.PostParameter"]) - Validation state: "Valid"
+2019-07-21 22:59:56.661 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-07-21 22:59:56.664 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Posts] AS [x]
+2019-07-21 22:59:56.669 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [x].[Id], [x].[Author], [x].[Body], [x].[LastModified], [x].[Title]
+FROM [Posts] AS [x]
+ORDER BY [x].[Id]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2019-07-21 22:59:56.673 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 11.7478ms.
+2019-07-21 22:59:56.676 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[MyWebAPI.Infrastructure.Resources.PostResource, MyWebAPI.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-07-21 22:59:56.677 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) in 18.4963ms
+2019-07-21 22:59:56.678 +08:00 [INF] Request finished in 23.7261ms 200 application/json; charset=utf-8
+2019-07-21 23:00:29.931 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/posts?pageIndex=5&pageSize=5  
+2019-07-21 23:00:29.932 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API)
+2019-07-21 23:00:29.935 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) with arguments (["MyWebAPI.Core.EntityParameters.PostParameter"]) - Validation state: "Valid"
+2019-07-21 23:00:29.937 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-07-21 23:00:29.940 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Posts] AS [x]
+2019-07-21 23:00:29.944 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [x].[Id], [x].[Author], [x].[Body], [x].[LastModified], [x].[Title]
+FROM [Posts] AS [x]
+ORDER BY [x].[Id]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2019-07-21 23:00:29.946 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 10.0007ms.
+2019-07-21 23:00:29.948 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[MyWebAPI.Infrastructure.Resources.PostResource, MyWebAPI.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-07-21 23:00:29.949 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) in 14.9319ms
+2019-07-21 23:00:29.952 +08:00 [INF] Request finished in 20.8716ms 200 application/json; charset=utf-8
+2019-07-21 23:01:03.921 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/posts?pageIndex=6&pageSize=5  
+2019-07-21 23:01:03.922 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API)
+2019-07-21 23:01:03.924 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) with arguments (["MyWebAPI.Core.EntityParameters.PostParameter"]) - Validation state: "Valid"
+2019-07-21 23:01:03.926 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-07-21 23:01:03.928 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Posts] AS [x]
+2019-07-21 23:01:03.931 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [x].[Id], [x].[Author], [x].[Body], [x].[LastModified], [x].[Title]
+FROM [Posts] AS [x]
+ORDER BY [x].[Id]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2019-07-21 23:01:03.936 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 9.8118ms.
+2019-07-21 23:01:03.937 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[MyWebAPI.Infrastructure.Resources.PostResource, MyWebAPI.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-07-21 23:01:03.938 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) in 13.6666ms
+2019-07-21 23:01:03.939 +08:00 [INF] Request finished in 17.7024ms 200 application/json; charset=utf-8
+2019-07-21 23:01:36.963 +08:00 [INF] User profile is available. Using 'C:\Users\陈彦森\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-07-21 23:01:37.813 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/  
+2019-07-21 23:01:37.899 +08:00 [INF] Request finished in 87.3238ms 404 
+2019-07-21 23:01:43.628 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/Posts?pageindex=6&pagesize=5  
+2019-07-21 23:01:43.669 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API)
+2019-07-21 23:01:44.049 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) with arguments (["MyWebAPI.Core.EntityParameters.PostParameter"]) - Validation state: "Valid"
+2019-07-21 23:01:44.495 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-07-21 23:01:45.009 +08:00 [INF] Executed DbCommand (56ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Posts] AS [x]
+2019-07-21 23:01:45.214 +08:00 [INF] Executed DbCommand (46ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [x].[Id], [x].[Author], [x].[Body], [x].[LastModified], [x].[Title]
+FROM [Posts] AS [x]
+ORDER BY [x].[Id]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2019-07-21 23:01:45.360 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1296.3312ms.
+2019-07-21 23:01:45.380 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[MyWebAPI.Infrastructure.Resources.PostResource, MyWebAPI.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-07-21 23:01:45.394 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) in 1721.4279000000001ms
+2019-07-21 23:01:45.402 +08:00 [INF] Request finished in 1773.6578ms 200 application/json; charset=utf-8
+2019-07-21 23:02:08.410 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/posts?pageIndex=5&pageSize=5  
+2019-07-21 23:02:08.412 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API)
+2019-07-21 23:02:08.416 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) with arguments (["MyWebAPI.Core.EntityParameters.PostParameter"]) - Validation state: "Valid"
+2019-07-21 23:02:08.419 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-07-21 23:02:08.429 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Posts] AS [x]
+2019-07-21 23:02:08.434 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [x].[Id], [x].[Author], [x].[Body], [x].[LastModified], [x].[Title]
+FROM [Posts] AS [x]
+ORDER BY [x].[Id]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2019-07-21 23:02:08.437 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 19.0505ms.
+2019-07-21 23:02:08.439 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[MyWebAPI.Infrastructure.Resources.PostResource, MyWebAPI.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-07-21 23:02:08.442 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) in 27.6659ms
+2019-07-21 23:02:08.444 +08:00 [INF] Request finished in 33.5688ms 200 application/json; charset=utf-8

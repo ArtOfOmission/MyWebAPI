@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using MyWebAPI.Core.Entities;
+using MyWebAPI.Core.EntityParameters;
 using MyWebAPI.Core.Interfaces.IRepositories;
 using MyWebAPI.Infrastructure.DataBase;
 using System;
@@ -26,9 +27,19 @@ namespace MyWebAPI.Infrastructure.Repositories
         /// 获取所有文章
         /// </summary>
         /// <returns></returns>
-        public async Task<IEnumerable<Post>> GetAllPostsAsync()
+        public async Task<PaginatedList<Post>> GetAllPostsAsync(PostParameter postParameters)
         {
-            return await this._myContext.Posts.ToListAsync();
+            var query = this._myContext.Posts.OrderBy(x => x.Id);
+
+            var count = await query.CountAsync();
+
+            var list = await query
+                .Skip((postParameters.PageIndex - 1) * postParameters.PageSize)
+                .Take(postParameters.PageSize)
+                .ToListAsync();
+
+            return new PaginatedList<Post>(postParameters.PageIndex, postParameters.PageSize, count, list); 
+
         }
 
         /// <summary>

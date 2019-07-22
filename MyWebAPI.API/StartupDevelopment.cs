@@ -23,6 +23,7 @@ using Microsoft.AspNetCore.Mvc.Formatters;
 using Microsoft.AspNetCore.Mvc.Infrastructure;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Routing;
+using MyWebAPI.Infrastructure.Services;
 
 namespace MyWebAPI.API
 {
@@ -86,6 +87,10 @@ namespace MyWebAPI.API
                 var actionContext = factory.GetService<IActionContextAccessor>().ActionContext;
                 return new UrlHelper(actionContext);
             });
+
+            var propertyMappingContainer = new PropertyMappingContainer();
+            propertyMappingContainer.Register<PostPropertyMapping>();
+            services.AddSingleton<IPropertyMappingContainer>(propertyMappingContainer);
 
         }
 

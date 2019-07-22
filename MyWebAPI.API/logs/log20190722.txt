@@ -1,0 +1,262 @@
+2019-07-22 20:33:32.375 +08:00 [INF] User profile is available. Using 'C:\Users\陈彦森\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-07-22 20:33:34.768 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/  
+2019-07-22 20:33:34.905 +08:00 [INF] Request finished in 138.6464ms 404 
+2019-07-22 20:33:58.036 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/posts?pageIndex=5&pageSize=5  
+2019-07-22 20:33:58.078 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API)
+2019-07-22 20:33:58.480 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) with arguments (["MyWebAPI.Core.EntityParameters.PostParameter"]) - Validation state: "Valid"
+2019-07-22 20:33:58.925 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-07-22 20:34:00.163 +08:00 [INF] Executed DbCommand (61ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Posts] AS [x]
+2019-07-22 20:34:00.374 +08:00 [INF] Executed DbCommand (55ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [x].[Id], [x].[Author], [x].[Body], [x].[LastModified], [x].[Title]
+FROM [Posts] AS [x]
+ORDER BY [x].[Id]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2019-07-22 20:34:00.544 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 2049.967ms.
+2019-07-22 20:34:00.560 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[MyWebAPI.Infrastructure.Resources.PostResource, MyWebAPI.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-07-22 20:34:00.576 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) in 2494.271ms
+2019-07-22 20:34:00.584 +08:00 [INF] Request finished in 2548.4286ms 200 application/json; charset=utf-8
+2019-07-22 20:34:05.939 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/posts?pageIndex=1&pageSize=5  
+2019-07-22 20:34:05.940 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API)
+2019-07-22 20:34:05.942 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) with arguments (["MyWebAPI.Core.EntityParameters.PostParameter"]) - Validation state: "Valid"
+2019-07-22 20:34:05.945 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-07-22 20:34:05.953 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Posts] AS [x]
+2019-07-22 20:34:05.956 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [x].[Id], [x].[Author], [x].[Body], [x].[LastModified], [x].[Title]
+FROM [Posts] AS [x]
+ORDER BY [x].[Id]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2019-07-22 20:34:05.960 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 16.2315ms.
+2019-07-22 20:34:05.962 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[MyWebAPI.Infrastructure.Resources.PostResource, MyWebAPI.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-07-22 20:34:05.964 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) in 22.8872ms
+2019-07-22 20:34:05.965 +08:00 [INF] Request finished in 26.6961ms 200 application/json; charset=utf-8
+2019-07-22 20:34:25.607 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/posts?pageIndex=1&pageSize=5&title=%E4%BA%94%E8%A1%8C  
+2019-07-22 20:34:25.609 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API)
+2019-07-22 20:34:25.611 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) with arguments (["MyWebAPI.Core.EntityParameters.PostParameter"]) - Validation state: "Valid"
+2019-07-22 20:34:25.614 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-07-22 20:34:25.660 +08:00 [WRN] The LINQ expression 'where [x].Title.ToLowerInvariant().Contains(__title_0)' could not be translated and will be evaluated locally.
+2019-07-22 20:34:25.669 +08:00 [WRN] The LINQ expression 'Count()' could not be translated and will be evaluated locally.
+2019-07-22 20:34:25.684 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [x].[Title]
+FROM [Posts] AS [x]
+2019-07-22 20:34:25.695 +08:00 [WRN] The LINQ expression 'where [x].Title.ToLowerInvariant().Contains(__title_0)' could not be translated and will be evaluated locally.
+2019-07-22 20:34:25.698 +08:00 [WRN] The LINQ expression 'Skip(__p_1)' could not be translated and will be evaluated locally.
+2019-07-22 20:34:25.700 +08:00 [WRN] The LINQ expression 'Take(__p_2)' could not be translated and will be evaluated locally.
+2019-07-22 20:34:25.707 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [x].[Id], [x].[Author], [x].[Body], [x].[LastModified], [x].[Title]
+FROM [Posts] AS [x]
+ORDER BY [x].[Id]
+2019-07-22 20:34:25.719 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 105.5903ms.
+2019-07-22 20:34:25.721 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[MyWebAPI.Infrastructure.Resources.PostResource, MyWebAPI.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-07-22 20:34:25.722 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) in 112.04100000000001ms
+2019-07-22 20:34:25.723 +08:00 [INF] Request finished in 116.1127ms 200 application/json; charset=utf-8
+2019-07-22 21:00:39.504 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/  
+2019-07-22 21:00:39.506 +08:00 [INF] Request finished in 2.2967ms 404 
+2019-07-22 21:00:39.511 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/Post  
+2019-07-22 21:00:39.512 +08:00 [INF] Request finished in 1.0102ms 404 
+2019-07-22 21:00:39.589 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/Posts  
+2019-07-22 21:00:39.591 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API)
+2019-07-22 21:00:39.593 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) with arguments (["MyWebAPI.Core.EntityParameters.PostParameter"]) - Validation state: "Valid"
+2019-07-22 21:00:39.595 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-07-22 21:00:40.379 +08:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Posts] AS [x]
+2019-07-22 21:00:40.384 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [x].[Id], [x].[Author], [x].[Body], [x].[LastModified], [x].[Title]
+FROM [Posts] AS [x]
+ORDER BY [x].[Id]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2019-07-22 21:00:40.458 +08:00 [ERR] An exception occurred while iterating over the results of a query for context type 'MyWebAPI.Infrastructure.DataBase.MyContext'.
+System.Data.SqlClient.SqlException (0x80131904): The offset specified in a OFFSET clause may not be negative.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at System.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at System.Data.SqlClient.SqlDataReader.<>c__DisplayClass190_0.<ReadAsync>b__1(Task t)
+   at System.Data.SqlClient.SqlDataReader.InvokeRetryable[T](Func`2 moreFunc, TaskCompletionSource`1 source, IDisposable objectToDispose)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.BufferlessMoveNext(DbContext _, Boolean buffer, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\Select.cs:line 106
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\AsyncIterator.cs:line 98
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+ClientConnectionId:07e49a13-c45a-4f64-9574-014b65fe9940
+Error Number:10742,State:1,Class:15
+System.Data.SqlClient.SqlException (0x80131904): The offset specified in a OFFSET clause may not be negative.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at System.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at System.Data.SqlClient.SqlDataReader.<>c__DisplayClass190_0.<ReadAsync>b__1(Task t)
+   at System.Data.SqlClient.SqlDataReader.InvokeRetryable[T](Func`2 moreFunc, TaskCompletionSource`1 source, IDisposable objectToDispose)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.BufferlessMoveNext(DbContext _, Boolean buffer, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\Select.cs:line 106
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\AsyncIterator.cs:line 98
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+ClientConnectionId:07e49a13-c45a-4f64-9574-014b65fe9940
+Error Number:10742,State:1,Class:15
+2019-07-22 21:00:40.474 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) in 881.8066ms
+2019-07-22 21:00:40.477 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Data.SqlClient.SqlException (0x80131904): The offset specified in a OFFSET clause may not be negative.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at System.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at System.Data.SqlClient.SqlDataReader.<>c__DisplayClass190_0.<ReadAsync>b__1(Task t)
+   at System.Data.SqlClient.SqlDataReader.InvokeRetryable[T](Func`2 moreFunc, TaskCompletionSource`1 source, IDisposable objectToDispose)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.BufferlessMoveNext(DbContext _, Boolean buffer, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\Select.cs:line 106
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\AsyncIterator.cs:line 98
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.Aggregate_[TSource,TAccumulate,TResult](IAsyncEnumerable`1 source, TAccumulate seed, Func`3 accumulator, Func`2 resultSelector, CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\Aggregate.cs:line 120
+   at MyWebAPI.Infrastructure.Repositories.PostRepository.GetAllPostsAsync(PostParameter postParameters) in C:\Users\陈彦森\Desktop\MyGitHub\MyWebAPI\MyWebAPI.Infrastructure\Repositories\PostRepository.cs:line 44
+   at MyWebAPI.API.Controllers.PostController.Get(PostParameter postParameters) in C:\Users\陈彦森\Desktop\MyGitHub\MyWebAPI\MyWebAPI.API\Controllers\PostController.cs:line 45
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.Invoke(HttpContext context)
+ClientConnectionId:07e49a13-c45a-4f64-9574-014b65fe9940
+Error Number:10742,State:1,Class:15
+2019-07-22 21:00:40.518 +08:00 [ERR] The offset specified in a OFFSET clause may not be negative.
+System.Data.SqlClient.SqlException (0x80131904): The offset specified in a OFFSET clause may not be negative.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at System.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at System.Data.SqlClient.SqlDataReader.<>c__DisplayClass190_0.<ReadAsync>b__1(Task t)
+   at System.Data.SqlClient.SqlDataReader.InvokeRetryable[T](Func`2 moreFunc, TaskCompletionSource`1 source, IDisposable objectToDispose)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.BufferlessMoveNext(DbContext _, Boolean buffer, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\Select.cs:line 106
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\AsyncIterator.cs:line 98
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.Aggregate_[TSource,TAccumulate,TResult](IAsyncEnumerable`1 source, TAccumulate seed, Func`3 accumulator, Func`2 resultSelector, CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\Aggregate.cs:line 120
+   at MyWebAPI.Infrastructure.Repositories.PostRepository.GetAllPostsAsync(PostParameter postParameters) in C:\Users\陈彦森\Desktop\MyGitHub\MyWebAPI\MyWebAPI.Infrastructure\Repositories\PostRepository.cs:line 44
+   at MyWebAPI.API.Controllers.PostController.Get(PostParameter postParameters) in C:\Users\陈彦森\Desktop\MyGitHub\MyWebAPI\MyWebAPI.API\Controllers\PostController.cs:line 45
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.Invoke(HttpContext context)
+ClientConnectionId:07e49a13-c45a-4f64-9574-014b65fe9940
+Error Number:10742,State:1,Class:15
+2019-07-22 21:00:40.541 +08:00 [INF] Request finished in 951.5584ms 500 application/json
+2019-07-22 21:11:40.320 +08:00 [INF] User profile is available. Using 'C:\Users\陈彦森\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-07-22 21:11:41.242 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/  
+2019-07-22 21:11:41.326 +08:00 [INF] Request finished in 85.4123ms 404 
+2019-07-22 21:12:11.150 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/posts?pageIndex=1&pageSize=5&  
+2019-07-22 21:12:11.190 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API)
+2019-07-22 21:12:11.546 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) with arguments (["MyWebAPI.Core.EntityParameters.PostParameter"]) - Validation state: "Valid"
+2019-07-22 21:12:11.987 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-07-22 21:12:12.525 +08:00 [INF] Executed DbCommand (64ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Posts] AS [p]
+2019-07-22 21:12:12.604 +08:00 [WRN] Query: '(from Post <generated>_2 in DbSet<Post> select [<generated>_2]).Skip(__p_0).Take(__p_1)' uses a row limiting operation (Skip/Take) without OrderBy which may lead to unpredictable results.
+2019-07-22 21:12:12.713 +08:00 [INF] Executed DbCommand (46ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Author], [p].[Body], [p].[LastModified], [p].[Title]
+FROM [Posts] AS [p]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2019-07-22 21:12:12.862 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1299.2729000000002ms.
+2019-07-22 21:12:12.874 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[MyWebAPI.Infrastructure.Resources.PostResource, MyWebAPI.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-07-22 21:12:12.889 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) in 1695.6660000000002ms
+2019-07-22 21:12:12.901 +08:00 [INF] Request finished in 1750.6573ms 200 application/json; charset=utf-8
+2019-07-22 21:12:33.442 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/posts?pageIndex=1&pageSize=5&orderby=id%20desc  
+2019-07-22 21:12:33.443 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API)
+2019-07-22 21:12:33.447 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) with arguments (["MyWebAPI.Core.EntityParameters.PostParameter"]) - Validation state: "Valid"
+2019-07-22 21:12:33.453 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-07-22 21:12:33.631 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Posts] AS [p]
+2019-07-22 21:12:33.666 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Author], [p].[Body], [p].[LastModified], [p].[Title]
+FROM [Posts] AS [p]
+ORDER BY [p].[Id] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2019-07-22 21:12:33.670 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 220.9101ms.
+2019-07-22 21:12:33.671 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[MyWebAPI.Infrastructure.Resources.PostResource, MyWebAPI.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-07-22 21:12:33.673 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) in 227.595ms
+2019-07-22 21:12:33.674 +08:00 [INF] Request finished in 232.303ms 200 application/json; charset=utf-8
+2019-07-22 21:13:23.618 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/posts?pageIndex=1&pageSize=5&orderby=author,id%20desc  
+2019-07-22 21:13:23.620 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API)
+2019-07-22 21:13:23.621 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) with arguments (["MyWebAPI.Core.EntityParameters.PostParameter"]) - Validation state: "Valid"
+2019-07-22 21:13:23.623 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-07-22 21:13:23.629 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Posts] AS [p]
+2019-07-22 21:13:23.635 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Author], [p].[Body], [p].[LastModified], [p].[Title]
+FROM [Posts] AS [p]
+ORDER BY [p].[Author], [p].[Id] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2019-07-22 21:13:23.638 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 15.2378ms.
+2019-07-22 21:13:23.640 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[MyWebAPI.Infrastructure.Resources.PostResource, MyWebAPI.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-07-22 21:13:23.641 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) in 20.5191ms
+2019-07-22 21:13:23.643 +08:00 [INF] Request finished in 24.7911ms 200 application/json; charset=utf-8
+2019-07-22 21:13:37.798 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/posts?pageIndex=1&pageSize=50&orderby=author,id%20desc  
+2019-07-22 21:13:37.800 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API)
+2019-07-22 21:13:37.802 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) with arguments (["MyWebAPI.Core.EntityParameters.PostParameter"]) - Validation state: "Valid"
+2019-07-22 21:13:37.804 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-07-22 21:13:37.811 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Posts] AS [p]
+2019-07-22 21:13:37.814 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Author], [p].[Body], [p].[LastModified], [p].[Title]
+FROM [Posts] AS [p]
+ORDER BY [p].[Author], [p].[Id] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2019-07-22 21:13:37.816 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 12.528400000000001ms.
+2019-07-22 21:13:37.818 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[MyWebAPI.Infrastructure.Resources.PostResource, MyWebAPI.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-07-22 21:13:37.820 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) in 17.890900000000002ms
+2019-07-22 21:13:37.821 +08:00 [INF] Request finished in 22.42ms 200 application/json; charset=utf-8
+2019-07-22 21:14:07.600 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/posts?pageIndex=1&pageSize=50&orderby=title,id%20desc  
+2019-07-22 21:14:07.601 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API)
+2019-07-22 21:14:07.603 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) with arguments (["MyWebAPI.Core.EntityParameters.PostParameter"]) - Validation state: "Valid"
+2019-07-22 21:14:07.605 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-07-22 21:14:07.611 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Posts] AS [p]
+2019-07-22 21:14:07.619 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Author], [p].[Body], [p].[LastModified], [p].[Title]
+FROM [Posts] AS [p]
+ORDER BY [p].[Title], [p].[Id] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2019-07-22 21:14:07.622 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 17.3641ms.
+2019-07-22 21:14:07.624 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[MyWebAPI.Infrastructure.Resources.PostResource, MyWebAPI.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-07-22 21:14:07.625 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) in 22.2271ms
+2019-07-22 21:14:07.626 +08:00 [INF] Request finished in 25.6896ms 200 application/json; charset=utf-8

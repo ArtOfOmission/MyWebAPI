@@ -7,7 +7,7 @@ namespace MyWebAPI.Core.EntityParameters
 {
     public class PostParameter: QueryParameters
     {
-
+        public string Title { get; set; }
 
 
 

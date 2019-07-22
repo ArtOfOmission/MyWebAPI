@@ -694,6 +694,17 @@
           "lib/netstandard2.0/System.Interactive.Async.dll": {}
         }
       },
+      "System.Linq.Dynamic.Core/1.0.18": {
+        "runtime": {
+          "lib/netcoreapp2.1/System.Linq.Dynamic.Core.dll": {
+            "assemblyVersion": "1.0.18.0",
+            "fileVersion": "1.0.18.0"
+          }
+        },
+        "compile": {
+          "lib/netcoreapp2.1/System.Linq.Dynamic.Core.dll": {}
+        }
+      },
       "System.Linq.Parallel/4.3.0": {
         "dependencies": {
           "System.Collections": "4.3.0",
@@ -776,7 +787,8 @@
           "FluentValidation": "8.4.0",
           "Microsoft.EntityFrameworkCore.Design": "2.2.6",
           "Microsoft.EntityFrameworkCore.SqlServer": "2.2.6",
-          "MyWebAPI.Core": "1.0.0"
+          "MyWebAPI.Core": "1.0.0",
+          "System.Linq.Dynamic.Core": "1.0.18"
         },
         "runtime": {
           "MyWebAPI.Infrastructure.dll": {}
@@ -4147,6 +4159,13 @@
       "sha512": "sha512-C07p0dAA5lGqYUPiPCK3paR709gqS4aMDDsje0v0pvffwzLaxmsn5YQTfZbyNG5qrudPx+BCxTqISnncQ3wIoQ==",
       "path": "system.interactive.async/3.2.0",
       "hashPath": "system.interactive.async.3.2.0.nupkg.sha512"
+    },
+    "System.Linq.Dynamic.Core/1.0.18": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-VonVK0xHQLzm+H6n5TE6wDwoCrVMuTBMdGQrXDfIAmf/klG/sJUai3bkMTlTgtqArB1NYEdWxUVqpPFnMZwVog==",
+      "path": "system.linq.dynamic.core/1.0.18",
+      "hashPath": "system.linq.dynamic.core.1.0.18.nupkg.sha512"
     },
     "System.Linq.Parallel/4.3.0": {
       "type": "package",

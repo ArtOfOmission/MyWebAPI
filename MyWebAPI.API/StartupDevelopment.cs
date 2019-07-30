@@ -45,7 +45,17 @@ namespace MyWebAPI.API
             services.AddMvc(options =>
                 {
                     options.ReturnHttpNotAcceptable = true;
-                    options.OutputFormatters.Add(new XmlDataContractSerializerOutputFormatter());
+
+                    //返回类型设置支持xml
+                    //options.OutputFormatters.Add(new XmlDataContractSerializerOutputFormatter());
+
+                    //设置自定义媒体类型
+                    var outputFormatter = options.OutputFormatters.OfType<JsonOutputFormatter>().FirstOrDefault();
+                    if (outputFormatter != null)
+                    {
+                        outputFormatter.SupportedMediaTypes.Add("application/vnd.sen.hateoas+json");
+                    }
+
                 })
                 .AddJsonOptions(options =>
                 {

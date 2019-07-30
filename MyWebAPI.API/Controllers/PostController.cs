@@ -49,7 +49,8 @@ namespace MyWebAPI.API.Controllers
         }
 
         [HttpGet(Name = "GetPosts")]
-        public async Task<IActionResult> Get(PostParameter postParameters)
+        public async Task<IActionResult> Get(PostParameter postParameters,
+            [FromHeader(Name ="Accept")] string mediaType)
         {
             if (!this._propertyMappingContainer.ValidateMappingExistsFor<PostResource, Post>(postParameters.OrderBy))
             {
@@ -64,36 +65,75 @@ namespace MyWebAPI.API.Controllers
 
             var postResources = this._mapper.Map<IEnumerable<Post>, IEnumerable<PostResource>>(postList);
 
-            var result = postResources.ToDynamicIEnumerable(postParameters.Fields);
-
-            var previousPageLink = postList.HasPrevious ?
-                this.CreatePostUri(postParameters, PaginationResourceUriType.PreviousPage) : null;
-
-            var nextPageLink = postList.HasNext ?
-                this.CreatePostUri(postParameters, PaginationResourceUriType.NextPage) : null;
-
-            var meta = new
+            if (mediaType == "application/vnd.sen.hateoas+json")
             {
-                postList.PageIndex,
-                postList.PageSize,
-                postList.TotalItemsCount,
-                postList.PageCount,
-                previousPageLink,
-                nextPageLink
-            };
+                var links = this.CreateLinksForPosts(postParameters, postList.HasPrevious, postList.HasNext);
 
-            //this._logger.LogInformation("get all posts");
-            //throw new Exception("error!!!!!!!!!!!!!!!");
+                var shapedResources = postResources.ToDynamicIEnumerable(postParameters.Fields);
 
-            Response.Headers.Add("X-Pagination", JsonConvert.SerializeObject(meta, new JsonSerializerSettings
+                var result = new
+                {
+                    value = shapedResources,
+                    links
+                };
+
+                //var previousPageLink = postList.HasPrevious ?
+                //    this.CreatePostUri(postParameters, PaginationResourceUriType.PreviousPage) : null;
+
+                //var nextPageLink = postList.HasNext ?
+                //    this.CreatePostUri(postParameters, PaginationResourceUriType.NextPage) : null;
+
+                var meta = new
+                {
+                    postList.PageIndex,
+                    postList.PageSize,
+                    postList.TotalItemsCount,
+                    postList.PageCount
+                };
+
+                //this._logger.LogInformation("get all posts");
+                //throw new Exception("error!!!!!!!!!!!!!!!");
+
+                Response.Headers.Add("X-Pagination",
+                    JsonConvert.SerializeObject(meta, new JsonSerializerSettings
+                    {
+                        ContractResolver = new CamelCasePropertyNamesContractResolver()//设定返回数据属性首字母小写
+                    }));
+
+                return Ok(result);
+            }
+            else
             {
-                ContractResolver = new CamelCasePropertyNamesContractResolver()//设定返回数据属性首字母小写
-            }));
+                var shapedResources = postResources.ToDynamicIEnumerable(postParameters.Fields);
 
-            return Ok(result);
+                var previousPageLink = postList.HasPrevious ?
+                    this.CreatePostUri(postParameters, PaginationResourceUriType.PreviousPage) : null;
+
+                var nextPageLink = postList.HasNext ?
+                    this.CreatePostUri(postParameters, PaginationResourceUriType.NextPage) : null;
+
+                var meta = new
+                {
+                    postList.PageIndex,
+                    postList.PageSize,
+                    postList.TotalItemsCount,
+                    postList.PageCount,
+                    previousPageLink,
+                    nextPageLink
+                };
+
+                Response.Headers.Add("X-Pagination",
+                    JsonConvert.SerializeObject(meta, new JsonSerializerSettings
+                    {
+                        ContractResolver = new CamelCasePropertyNamesContractResolver()//设定返回数据属性首字母小写
+                    }));
+
+                return Ok(shapedResources);
+            }
+
         }
 
-        [HttpGet("{id}")]
+        [HttpGet("{id}",Name ="GetPost")]
         public async Task<IActionResult> Get(int id,string fields)
         {
             if (!_typeHelperService.TypeHasProperties<PostResource>(fields))
@@ -108,14 +148,20 @@ namespace MyWebAPI.API.Controllers
                 return NotFound();
             }
 
-            var postResource = this._mapper.Map<Post, PostResource>(post);
+            var postResource = this._mapper.Map<Post, PostResource>(post);      
 
-            var result = postResource.ToDynamic(fields);
+            var shapedResource = postResource.ToDynamic(fields);
+
+            var links = this.CreateLinksForPost(id, fields);
+
+            var result = shapedResource as IDictionary<string, object>;
+
+            result.Add("links", links);
 
             return Ok(result);
         }
 
-        [HttpPost]
+        [HttpPost(Name = "CreatePost")]
         public async Task<IActionResult> Post()
         {
             var post = new Post()
@@ -172,6 +218,70 @@ namespace MyWebAPI.API.Controllers
                     return this._urlHelper.Link("GetPosts", currentParameters);
 
             }
+        }
+
+        /// <summary>
+        /// 创建链接(单个post)
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="fields"></param>
+        /// <returns></returns>
+        private IEnumerable<LinkResource> CreateLinksForPost(int id, string fields = null)
+        {
+            var links = new List<LinkResource>();
+
+            if (!string.IsNullOrWhiteSpace(fields))
+            {
+                links.Add(
+                    new LinkResource(this._urlHelper.Link("GetPost", new { id }), "self", "GET"));
+            }
+            else
+            {
+                links.Add(
+                    new LinkResource(this._urlHelper.Link("GetPost", new { id, fields }), "self", "GET"));
+            }
+
+            links.Add(
+                new LinkResource(this._urlHelper.Link("DeletePost", new { id }), "self", "DEELETE"));
+
+            return links;
+
+        }
+
+        /// <summary>
+        /// 为集合资源创建链接
+        /// </summary>
+        /// <param name="postResourceParameters"></param>
+        /// <param name="hasPrevious"></param>
+        /// <param name="hasNext"></param>
+        /// <returns></returns>
+        private IEnumerable<LinkResource> CreateLinksForPosts(PostParameter postResourceParameters,
+          bool hasPrevious, bool hasNext)
+        {
+            var links = new List<LinkResource>
+            {
+                new LinkResource(
+                    CreatePostUri(postResourceParameters, PaginationResourceUriType.CurrentPage),
+                    "self", "GET")
+            };
+
+            if (hasPrevious)
+            {
+                links.Add(
+                    new LinkResource(
+                        CreatePostUri(postResourceParameters, PaginationResourceUriType.PreviousPage),
+                        "previous_page", "GET"));
+            }
+
+            if (hasNext)
+            {
+                links.Add(
+                    new LinkResource(
+                        CreatePostUri(postResourceParameters, PaginationResourceUriType.NextPage),
+                        "next_page", "GET"));
+            }
+
+            return links;
         }
     }
 }

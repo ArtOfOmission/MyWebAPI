@@ -24,6 +24,7 @@ using Microsoft.AspNetCore.Mvc.Infrastructure;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Routing;
 using MyWebAPI.Infrastructure.Services;
+using Newtonsoft.Json.Serialization;
 
 namespace MyWebAPI.API
 {
@@ -42,10 +43,14 @@ namespace MyWebAPI.API
         {
             //注册Mvc
             services.AddMvc(options =>
-            {
-                options.ReturnHttpNotAcceptable = true;
-                options.OutputFormatters.Add(new XmlDataContractSerializerOutputFormatter());
-            });
+                {
+                    options.ReturnHttpNotAcceptable = true;
+                    options.OutputFormatters.Add(new XmlDataContractSerializerOutputFormatter());
+                })
+                .AddJsonOptions(options =>
+                {
+                    options.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();
+                });
 
             //注册DbContext
             services.AddDbContext<MyContext>(options =>
@@ -91,6 +96,9 @@ namespace MyWebAPI.API
             var propertyMappingContainer = new PropertyMappingContainer();
             propertyMappingContainer.Register<PostPropertyMapping>();
             services.AddSingleton<IPropertyMappingContainer>(propertyMappingContainer);
+
+
+            services.AddTransient<ITypeHelperService, TypeHelperService>();
 
         }
 

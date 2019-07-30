@@ -11,7 +11,9 @@ using MyWebAPI.Core.EntityParameters;
 using MyWebAPI.Core.Interfaces;
 using MyWebAPI.Core.Interfaces.IRepositories;
 using MyWebAPI.Infrastructure.DataBase;
+using MyWebAPI.Infrastructure.Extensions;
 using MyWebAPI.Infrastructure.Resources;
+using MyWebAPI.Infrastructure.Services;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
 
@@ -25,26 +27,44 @@ namespace MyWebAPI.API.Controllers
         private readonly ILogger<PostController> _logger;
         private readonly IMapper _mapper;
         private readonly IUrlHelper _urlHelper;
+        private readonly ITypeHelperService _typeHelperService;
+        private readonly IPropertyMappingContainer _propertyMappingContainer;
 
         public PostController(IPostRepository postRepository,
             IUnitOfWork unitOfWork,
              ILogger<PostController> logger,
              IMapper mapper,
-             IUrlHelper urlHelper)
+             IUrlHelper urlHelper,
+             ITypeHelperService typeHelperService,
+             IPropertyMappingContainer propertyMappingContainer
+             )
         {
             this._postRepository = postRepository;
             this._unitOfWork = unitOfWork;
             this._logger = logger;
             this._mapper = mapper;
             this._urlHelper = urlHelper;
+            this._typeHelperService = typeHelperService;
+            this._propertyMappingContainer = propertyMappingContainer;
         }
 
         [HttpGet(Name = "GetPosts")]
         public async Task<IActionResult> Get(PostParameter postParameters)
         {
+            if (!this._propertyMappingContainer.ValidateMappingExistsFor<PostResource, Post>(postParameters.OrderBy))
+            {
+                return BadRequest("Can't find fields for sorting");
+            }
+            if (!this._typeHelperService.TypeHasProperties<PostResource>(postParameters.Fields))
+            {
+                return BadRequest("Fields not exist.");
+            }
+
             var postList = await this._postRepository.GetAllPostsAsync(postParameters);
 
             var postResources = this._mapper.Map<IEnumerable<Post>, IEnumerable<PostResource>>(postList);
+
+            var result = postResources.ToDynamicIEnumerable(postParameters.Fields);
 
             var previousPageLink = postList.HasPrevious ?
                 this.CreatePostUri(postParameters, PaginationResourceUriType.PreviousPage) : null;
@@ -70,12 +90,17 @@ namespace MyWebAPI.API.Controllers
                 ContractResolver = new CamelCasePropertyNamesContractResolver()//设定返回数据属性首字母小写
             }));
 
-            return Ok(postResources);
+            return Ok(result);
         }
 
         [HttpGet("{id}")]
-        public async Task<IActionResult> Get(int id)
+        public async Task<IActionResult> Get(int id,string fields)
         {
+            if (!_typeHelperService.TypeHasProperties<PostResource>(fields))
+            {
+                return BadRequest("Fields not exist.");
+            }
+
             var post = await this._postRepository.GetPostByIdAsync(id);
 
             if (post == null)
@@ -85,7 +110,9 @@ namespace MyWebAPI.API.Controllers
 
             var postResource = this._mapper.Map<Post, PostResource>(post);
 
-            return Ok(postResource);
+            var result = postResource.ToDynamic(fields);
+
+            return Ok(result);
         }
 
         [HttpPost]

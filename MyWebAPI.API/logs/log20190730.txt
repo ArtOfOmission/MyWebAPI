@@ -1,0 +1,131 @@
+2019-07-30 21:21:40.136 +08:00 [INF] User profile is available. Using 'C:\Users\陈彦森\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-07-30 21:21:42.633 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/  
+2019-07-30 21:21:42.765 +08:00 [INF] Request finished in 133.2837ms 404 
+2019-07-30 21:23:07.635 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/Posts?pageindex=6&pagesize=5  
+2019-07-30 21:23:07.675 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API)
+2019-07-30 21:23:08.056 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) with arguments (["MyWebAPI.Core.EntityParameters.PostParameter"]) - Validation state: "Valid"
+2019-07-30 21:23:08.512 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-07-30 21:23:09.943 +08:00 [INF] Executed DbCommand (72ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Posts] AS [p]
+2019-07-30 21:23:10.032 +08:00 [WRN] Query: '(from Post <generated>_2 in DbSet<Post> select [<generated>_2]).Skip(__p_0).Take(__p_1)' uses a row limiting operation (Skip/Take) without OrderBy which may lead to unpredictable results.
+2019-07-30 21:23:10.153 +08:00 [INF] Executed DbCommand (57ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Author], [p].[Body], [p].[LastModified], [p].[Title]
+FROM [Posts] AS [p]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2019-07-30 21:23:10.308 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 2232.3501ms.
+2019-07-30 21:23:10.320 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2019-07-30 21:23:10.338 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) in 2658.9295ms
+2019-07-30 21:23:10.346 +08:00 [INF] Request finished in 2710.5889ms 200 application/json; charset=utf-8
+2019-07-30 21:23:53.191 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/Posts?pageindex=6&pagesize=5&fields=id,author  
+2019-07-30 21:23:53.193 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API)
+2019-07-30 21:23:53.196 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) with arguments (["MyWebAPI.Core.EntityParameters.PostParameter"]) - Validation state: "Valid"
+2019-07-30 21:23:53.198 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-07-30 21:23:53.202 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Posts] AS [p]
+2019-07-30 21:23:53.206 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Author], [p].[Body], [p].[LastModified], [p].[Title]
+FROM [Posts] AS [p]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2019-07-30 21:23:53.209 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 11.8521ms.
+2019-07-30 21:23:53.211 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2019-07-30 21:23:53.212 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) in 18.6033ms
+2019-07-30 21:23:53.214 +08:00 [INF] Request finished in 22.7628ms 200 application/json; charset=utf-8
+2019-07-30 21:25:54.765 +08:00 [INF] User profile is available. Using 'C:\Users\陈彦森\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-07-30 21:25:55.559 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/  
+2019-07-30 21:25:55.655 +08:00 [INF] Request finished in 97.439ms 404 
+2019-07-30 21:26:36.780 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/posts/5?fields=title,id  
+2019-07-30 21:26:36.812 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API)
+2019-07-30 21:26:37.163 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) with arguments (["5","title,id"]) - Validation state: "Valid"
+2019-07-30 21:26:37.610 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-07-30 21:26:38.279 +08:00 [INF] Executed DbCommand (89ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[Author], [e].[Body], [e].[LastModified], [e].[Title]
+FROM [Posts] AS [e]
+WHERE [e].[Id] = @__get_Item_0
+2019-07-30 21:26:38.343 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.NotFoundResult in 1157.2975000000001ms.
+2019-07-30 21:26:38.354 +08:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 404
+2019-07-30 21:26:38.358 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) in 1543.421ms
+2019-07-30 21:26:38.366 +08:00 [INF] Request finished in 1585.8601ms 404 
+2019-07-30 21:26:48.391 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/posts/6?fields=title,id  
+2019-07-30 21:26:48.392 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API)
+2019-07-30 21:26:48.394 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) with arguments (["6","title,id"]) - Validation state: "Valid"
+2019-07-30 21:26:48.397 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-07-30 21:26:48.408 +08:00 [INF] Executed DbCommand (3ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[Author], [e].[Body], [e].[LastModified], [e].[Title]
+FROM [Posts] AS [e]
+WHERE [e].[Id] = @__get_Item_0
+2019-07-30 21:26:48.411 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.NotFoundResult in 15.1845ms.
+2019-07-30 21:26:48.412 +08:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 404
+2019-07-30 21:26:48.413 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) in 19.942700000000002ms
+2019-07-30 21:26:48.414 +08:00 [INF] Request finished in 22.6995ms 404 
+2019-07-30 21:26:55.380 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/posts/12?fields=title,id  
+2019-07-30 21:26:55.381 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API)
+2019-07-30 21:26:55.382 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) with arguments (["12","title,id"]) - Validation state: "Valid"
+2019-07-30 21:26:55.384 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-07-30 21:26:55.387 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[Author], [e].[Body], [e].[LastModified], [e].[Title]
+FROM [Posts] AS [e]
+WHERE [e].[Id] = @__get_Item_0
+2019-07-30 21:26:55.478 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 94.3217ms.
+2019-07-30 21:26:55.483 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Dynamic.ExpandoObject'.
+2019-07-30 21:26:55.516 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) in 133.5301ms
+2019-07-30 21:26:55.518 +08:00 [INF] Request finished in 137.6214ms 200 application/json; charset=utf-8
+2019-07-30 21:31:20.225 +08:00 [INF] User profile is available. Using 'C:\Users\陈彦森\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-07-30 21:31:20.996 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/  
+2019-07-30 21:31:21.085 +08:00 [INF] Request finished in 90.7045ms 404 
+2019-07-30 21:31:24.727 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/posts/12?fields=title,id  
+2019-07-30 21:31:24.760 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API)
+2019-07-30 21:31:25.123 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) with arguments (["12","title,id"]) - Validation state: "Valid"
+2019-07-30 21:31:25.564 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-07-30 21:31:26.195 +08:00 [INF] Executed DbCommand (85ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[Author], [e].[Body], [e].[LastModified], [e].[Title]
+FROM [Posts] AS [e]
+WHERE [e].[Id] = @__get_Item_0
+2019-07-30 21:31:26.343 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1205.6718ms.
+2019-07-30 21:31:26.355 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Dynamic.ExpandoObject'.
+2019-07-30 21:31:26.398 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) in 1634.7894000000001ms
+2019-07-30 21:31:26.407 +08:00 [INF] Request finished in 1679.8745ms 200 application/json; charset=utf-8
+2019-07-30 21:31:33.250 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/Posts?pageindex=6&pagesize=5&fields=id,author  
+2019-07-30 21:31:33.256 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API)
+2019-07-30 21:31:33.266 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) with arguments (["MyWebAPI.Core.EntityParameters.PostParameter"]) - Validation state: "Valid"
+2019-07-30 21:31:33.276 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-07-30 21:31:33.330 +08:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Posts] AS [p]
+2019-07-30 21:31:33.355 +08:00 [WRN] Query: '(from Post <generated>_2 in DbSet<Post> select [<generated>_2]).Skip(__p_0).Take(__p_1)' uses a row limiting operation (Skip/Take) without OrderBy which may lead to unpredictable results.
+2019-07-30 21:31:33.367 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Author], [p].[Body], [p].[LastModified], [p].[Title]
+FROM [Posts] AS [p]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2019-07-30 21:31:33.402 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 133.8467ms.
+2019-07-30 21:31:33.403 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2019-07-30 21:31:33.407 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) in 148.96460000000002ms
+2019-07-30 21:31:33.408 +08:00 [INF] Request finished in 158.4239ms 200 application/json; charset=utf-8
+2019-07-30 21:51:01.033 +08:00 [INF] User profile is available. Using 'C:\Users\陈彦森\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-07-30 21:51:01.824 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/  
+2019-07-30 21:51:01.916 +08:00 [INF] Request finished in 93.4251ms 404 
+2019-07-30 21:51:10.411 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/Posts?pageindex=6&pagesize=5&fields=id,author11  
+2019-07-30 21:51:10.449 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API)
+2019-07-30 21:51:10.818 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) with arguments (["MyWebAPI.Core.EntityParameters.PostParameter"]) - Validation state: "Valid"
+2019-07-30 21:51:10.837 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.BadRequestObjectResult in 3.9124000000000003ms.
+2019-07-30 21:51:10.844 +08:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2019-07-30 21:51:10.849 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) in 396.34520000000003ms
+2019-07-30 21:51:10.853 +08:00 [INF] Request finished in 441.5237ms 400 text/plain; charset=utf-8
+2019-07-30 21:51:18.518 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/posts/12?fields=title,123  
+2019-07-30 21:51:18.525 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API)
+2019-07-30 21:51:18.527 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) with arguments (["12","title,123"]) - Validation state: "Valid"
+2019-07-30 21:51:18.530 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.BadRequestObjectResult in 1.4714ms.
+2019-07-30 21:51:18.532 +08:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2019-07-30 21:51:18.533 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) in 6.9016ms
+2019-07-30 21:51:18.534 +08:00 [INF] Request finished in 16.5173ms 400 text/plain; charset=utf-8
+2019-07-30 21:51:46.979 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/Posts?pageindex=6&pagesize=5&fields=id,author&orderby=21  
+2019-07-30 21:51:46.980 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API)
+2019-07-30 21:51:46.982 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) with arguments (["MyWebAPI.Core.EntityParameters.PostParameter"]) - Validation state: "Valid"
+2019-07-30 21:51:46.984 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.BadRequestObjectResult in 0.0354ms.
+2019-07-30 21:51:46.986 +08:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2019-07-30 21:51:46.988 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) in 6.6084000000000005ms
+2019-07-30 21:51:46.989 +08:00 [INF] Request finished in 10.6796ms 400 text/plain; charset=utf-8

@@ -11,7 +11,7 @@ namespace MyWebAPI.API.Extensions
     /// <summary>
     /// 实体映射
     /// </summary>
-    public class MappingProfile: Profile
+    public class MappingProfile : Profile
     {
         public MappingProfile()
         {
@@ -19,6 +19,8 @@ namespace MyWebAPI.API.Extensions
                 .ForMember(dest => dest.UpdateTime, opt => opt.MapFrom(src => src.LastModified));
 
             CreateMap<PostResource, Post>();
+            CreateMap<PostAddResource, Post>();
+            CreateMap<Post, PostAddResource>();
 
         }
     }

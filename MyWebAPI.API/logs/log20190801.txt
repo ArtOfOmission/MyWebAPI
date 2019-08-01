@@ -1,0 +1,347 @@
+2019-08-01 21:17:20.113 +08:00 [INF] User profile is available. Using 'C:\Users\陈彦森\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-08-01 21:17:22.624 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/  
+2019-08-01 21:17:22.902 +08:00 [INF] Request finished in 280.3146ms 404 
+2019-08-01 21:17:23.002 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/favicon.ico  
+2019-08-01 21:17:23.004 +08:00 [INF] Request finished in 1.9704ms 404 
+2019-08-01 21:17:52.439 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/Posts?pageindex=1&pagesize=5  
+2019-08-01 21:17:52.492 +08:00 [INF] Route matched with {action = "GetHateoas", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.GetHateoas (MyWebAPI.API)
+2019-08-01 21:17:53.057 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.GetHateoas (MyWebAPI.API) with arguments (["MyWebAPI.Core.EntityParameters.PostParameter"]) - Validation state: "Valid"
+2019-08-01 21:17:59.333 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-01 21:18:00.750 +08:00 [INF] Executed DbCommand (80ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Posts] AS [p]
+2019-08-01 21:18:00.844 +08:00 [WRN] Query: '(from Post <generated>_2 in DbSet<Post> select [<generated>_2]).Skip(__p_0).Take(__p_1)' uses a row limiting operation (Skip/Take) without OrderBy which may lead to unpredictable results.
+2019-08-01 21:18:00.979 +08:00 [INF] Executed DbCommand (67ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Author], [p].[Body], [p].[LastModified], [p].[Title]
+FROM [Posts] AS [p]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2019-08-01 21:18:01.168 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.GetHateoas (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 8096.9299ms.
+2019-08-01 21:18:01.181 +08:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Collections.Generic.IEnumerable`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IEnumerable`1[[MyWebAPI.Infrastructure.Resources.LinkResource, MyWebAPI.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2019-08-01 21:18:01.204 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.GetHateoas (MyWebAPI.API) in 8708.5891000000011ms
+2019-08-01 21:18:01.213 +08:00 [INF] Request finished in 8774.7276ms 200 application/vnd.sen.hateoas+json; charset=utf-8
+2019-08-01 21:18:07.482 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/Posts?pageindex=1&pagesize=5  
+2019-08-01 21:18:07.487 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API)
+2019-08-01 21:18:07.507 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) with arguments (["MyWebAPI.Core.EntityParameters.PostParameter"]) - Validation state: "Valid"
+2019-08-01 21:18:11.654 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-01 21:18:11.660 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Posts] AS [p]
+2019-08-01 21:18:11.666 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Author], [p].[Body], [p].[LastModified], [p].[Title]
+FROM [Posts] AS [p]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2019-08-01 21:18:11.674 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 4165.1366ms.
+2019-08-01 21:18:11.676 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2019-08-01 21:18:11.678 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) in 4189.2612ms
+2019-08-01 21:18:11.679 +08:00 [INF] Request finished in 4197.1187ms 200 application/json; charset=utf-8
+2019-08-01 21:18:19.126 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/Posts?pageindex=1&pagesize=5  
+2019-08-01 21:18:19.127 +08:00 [INF] Route matched with {action = "GetHateoas", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.GetHateoas (MyWebAPI.API)
+2019-08-01 21:18:19.129 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.GetHateoas (MyWebAPI.API) with arguments (["MyWebAPI.Core.EntityParameters.PostParameter"]) - Validation state: "Valid"
+2019-08-01 21:18:20.470 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-01 21:18:20.473 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Posts] AS [p]
+2019-08-01 21:18:20.476 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Author], [p].[Body], [p].[LastModified], [p].[Title]
+FROM [Posts] AS [p]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2019-08-01 21:18:20.479 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.GetHateoas (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1348.382ms.
+2019-08-01 21:18:20.481 +08:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Collections.Generic.IEnumerable`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IEnumerable`1[[MyWebAPI.Infrastructure.Resources.LinkResource, MyWebAPI.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2019-08-01 21:18:20.483 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.GetHateoas (MyWebAPI.API) in 1354.3752000000002ms
+2019-08-01 21:18:20.484 +08:00 [INF] Request finished in 1358.317ms 200 application/vnd.sen.hateoas+json; charset=utf-8
+2019-08-01 22:10:59.583 +08:00 [INF] User profile is available. Using 'C:\Users\陈彦森\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-08-01 22:11:00.904 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/  
+2019-08-01 22:11:00.997 +08:00 [INF] Request finished in 94.1918ms 404 
+2019-08-01 22:11:01.144 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/favicon.ico  
+2019-08-01 22:11:01.145 +08:00 [INF] Request finished in 1.421ms 0 
+2019-08-01 22:11:42.361 +08:00 [INF] User profile is available. Using 'C:\Users\陈彦森\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-08-01 22:11:43.338 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/  
+2019-08-01 22:11:43.505 +08:00 [INF] Request finished in 168.7535ms 404 
+2019-08-01 22:15:03.375 +08:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/posts text/plain 76
+2019-08-01 22:15:03.419 +08:00 [INF] Route matched with {action = "Post", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Post (MyWebAPI.API)
+2019-08-01 22:15:03.869 +08:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 415
+2019-08-01 22:15:03.878 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Post (MyWebAPI.API) in 455.01570000000004ms
+2019-08-01 22:15:03.883 +08:00 [INF] Request finished in 508.0422ms 415 
+2019-08-01 22:15:03.890 +08:00 [INF] Connection id "0HLOMH8MV5NAU", Request id "0HLOMH8MV5NAU:00000001": the application completed without reading the entire request body.
+2019-08-01 22:15:45.856 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/Posts?pageindex=1&pagesize=5  
+2019-08-01 22:15:45.867 +08:00 [INF] Route matched with {action = "GetHateoas", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.GetHateoas (MyWebAPI.API)
+2019-08-01 22:15:45.923 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.GetHateoas (MyWebAPI.API) with arguments (["MyWebAPI.Core.EntityParameters.PostParameter"]) - Validation state: "Valid"
+2019-08-01 22:15:53.935 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-01 22:15:55.099 +08:00 [INF] Executed DbCommand (63ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Posts] AS [p]
+2019-08-01 22:15:55.186 +08:00 [WRN] Query: '(from Post <generated>_2 in DbSet<Post> select [<generated>_2]).Skip(__p_0).Take(__p_1)' uses a row limiting operation (Skip/Take) without OrderBy which may lead to unpredictable results.
+2019-08-01 22:15:55.309 +08:00 [INF] Executed DbCommand (53ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Author], [p].[Body], [p].[LastModified], [p].[Title]
+FROM [Posts] AS [p]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2019-08-01 22:15:55.499 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.GetHateoas (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 9565.5334ms.
+2019-08-01 22:15:55.508 +08:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Collections.Generic.IEnumerable`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IEnumerable`1[[MyWebAPI.Infrastructure.Resources.LinkResource, MyWebAPI.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2019-08-01 22:15:55.526 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.GetHateoas (MyWebAPI.API) in 9657.6041ms
+2019-08-01 22:15:55.533 +08:00 [INF] Request finished in 9699.6146ms 200 application/vnd.sen.hateoas+json; charset=utf-8
+2019-08-01 22:16:11.980 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/Posts?pageindex=6&pagesize=5  
+2019-08-01 22:16:11.982 +08:00 [INF] Route matched with {action = "GetHateoas", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.GetHateoas (MyWebAPI.API)
+2019-08-01 22:16:11.983 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.GetHateoas (MyWebAPI.API) with arguments (["MyWebAPI.Core.EntityParameters.PostParameter"]) - Validation state: "Valid"
+2019-08-01 22:16:11.986 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-01 22:16:11.991 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Posts] AS [p]
+2019-08-01 22:16:11.996 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Author], [p].[Body], [p].[LastModified], [p].[Title]
+FROM [Posts] AS [p]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2019-08-01 22:16:12.000 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.GetHateoas (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 15.4648ms.
+2019-08-01 22:16:12.002 +08:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Collections.Generic.IEnumerable`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IEnumerable`1[[MyWebAPI.Infrastructure.Resources.LinkResource, MyWebAPI.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2019-08-01 22:16:12.003 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.GetHateoas (MyWebAPI.API) in 20.8685ms
+2019-08-01 22:16:12.005 +08:00 [INF] Request finished in 24.4519ms 200 application/vnd.sen.hateoas+json; charset=utf-8
+2019-08-01 22:17:09.170 +08:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/posts text/plain 76
+2019-08-01 22:17:09.171 +08:00 [INF] Route matched with {action = "Post", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Post (MyWebAPI.API)
+2019-08-01 22:17:09.173 +08:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 415
+2019-08-01 22:17:09.174 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Post (MyWebAPI.API) in 0.9221ms
+2019-08-01 22:17:09.175 +08:00 [INF] Request finished in 6.8945ms 415 
+2019-08-01 22:17:09.176 +08:00 [INF] Connection id "0HLOMH8MV5NAU", Request id "0HLOMH8MV5NAU:00000004": the application completed without reading the entire request body.
+2019-08-01 22:17:43.854 +08:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/posts application/json 76
+2019-08-01 22:17:43.858 +08:00 [INF] Route matched with {action = "Post", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Post (MyWebAPI.API)
+2019-08-01 22:17:43.872 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Post (MyWebAPI.API) with arguments (["MyWebAPI.Infrastructure.Resources.PostAddResource"]) - Validation state: "Valid"
+2019-08-01 22:17:55.273 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Post (MyWebAPI.API) in 11414.2754ms
+2019-08-01 22:17:55.276 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+PostAddResource -> Post
+MyWebAPI.Infrastructure.Resources.PostAddResource -> MyWebAPI.Core.Entities.Post
+   at lambda_method(Closure , PostAddResource , Post , ResolutionContext )
+   at AutoMapper.Mapper.AutoMapper.IMapper.Map[TSource,TDestination](TSource source) in C:\projects\automapper\src\AutoMapper\Mapper.cs:line 234
+   at MyWebAPI.API.Controllers.PostController.Post(PostAddResource postAddResource) in C:\Users\陈彦森\Desktop\MyGitHub\MyWebAPI\MyWebAPI.API\Controllers\PostController.cs:line 185
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.Invoke(HttpContext context)
+2019-08-01 22:17:55.364 +08:00 [ERR] Missing type map configuration or unsupported mapping.
+
+Mapping types:
+PostAddResource -> Post
+MyWebAPI.Infrastructure.Resources.PostAddResource -> MyWebAPI.Core.Entities.Post
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+PostAddResource -> Post
+MyWebAPI.Infrastructure.Resources.PostAddResource -> MyWebAPI.Core.Entities.Post
+   at lambda_method(Closure , PostAddResource , Post , ResolutionContext )
+   at AutoMapper.Mapper.AutoMapper.IMapper.Map[TSource,TDestination](TSource source) in C:\projects\automapper\src\AutoMapper\Mapper.cs:line 234
+   at MyWebAPI.API.Controllers.PostController.Post(PostAddResource postAddResource) in C:\Users\陈彦森\Desktop\MyGitHub\MyWebAPI\MyWebAPI.API\Controllers\PostController.cs:line 185
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.Invoke(HttpContext context)
+2019-08-01 22:17:55.373 +08:00 [INF] Request finished in 11521.24ms 500 application/json
+2019-08-01 22:18:22.820 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/Posts?pageindex=6&pagesize=5  
+2019-08-01 22:18:22.821 +08:00 [INF] Route matched with {action = "GetHateoas", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.GetHateoas (MyWebAPI.API)
+2019-08-01 22:18:22.822 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.GetHateoas (MyWebAPI.API) with arguments (["MyWebAPI.Core.EntityParameters.PostParameter"]) - Validation state: "Valid"
+2019-08-01 22:18:22.824 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-01 22:18:22.826 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Posts] AS [p]
+2019-08-01 22:18:22.829 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Author], [p].[Body], [p].[LastModified], [p].[Title]
+FROM [Posts] AS [p]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2019-08-01 22:18:22.832 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.GetHateoas (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 8.5154ms.
+2019-08-01 22:18:22.834 +08:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Collections.Generic.IEnumerable`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IEnumerable`1[[MyWebAPI.Infrastructure.Resources.LinkResource, MyWebAPI.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2019-08-01 22:18:22.836 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.GetHateoas (MyWebAPI.API) in 13.635800000000001ms
+2019-08-01 22:18:22.837 +08:00 [INF] Request finished in 17.0186ms 200 application/vnd.sen.hateoas+json; charset=utf-8
+2019-08-01 22:18:26.432 +08:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/posts application/json 76
+2019-08-01 22:18:26.433 +08:00 [INF] Route matched with {action = "Post", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Post (MyWebAPI.API)
+2019-08-01 22:18:26.435 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Post (MyWebAPI.API) with arguments (["MyWebAPI.Infrastructure.Resources.PostAddResource"]) - Validation state: "Valid"
+2019-08-01 22:18:32.430 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Post (MyWebAPI.API) in 5996.0237000000006ms
+2019-08-01 22:18:32.435 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+PostAddResource -> Post
+MyWebAPI.Infrastructure.Resources.PostAddResource -> MyWebAPI.Core.Entities.Post
+   at lambda_method(Closure , PostAddResource , Post , ResolutionContext )
+   at AutoMapper.Mapper.AutoMapper.IMapper.Map[TSource,TDestination](TSource source) in C:\projects\automapper\src\AutoMapper\Mapper.cs:line 234
+   at MyWebAPI.API.Controllers.PostController.Post(PostAddResource postAddResource) in C:\Users\陈彦森\Desktop\MyGitHub\MyWebAPI\MyWebAPI.API\Controllers\PostController.cs:line 185
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.Invoke(HttpContext context)
+2019-08-01 22:18:32.479 +08:00 [ERR] Missing type map configuration or unsupported mapping.
+
+Mapping types:
+PostAddResource -> Post
+MyWebAPI.Infrastructure.Resources.PostAddResource -> MyWebAPI.Core.Entities.Post
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+PostAddResource -> Post
+MyWebAPI.Infrastructure.Resources.PostAddResource -> MyWebAPI.Core.Entities.Post
+   at lambda_method(Closure , PostAddResource , Post , ResolutionContext )
+   at AutoMapper.Mapper.AutoMapper.IMapper.Map[TSource,TDestination](TSource source) in C:\projects\automapper\src\AutoMapper\Mapper.cs:line 234
+   at MyWebAPI.API.Controllers.PostController.Post(PostAddResource postAddResource) in C:\Users\陈彦森\Desktop\MyGitHub\MyWebAPI\MyWebAPI.API\Controllers\PostController.cs:line 185
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.Invoke(HttpContext context)
+2019-08-01 22:18:32.489 +08:00 [INF] Request finished in 6056.9179ms 500 application/json
+2019-08-01 22:22:29.235 +08:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/posts application/json 76
+2019-08-01 22:22:48.042 +08:00 [INF] Route matched with {action = "Post", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Post (MyWebAPI.API)
+2019-08-01 22:22:48.044 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Post (MyWebAPI.API) with arguments (["MyWebAPI.Infrastructure.Resources.PostAddResource"]) - Validation state: "Valid"
+2019-08-01 22:22:58.377 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Post (MyWebAPI.API) in 10333.3052ms
+2019-08-01 22:22:58.382 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+PostAddResource -> Post
+MyWebAPI.Infrastructure.Resources.PostAddResource -> MyWebAPI.Core.Entities.Post
+   at lambda_method(Closure , PostAddResource , Post , ResolutionContext )
+   at AutoMapper.Mapper.AutoMapper.IMapper.Map[TSource,TDestination](TSource source) in C:\projects\automapper\src\AutoMapper\Mapper.cs:line 234
+   at MyWebAPI.API.Controllers.PostController.Post(PostAddResource postAddResource) in C:\Users\陈彦森\Desktop\MyGitHub\MyWebAPI\MyWebAPI.API\Controllers\PostController.cs:line 185
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.Invoke(HttpContext context)
+2019-08-01 22:23:50.044 +08:00 [ERR] Missing type map configuration or unsupported mapping.
+
+Mapping types:
+PostAddResource -> Post
+MyWebAPI.Infrastructure.Resources.PostAddResource -> MyWebAPI.Core.Entities.Post
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+PostAddResource -> Post
+MyWebAPI.Infrastructure.Resources.PostAddResource -> MyWebAPI.Core.Entities.Post
+   at lambda_method(Closure , PostAddResource , Post , ResolutionContext )
+   at AutoMapper.Mapper.AutoMapper.IMapper.Map[TSource,TDestination](TSource source) in C:\projects\automapper\src\AutoMapper\Mapper.cs:line 234
+   at MyWebAPI.API.Controllers.PostController.Post(PostAddResource postAddResource) in C:\Users\陈彦森\Desktop\MyGitHub\MyWebAPI\MyWebAPI.API\Controllers\PostController.cs:line 185
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.Invoke(HttpContext context)
+2019-08-01 22:23:50.061 +08:00 [INF] Request finished in 80825.7355ms 500 application/json
+2019-08-01 22:26:44.175 +08:00 [INF] User profile is available. Using 'C:\Users\陈彦森\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-08-01 22:26:44.974 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/  
+2019-08-01 22:26:45.058 +08:00 [INF] Request finished in 85.6029ms 404 
+2019-08-01 22:26:50.904 +08:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/posts application/json 76
+2019-08-01 22:26:50.938 +08:00 [INF] Route matched with {action = "Post", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Post (MyWebAPI.API)
+2019-08-01 22:26:51.341 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Post (MyWebAPI.API) with arguments (["MyWebAPI.Infrastructure.Resources.PostAddResource"]) - Validation state: "Valid"
+2019-08-01 22:26:51.824 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-01 22:26:52.367 +08:00 [INF] Executed DbCommand (86ms) [Parameters=[@p0='?' (Size = 50), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Posts] ([Author], [Body], [LastModified], [Title])
+VALUES (@p0, @p1, @p2, @p3);
+SELECT [Id]
+FROM [Posts]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2019-08-01 22:26:52.467 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.Post (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.CreatedAtRouteResult in 1110.6818ms.
+2019-08-01 22:26:52.478 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Dynamic.ExpandoObject'.
+2019-08-01 22:26:52.496 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Post (MyWebAPI.API) in 1555.4859000000001ms
+2019-08-01 22:26:52.505 +08:00 [INF] Request finished in 1601.3539ms 201 application/json; charset=utf-8
+2019-08-01 22:26:57.069 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/Posts?pageindex=6&pagesize=5  
+2019-08-01 22:26:57.079 +08:00 [INF] Route matched with {action = "GetHateoas", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.GetHateoas (MyWebAPI.API)
+2019-08-01 22:26:57.090 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.GetHateoas (MyWebAPI.API) with arguments (["MyWebAPI.Core.EntityParameters.PostParameter"]) - Validation state: "Valid"
+2019-08-01 22:26:57.102 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-01 22:26:57.337 +08:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Posts] AS [p]
+2019-08-01 22:26:57.378 +08:00 [WRN] Query: '(from Post <generated>_2 in DbSet<Post> select [<generated>_2]).Skip(__p_0).Take(__p_1)' uses a row limiting operation (Skip/Take) without OrderBy which may lead to unpredictable results.
+2019-08-01 22:26:57.434 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Author], [p].[Body], [p].[LastModified], [p].[Title]
+FROM [Posts] AS [p]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2019-08-01 22:26:57.484 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.GetHateoas (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 392.10150000000004ms.
+2019-08-01 22:26:57.486 +08:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Collections.Generic.IEnumerable`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IEnumerable`1[[MyWebAPI.Infrastructure.Resources.LinkResource, MyWebAPI.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2019-08-01 22:26:57.492 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.GetHateoas (MyWebAPI.API) in 411.0263ms
+2019-08-01 22:26:57.493 +08:00 [INF] Request finished in 423.8954ms 200 application/vnd.sen.hateoas+json; charset=utf-8
+2019-08-01 22:27:21.995 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/posts/35  
+2019-08-01 22:27:22.000 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API)
+2019-08-01 22:27:22.002 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) with arguments (["35",""]) - Validation state: "Valid"
+2019-08-01 22:27:22.007 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-01 22:27:22.083 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[Author], [e].[Body], [e].[LastModified], [e].[Title]
+FROM [Posts] AS [e]
+WHERE [e].[Id] = @__get_Item_0
+2019-08-01 22:27:22.102 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 97.9848ms.
+2019-08-01 22:27:22.104 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Dynamic.ExpandoObject'.
+2019-08-01 22:27:22.105 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) in 103.10220000000001ms
+2019-08-01 22:27:22.105 +08:00 [INF] Request finished in 110.7077ms 200 application/json; charset=utf-8
+2019-08-01 22:27:32.177 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/posts/35  
+2019-08-01 22:27:32.177 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API)
+2019-08-01 22:27:32.179 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) with arguments (["35",""]) - Validation state: "Valid"
+2019-08-01 22:27:32.180 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-01 22:27:32.187 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[Author], [e].[Body], [e].[LastModified], [e].[Title]
+FROM [Posts] AS [e]
+WHERE [e].[Id] = @__get_Item_0
+2019-08-01 22:27:32.190 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 9.7286ms.
+2019-08-01 22:27:32.191 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Dynamic.ExpandoObject'.
+2019-08-01 22:27:32.192 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) in 13.299700000000001ms
+2019-08-01 22:27:32.193 +08:00 [INF] Request finished in 16.8643ms 200 application/json; charset=utf-8

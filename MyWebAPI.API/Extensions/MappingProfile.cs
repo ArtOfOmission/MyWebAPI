@@ -19,6 +19,7 @@ namespace MyWebAPI.API.Extensions
                 .ForMember(dest => dest.UpdateTime, opt => opt.MapFrom(src => src.LastModified));
 
             CreateMap<PostResource, Post>();
+
             CreateMap<PostAddResource, Post>();
             CreateMap<Post, PostAddResource>();
 

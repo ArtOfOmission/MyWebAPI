@@ -25,6 +25,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Routing;
 using MyWebAPI.Infrastructure.Services;
 using Newtonsoft.Json.Serialization;
+using FluentValidation.AspNetCore;
 
 namespace MyWebAPI.API
 {
@@ -49,7 +50,14 @@ namespace MyWebAPI.API
                     //返回类型设置支持xml
                     //options.OutputFormatters.Add(new XmlDataContractSerializerOutputFormatter());
 
-                    //设置自定义媒体类型
+                    //设置自定义输入媒体类型
+                    var inputFormatter = options.InputFormatters.OfType<JsonInputFormatter>().FirstOrDefault();
+                    if (inputFormatter != null)
+                    {
+                        inputFormatter.SupportedMediaTypes.Add("application/vnd.cgzl.post.create+json");
+                    }
+
+                    //设置自定义输出媒体类型
                     var outputFormatter = options.OutputFormatters.OfType<JsonOutputFormatter>().FirstOrDefault();
                     if (outputFormatter != null)
                     {
@@ -60,7 +68,8 @@ namespace MyWebAPI.API
                 .AddJsonOptions(options =>
                 {
                     options.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();
-                });
+                })
+                .AddFluentValidation();
 
             //注册DbContext
             services.AddDbContext<MyContext>(options =>
@@ -91,7 +100,7 @@ namespace MyWebAPI.API
 
             #region 验证器注册(按字母顺序排序)
 
-            services.AddTransient<IValidator<PostResource>, PostResourceValidater>();
+            services.AddTransient<IValidator<PostAddResource>, PostAddResouceValidator>();
 
             #endregion
 

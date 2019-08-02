@@ -1,0 +1,71 @@
+2019-08-02 23:10:11.273 +08:00 [INF] User profile is available. Using 'C:\Users\陈彦森\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-08-02 23:10:12.851 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/  
+2019-08-02 23:10:12.949 +08:00 [INF] Request finished in 99.1076ms 404 
+2019-08-02 23:10:13.021 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/favicon.ico  
+2019-08-02 23:10:13.023 +08:00 [INF] Request finished in 1.5326ms 404 
+2019-08-02 23:10:42.631 +08:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/posts application/json 160
+2019-08-02 23:10:42.664 +08:00 [INF] Route matched with {action = "Post", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Post (MyWebAPI.API)
+2019-08-02 23:10:43.192 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Post (MyWebAPI.API) with arguments (["MyWebAPI.Infrastructure.Resources.PostAddResource"]) - Validation state: "Invalid"
+2019-08-02 23:10:43.210 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.Post (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.UnprocessableEntityObjectResult in 2.952ms.
+2019-08-02 23:10:43.218 +08:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.SerializableError'.
+2019-08-02 23:10:43.231 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Post (MyWebAPI.API) in 564.42540000000008ms
+2019-08-02 23:10:43.236 +08:00 [INF] Request finished in 604.7806ms 422 application/json; charset=utf-8
+2019-08-02 23:11:28.685 +08:00 [INF] User profile is available. Using 'C:\Users\陈彦森\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-08-02 23:11:29.501 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/  
+2019-08-02 23:11:29.597 +08:00 [INF] Request finished in 97.8203ms 404 
+2019-08-02 23:11:59.491 +08:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/posts application/json 160
+2019-08-02 23:11:59.523 +08:00 [INF] Route matched with {action = "Post", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Post (MyWebAPI.API)
+2019-08-02 23:11:59.981 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Post (MyWebAPI.API) with arguments (["MyWebAPI.Infrastructure.Resources.PostAddResource"]) - Validation state: "Invalid"
+2019-08-02 23:11:59.998 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.Post (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.UnprocessableEntityObjectResult in 2.31ms.
+2019-08-02 23:12:00.005 +08:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.SerializableError'.
+2019-08-02 23:12:00.017 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Post (MyWebAPI.API) in 489.74620000000004ms
+2019-08-02 23:12:00.021 +08:00 [INF] Request finished in 530.8526ms 422 application/json; charset=utf-8
+2019-08-02 23:15:09.763 +08:00 [INF] User profile is available. Using 'C:\Users\陈彦森\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-08-02 23:15:10.571 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/  
+2019-08-02 23:15:10.660 +08:00 [INF] Request finished in 90.5169ms 404 
+2019-08-02 23:15:25.005 +08:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/posts application/json 131
+2019-08-02 23:15:25.041 +08:00 [INF] Route matched with {action = "Post", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Post (MyWebAPI.API)
+2019-08-02 23:15:25.505 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Post (MyWebAPI.API) with arguments (["MyWebAPI.Infrastructure.Resources.PostAddResource"]) - Validation state: "Invalid"
+2019-08-02 23:15:25.522 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.Post (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.UnprocessableEntityObjectResult in 2.3162000000000003ms.
+2019-08-02 23:15:25.529 +08:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.SerializableError'.
+2019-08-02 23:15:25.540 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Post (MyWebAPI.API) in 495.387ms
+2019-08-02 23:15:25.544 +08:00 [INF] Request finished in 539.5051ms 422 application/json; charset=utf-8
+2019-08-02 23:15:34.894 +08:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/posts application/json 121
+2019-08-02 23:15:34.898 +08:00 [INF] Route matched with {action = "Post", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Post (MyWebAPI.API)
+2019-08-02 23:15:34.903 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Post (MyWebAPI.API) with arguments (["MyWebAPI.Infrastructure.Resources.PostAddResource"]) - Validation state: "Invalid"
+2019-08-02 23:15:34.905 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.Post (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.UnprocessableEntityObjectResult in 0.0555ms.
+2019-08-02 23:15:34.906 +08:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.SerializableError'.
+2019-08-02 23:15:34.908 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Post (MyWebAPI.API) in 8.2722ms
+2019-08-02 23:15:34.909 +08:00 [INF] Request finished in 15.186ms 422 application/json; charset=utf-8
+2019-08-02 23:15:55.125 +08:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/posts application/json 232
+2019-08-02 23:15:55.126 +08:00 [INF] Route matched with {action = "Post", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Post (MyWebAPI.API)
+2019-08-02 23:15:55.128 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Post (MyWebAPI.API) with arguments (["MyWebAPI.Infrastructure.Resources.PostAddResource"]) - Validation state: "Invalid"
+2019-08-02 23:15:55.130 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.Post (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.UnprocessableEntityObjectResult in 0.0385ms.
+2019-08-02 23:15:55.133 +08:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.SerializableError'.
+2019-08-02 23:15:55.135 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Post (MyWebAPI.API) in 7.4729ms
+2019-08-02 23:15:55.137 +08:00 [INF] Request finished in 12.1414ms 422 application/json; charset=utf-8
+2019-08-02 23:24:43.065 +08:00 [INF] User profile is available. Using 'C:\Users\陈彦森\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-08-02 23:24:43.872 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/  
+2019-08-02 23:24:43.961 +08:00 [INF] Request finished in 89.9415ms 404 
+2019-08-02 23:25:59.203 +08:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/posts application/vnd.sen.post.create+json 232
+2019-08-02 23:25:59.234 +08:00 [INF] Route matched with {action = "Post", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Post (MyWebAPI.API)
+2019-08-02 23:25:59.707 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Post (MyWebAPI.API) with arguments (["MyWebAPI.Infrastructure.Resources.PostAddResource"]) - Validation state: "Invalid"
+2019-08-02 23:25:59.724 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.Post (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.UnprocessableEntityObjectResult in 2.3661000000000003ms.
+2019-08-02 23:25:59.732 +08:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.SerializableError'.
+2019-08-02 23:25:59.744 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Post (MyWebAPI.API) in 505.8756ms
+2019-08-02 23:25:59.748 +08:00 [INF] Request finished in 545.3962ms 422 application/vnd.sen.hateoas+json; charset=utf-8
+2019-08-02 23:26:42.523 +08:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/posts application/vnd.sen.post.create+json 43
+2019-08-02 23:26:42.525 +08:00 [INF] Route matched with {action = "Post", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Post (MyWebAPI.API)
+2019-08-02 23:26:42.528 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Post (MyWebAPI.API) with arguments (["MyWebAPI.Infrastructure.Resources.PostAddResource"]) - Validation state: "Valid"
+2019-08-02 23:26:43.029 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-02 23:26:44.420 +08:00 [INF] Executed DbCommand (113ms) [Parameters=[@p0='?' (Size = 50), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Posts] ([Author], [Body], [LastModified], [Title])
+VALUES (@p0, @p1, @p2, @p3);
+SELECT [Id]
+FROM [Posts]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2019-08-02 23:26:44.521 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.Post (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.CreatedAtRouteResult in 1991.0873000000001ms.
+2019-08-02 23:26:44.528 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Dynamic.ExpandoObject'.
+2019-08-02 23:26:44.539 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Post (MyWebAPI.API) in 2013.6641000000002ms
+2019-08-02 23:26:44.545 +08:00 [INF] Request finished in 2022.2349ms 201 application/vnd.sen.hateoas+json; charset=utf-8

@@ -169,17 +169,25 @@ namespace MyWebAPI.API.Controllers
             return Ok(result);
         }
 
+
+        //application/vnd.cgzl.post.create+json
         /// <summary>
         /// 新建文章
         /// </summary>
         /// <returns></returns>
         [HttpPost(Name = "CreatePost")]
-        //[RequestHeaderMatchingMediaType("Accept", new[] { "application/vnd.sen.hateoas+json" })]
+        [RequestHeaderMatchingMediaType("Content-Type", new[] { "application/vnd.sen.post.create+json" })]
+        [RequestHeaderMatchingMediaType("Accept", new[] { "application/vnd.sen.hateoas+json" })]
         public async Task<IActionResult> Post([FromBody]PostAddResource postAddResource )
         {
             if (postAddResource == null)
             {
                 return BadRequest();
+            }
+
+            if (!ModelState.IsValid)
+            {
+                return UnprocessableEntity(ModelState);
             }
 
             var newPost = this._mapper.Map<PostAddResource, Post>(postAddResource);

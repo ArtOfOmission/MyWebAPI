@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
+using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using MyWebAPI.API.Helpers;
@@ -187,7 +188,8 @@ namespace MyWebAPI.API.Controllers
 
             if (!ModelState.IsValid)
             {
-                return UnprocessableEntity(ModelState);
+                //return UnprocessableEntity(ModelState);
+                return new MyUnprocessableEntityObjectResult(ModelState);
             }
 
             var newPost = this._mapper.Map<PostAddResource, Post>(postAddResource);
@@ -255,6 +257,104 @@ namespace MyWebAPI.API.Controllers
         }
 
         /// <summary>
+        /// 删除文章
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        [HttpDelete("id",Name ="DeletePost")]
+        public async Task<IActionResult> DeletePost(int id) {
+
+            var post = await _postRepository.GetPostByIdAsync(id);
+
+            if (post == null)
+            {
+                return NotFound();
+            }
+
+            _postRepository.Deletet(post);
+
+            if (await this._unitOfWork.SaveAsync())
+            {
+                throw new Exception($"Deleteing post {id} failed when saving.");
+            }
+
+            return NoContent();
+
+        }
+
+
+        [HttpPut("{id}", Name = "UpdatePost")]
+        [RequestHeaderMatchingMediaType("Content-Type", new[] { "application/vnd.sen.post.update+json" })]
+        public async Task<IActionResult> UpdatePost(int id, [FromBody] PostUpdateResource postUpdate)
+        {
+            if (postUpdate == null)
+            {
+                return BadRequest();
+            }
+
+            if (!ModelState.IsValid)
+            {
+                return new MyUnprocessableEntityObjectResult(ModelState);
+            }
+
+            var post = await _postRepository.GetPostByIdAsync(id);
+            if (post == null)
+            {
+                return NotFound();
+            }
+
+            post.LastModified = DateTime.Now;
+            _mapper.Map(postUpdate, post);
+
+            if (!await _unitOfWork.SaveAsync())
+            {
+                throw new Exception($"Updating post {id} failed when saving.");
+            }
+            return NoContent();
+        }
+
+
+        [HttpPatch("{id}", Name = "PartiallyUpdatePost")]
+        public async Task<IActionResult> PartiallyUpdate(int id,
+            [FromBody] JsonPatchDocument<PostUpdateResource> patchDoc)
+        {
+            if (patchDoc == null)
+            {
+                return BadRequest();
+            }
+
+            var post = await _postRepository.GetPostByIdAsync(id);
+            if (post == null)
+            {
+                return NotFound();
+            }
+
+            var postToPatch = _mapper.Map<PostUpdateResource>(post);
+
+            patchDoc.ApplyTo(postToPatch, ModelState);
+
+            TryValidateModel(postToPatch);
+
+            if (!ModelState.IsValid)
+            {
+                return new MyUnprocessableEntityObjectResult(ModelState);
+            }
+
+            _mapper.Map(postToPatch, post);
+            post.LastModified = DateTime.Now;
+            _postRepository.Update(post);
+
+            if (!await _unitOfWork.SaveAsync())
+            {
+                throw new Exception($"Patching city {id} failed when saving.");
+            }
+
+            return NoContent();
+        }
+
+
+
+        /// <summary>
         /// 创建链接(单个post)
         /// </summary>
         /// <param name="id"></param>
@@ -281,6 +381,8 @@ namespace MyWebAPI.API.Controllers
             return links;
 
         }
+       
+
 
         /// <summary>
         /// 为集合资源创建链接

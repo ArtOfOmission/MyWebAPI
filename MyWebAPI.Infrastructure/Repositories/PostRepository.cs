@@ -74,6 +74,24 @@ namespace MyWebAPI.Infrastructure.Repositories
             this._myContext.Posts.Add(post);
         }
 
+        /// <summary>
+        /// 删除文章
+        /// </summary>
+        /// <param name="post"></param>
+        public void Deletet(Post post)
+        {
+            this._myContext.Posts.Remove(post);
+        }
+
+        /// <summary>
+        /// 更新
+        /// </summary>
+        /// <param name="post"></param>
+        public void Update(Post post)
+        {
+            this._myContext.Entry(post).State = EntityState.Modified;
+        }
+
 
     }
 }

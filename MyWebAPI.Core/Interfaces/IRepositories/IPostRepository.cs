@@ -15,5 +15,7 @@ namespace MyWebAPI.Core.Interfaces.IRepositories
         Task<PaginatedList<Post>> GetAllPostsAsync(PostParameter postParameters);
         Task<Post> GetPostByIdAsync(int id);
         void AddPost(Post post);
+        void Deletet(Post post);
+        void Update(Post post);
     }
 }

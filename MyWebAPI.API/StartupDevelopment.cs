@@ -54,7 +54,8 @@ namespace MyWebAPI.API
                     var inputFormatter = options.InputFormatters.OfType<JsonInputFormatter>().FirstOrDefault();
                     if (inputFormatter != null)
                     {
-                        inputFormatter.SupportedMediaTypes.Add("application/vnd.cgzl.post.create+json");
+                        inputFormatter.SupportedMediaTypes.Add("application/vnd.sen.post.create+json");
+                        inputFormatter.SupportedMediaTypes.Add("application/vnd.sen.post.update+json");
                     }
 
                     //设置自定义输出媒体类型
@@ -100,7 +101,8 @@ namespace MyWebAPI.API
 
             #region 验证器注册(按字母顺序排序)
 
-            services.AddTransient<IValidator<PostAddResource>, PostAddResouceValidator>();
+            services.AddTransient<IValidator<PostAddResource>, PostAddOrUpdateResouceValidator<PostAddResource>>();
+            services.AddTransient<IValidator<PostUpdateResource>, PostAddOrUpdateResouceValidator<PostUpdateResource>>();
 
             #endregion
 

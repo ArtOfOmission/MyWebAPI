@@ -1,0 +1,179 @@
+2019-08-03 20:26:22.604 +08:00 [INF] User profile is available. Using 'C:\Users\陈彦森\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-08-03 20:26:24.599 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/  
+2019-08-03 20:26:24.712 +08:00 [INF] Request finished in 114.5501ms 404 
+2019-08-03 20:27:19.500 +08:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/posts application/vnd.sen.post.create+json 16
+2019-08-03 20:27:19.532 +08:00 [INF] Route matched with {action = "Post", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Post (MyWebAPI.API)
+2019-08-03 20:27:20.043 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Post (MyWebAPI.API) with arguments (["MyWebAPI.Infrastructure.Resources.PostAddResource"]) - Validation state: "Invalid"
+2019-08-03 20:27:20.060 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.Post (MyWebAPI.API), returned result MyWebAPI.API.Helpers.MyUnprocessableEntityObjectResult in 3.0981ms.
+2019-08-03 20:27:20.067 +08:00 [INF] Executing ObjectResult, writing value of type 'MyWebAPI.API.Helpers.ResourceValidationResult'.
+2019-08-03 20:27:20.082 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Post (MyWebAPI.API) in 545.8369ms
+2019-08-03 20:27:20.087 +08:00 [INF] Request finished in 587.0875ms 422 application/vnd.sen.hateoas+json; charset=utf-8
+2019-08-03 21:12:37.105 +08:00 [INF] User profile is available. Using 'C:\Users\陈彦森\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-08-03 21:12:37.897 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/  
+2019-08-03 21:12:37.987 +08:00 [INF] Request finished in 92.257ms 404 
+2019-08-03 21:13:07.068 +08:00 [INF] User profile is available. Using 'C:\Users\陈彦森\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-08-03 21:13:08.220 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/  
+2019-08-03 21:13:08.379 +08:00 [INF] Request finished in 160.6466ms 404 
+2019-08-03 21:13:54.527 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/Posts?pageindex=1&pagesize=5  
+2019-08-03 21:13:54.570 +08:00 [INF] Route matched with {action = "GetHateoas", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.GetHateoas (MyWebAPI.API)
+2019-08-03 21:13:55.168 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.GetHateoas (MyWebAPI.API) with arguments (["MyWebAPI.Core.EntityParameters.PostParameter"]) - Validation state: "Valid"
+2019-08-03 21:13:55.752 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-03 21:13:57.005 +08:00 [INF] Executed DbCommand (63ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Posts] AS [p]
+2019-08-03 21:13:57.092 +08:00 [WRN] Query: '(from Post <generated>_2 in DbSet<Post> select [<generated>_2]).Skip(__p_0).Take(__p_1)' uses a row limiting operation (Skip/Take) without OrderBy which may lead to unpredictable results.
+2019-08-03 21:13:57.222 +08:00 [INF] Executed DbCommand (62ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Author], [p].[Body], [p].[LastModified], [p].[Title]
+FROM [Posts] AS [p]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2019-08-03 21:13:57.407 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.GetHateoas (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 2223.9067ms.
+2019-08-03 21:13:57.421 +08:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Collections.Generic.IEnumerable`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IEnumerable`1[[MyWebAPI.Infrastructure.Resources.LinkResource, MyWebAPI.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2019-08-03 21:13:57.446 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.GetHateoas (MyWebAPI.API) in 2871.9276ms
+2019-08-03 21:13:57.456 +08:00 [INF] Request finished in 2928.5582ms 200 application/vnd.sen.hateoas+json; charset=utf-8
+2019-08-03 21:14:12.671 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/Posts?pageindex=6&pagesize=5  
+2019-08-03 21:14:12.672 +08:00 [INF] Route matched with {action = "GetHateoas", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.GetHateoas (MyWebAPI.API)
+2019-08-03 21:14:12.697 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.GetHateoas (MyWebAPI.API) with arguments (["MyWebAPI.Core.EntityParameters.PostParameter"]) - Validation state: "Valid"
+2019-08-03 21:14:12.699 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-03 21:14:12.704 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Posts] AS [p]
+2019-08-03 21:14:12.709 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Author], [p].[Body], [p].[LastModified], [p].[Title]
+FROM [Posts] AS [p]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2019-08-03 21:14:12.713 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.GetHateoas (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 14.4885ms.
+2019-08-03 21:14:12.714 +08:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Collections.Generic.IEnumerable`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IEnumerable`1[[MyWebAPI.Infrastructure.Resources.LinkResource, MyWebAPI.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2019-08-03 21:14:12.716 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.GetHateoas (MyWebAPI.API) in 42.422200000000004ms
+2019-08-03 21:14:12.717 +08:00 [INF] Request finished in 46.0802ms 200 application/vnd.sen.hateoas+json; charset=utf-8
+2019-08-03 21:16:49.053 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/posts/36 text/plain 176
+2019-08-03 21:16:49.058 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API)
+2019-08-03 21:16:49.060 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) with arguments (["36",""]) - Validation state: "Valid"
+2019-08-03 21:16:49.065 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-03 21:16:49.158 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[Author], [e].[Body], [e].[LastModified], [e].[Title]
+FROM [Posts] AS [e]
+WHERE [e].[Id] = @__get_Item_0
+2019-08-03 21:16:49.189 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 127.15650000000001ms.
+2019-08-03 21:16:49.191 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Dynamic.ExpandoObject'.
+2019-08-03 21:16:49.192 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) in 132.72740000000002ms
+2019-08-03 21:16:49.193 +08:00 [INF] Request finished in 140.5697ms 200 application/json; charset=utf-8
+2019-08-03 21:16:49.202 +08:00 [INF] Connection id "0HLOO2H9PSC3S", Request id "0HLOO2H9PSC3S:00000003": the application completed without reading the entire request body.
+2019-08-03 21:17:42.861 +08:00 [INF] Request starting HTTP/1.1 PUT https://localhost:5001/api/posts/36 text/plain 176
+2019-08-03 21:17:42.862 +08:00 [INF] Request finished in 1.0836ms 404 
+2019-08-03 21:17:42.862 +08:00 [INF] Connection id "0HLOO2H9PSC3S", Request id "0HLOO2H9PSC3S:00000004": the application completed without reading the entire request body.
+2019-08-03 21:18:07.438 +08:00 [INF] Request starting HTTP/1.1 PUT https://localhost:5001/api/posts/35 text/plain 176
+2019-08-03 21:18:07.439 +08:00 [INF] Request finished in 1.082ms 404 
+2019-08-03 21:18:07.440 +08:00 [INF] Connection id "0HLOO2H9PSC3S", Request id "0HLOO2H9PSC3S:00000005": the application completed without reading the entire request body.
+2019-08-03 21:18:37.213 +08:00 [INF] Request starting HTTP/1.1 PUT https://localhost:5001/api/posts/36 text/plain 151
+2019-08-03 21:18:37.214 +08:00 [INF] Request finished in 0.9992ms 404 
+2019-08-03 21:18:37.215 +08:00 [INF] Connection id "0HLOO2H9PSC3S", Request id "0HLOO2H9PSC3S:00000006": the application completed without reading the entire request body.
+2019-08-03 21:19:29.750 +08:00 [INF] Request starting HTTP/1.1 PUT https://localhost:5001/api/posts/36 application/vnd.sen.post.update+json 151
+2019-08-03 21:19:29.760 +08:00 [INF] Route matched with {action = "UpdatePost", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.UpdatePost (MyWebAPI.API)
+2019-08-03 21:19:29.835 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.UpdatePost (MyWebAPI.API) with arguments (["36","MyWebAPI.Infrastructure.Resources.PostUpdateResource"]) - Validation state: "Invalid"
+2019-08-03 21:19:34.802 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.UpdatePost (MyWebAPI.API), returned result MyWebAPI.API.Helpers.MyUnprocessableEntityObjectResult in 4965.4181ms.
+2019-08-03 21:19:34.803 +08:00 [INF] Executing ObjectResult, writing value of type 'MyWebAPI.API.Helpers.ResourceValidationResult'.
+2019-08-03 21:19:34.808 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.UpdatePost (MyWebAPI.API) in 5046.1456ms
+2019-08-03 21:19:34.809 +08:00 [INF] Request finished in 5060.7395ms 422 application/json; charset=utf-8
+2019-08-03 21:19:54.521 +08:00 [INF] Request starting HTTP/1.1 PUT https://localhost:5001/api/posts/36 application/vnd.sen.post.update+json 186
+2019-08-03 21:19:54.523 +08:00 [INF] Route matched with {action = "UpdatePost", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.UpdatePost (MyWebAPI.API)
+2019-08-03 21:19:54.526 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.UpdatePost (MyWebAPI.API) with arguments (["36","MyWebAPI.Infrastructure.Resources.PostUpdateResource"]) - Validation state: "Valid"
+2019-08-03 21:19:55.835 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-03 21:19:55.841 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[Author], [e].[Body], [e].[LastModified], [e].[Title]
+FROM [Posts] AS [e]
+WHERE [e].[Id] = @__get_Item_0
+2019-08-03 21:19:55.978 +08:00 [INF] Executed DbCommand (5ms) [Parameters=[@p3='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (DbType = DateTime2), @p2='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Posts] SET [Body] = @p0, [LastModified] = @p1, [Title] = @p2
+WHERE [Id] = @p3;
+SELECT @@ROWCOUNT;
+2019-08-03 21:19:56.022 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.UpdatePost (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.NoContentResult in 1493.7319ms.
+2019-08-03 21:19:56.026 +08:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 204
+2019-08-03 21:19:56.027 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.UpdatePost (MyWebAPI.API) in 1502.8028000000002ms
+2019-08-03 21:19:56.028 +08:00 [INF] Request finished in 1507.5309ms 204 
+2019-08-03 21:20:10.681 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/Posts?pageindex=6&pagesize=5  
+2019-08-03 21:20:10.682 +08:00 [INF] Route matched with {action = "GetHateoas", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.GetHateoas (MyWebAPI.API)
+2019-08-03 21:20:10.684 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.GetHateoas (MyWebAPI.API) with arguments (["MyWebAPI.Core.EntityParameters.PostParameter"]) - Validation state: "Valid"
+2019-08-03 21:20:10.685 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-03 21:20:10.688 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Posts] AS [p]
+2019-08-03 21:20:10.692 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Author], [p].[Body], [p].[LastModified], [p].[Title]
+FROM [Posts] AS [p]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2019-08-03 21:20:10.694 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.GetHateoas (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 9.2384ms.
+2019-08-03 21:20:10.696 +08:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Collections.Generic.IEnumerable`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IEnumerable`1[[MyWebAPI.Infrastructure.Resources.LinkResource, MyWebAPI.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2019-08-03 21:20:10.698 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.GetHateoas (MyWebAPI.API) in 14.742600000000001ms
+2019-08-03 21:20:10.699 +08:00 [INF] Request finished in 18.6081ms 200 application/vnd.sen.hateoas+json; charset=utf-8
+2019-08-03 21:59:02.951 +08:00 [INF] User profile is available. Using 'C:\Users\陈彦森\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-08-03 21:59:03.832 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/  
+2019-08-03 21:59:03.926 +08:00 [INF] Request finished in 95.7367ms 404 
+2019-08-03 21:59:16.364 +08:00 [INF] Request starting HTTP/1.1 PATCH https://localhost:5001/api/posts/36 application/json.patch+json 112
+2019-08-03 21:59:16.395 +08:00 [INF] Route matched with {action = "PartiallyUpdate", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.PartiallyUpdate (MyWebAPI.API)
+2019-08-03 21:59:16.817 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.PartiallyUpdate (MyWebAPI.API) with arguments (["36","Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[MyWebAPI.Infrastructure.Resources.PostUpdateResource]"]) - Validation state: "Valid"
+2019-08-03 21:59:17.267 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-03 21:59:18.485 +08:00 [INF] Executed DbCommand (86ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[Author], [e].[Body], [e].[LastModified], [e].[Title]
+FROM [Posts] AS [e]
+WHERE [e].[Id] = @__get_Item_0
+2019-08-03 21:59:18.688 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.PartiallyUpdate (MyWebAPI.API), returned result MyWebAPI.API.Helpers.MyUnprocessableEntityObjectResult in 1856.4203ms.
+2019-08-03 21:59:18.700 +08:00 [INF] Executing ObjectResult, writing value of type 'MyWebAPI.API.Helpers.ResourceValidationResult'.
+2019-08-03 21:59:18.715 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.PartiallyUpdate (MyWebAPI.API) in 2315.9976ms
+2019-08-03 21:59:18.725 +08:00 [INF] Request finished in 2361.0473ms 422 application/json; charset=utf-8
+2019-08-03 21:59:46.191 +08:00 [INF] Request starting HTTP/1.1 PATCH https://localhost:5001/api/posts/36 application/json.patch+json 111
+2019-08-03 21:59:46.193 +08:00 [INF] Route matched with {action = "PartiallyUpdate", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.PartiallyUpdate (MyWebAPI.API)
+2019-08-03 21:59:46.196 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.PartiallyUpdate (MyWebAPI.API) with arguments (["36","Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[MyWebAPI.Infrastructure.Resources.PostUpdateResource]"]) - Validation state: "Valid"
+2019-08-03 21:59:46.199 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-03 21:59:46.212 +08:00 [INF] Executed DbCommand (4ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[Author], [e].[Body], [e].[LastModified], [e].[Title]
+FROM [Posts] AS [e]
+WHERE [e].[Id] = @__get_Item_0
+2019-08-03 21:59:46.216 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.PartiallyUpdate (MyWebAPI.API), returned result MyWebAPI.API.Helpers.MyUnprocessableEntityObjectResult in 18.1291ms.
+2019-08-03 21:59:46.218 +08:00 [INF] Executing ObjectResult, writing value of type 'MyWebAPI.API.Helpers.ResourceValidationResult'.
+2019-08-03 21:59:46.219 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.PartiallyUpdate (MyWebAPI.API) in 25.761200000000002ms
+2019-08-03 21:59:46.221 +08:00 [INF] Request finished in 29.3065ms 422 application/json; charset=utf-8
+2019-08-03 21:59:56.246 +08:00 [INF] Request starting HTTP/1.1 PATCH https://localhost:5001/api/posts/36 application/json.patch+json 109
+2019-08-03 21:59:56.247 +08:00 [INF] Route matched with {action = "PartiallyUpdate", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.PartiallyUpdate (MyWebAPI.API)
+2019-08-03 21:59:56.249 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.PartiallyUpdate (MyWebAPI.API) with arguments (["36","Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[MyWebAPI.Infrastructure.Resources.PostUpdateResource]"]) - Validation state: "Valid"
+2019-08-03 21:59:56.252 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-03 21:59:56.255 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[Author], [e].[Body], [e].[LastModified], [e].[Title]
+FROM [Posts] AS [e]
+WHERE [e].[Id] = @__get_Item_0
+2019-08-03 21:59:56.265 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.PartiallyUpdate (MyWebAPI.API), returned result MyWebAPI.API.Helpers.MyUnprocessableEntityObjectResult in 13.697000000000001ms.
+2019-08-03 21:59:56.267 +08:00 [INF] Executing ObjectResult, writing value of type 'MyWebAPI.API.Helpers.ResourceValidationResult'.
+2019-08-03 21:59:56.268 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.PartiallyUpdate (MyWebAPI.API) in 19.5139ms
+2019-08-03 21:59:56.269 +08:00 [INF] Request finished in 23.0726ms 422 application/json; charset=utf-8
+2019-08-03 22:00:30.705 +08:00 [INF] Request starting HTTP/1.1 PATCH https://localhost:5001/api/posts/36 application/json.patch+json 184
+2019-08-03 22:00:30.706 +08:00 [INF] Route matched with {action = "PartiallyUpdate", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.PartiallyUpdate (MyWebAPI.API)
+2019-08-03 22:00:30.708 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.PartiallyUpdate (MyWebAPI.API) with arguments (["36","Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[MyWebAPI.Infrastructure.Resources.PostUpdateResource]"]) - Validation state: "Valid"
+2019-08-03 22:00:30.710 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-03 22:00:30.712 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[Author], [e].[Body], [e].[LastModified], [e].[Title]
+FROM [Posts] AS [e]
+WHERE [e].[Id] = @__get_Item_0
+2019-08-03 22:00:30.850 +08:00 [INF] Executed DbCommand (5ms) [Parameters=[@p4='?' (DbType = Int32), @p0='?' (Size = 50), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Posts] SET [Author] = @p0, [Body] = @p1, [LastModified] = @p2, [Title] = @p3
+WHERE [Id] = @p4;
+SELECT @@ROWCOUNT;
+2019-08-03 22:00:30.881 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.PartiallyUpdate (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.NoContentResult in 171.9684ms.
+2019-08-03 22:00:30.885 +08:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 204
+2019-08-03 22:00:30.886 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.PartiallyUpdate (MyWebAPI.API) in 178.499ms
+2019-08-03 22:00:30.887 +08:00 [INF] Request finished in 181.8108ms 204 
+2019-08-03 22:00:41.829 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/posts/36  
+2019-08-03 22:00:41.839 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API)
+2019-08-03 22:00:41.841 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) with arguments (["36",""]) - Validation state: "Valid"
+2019-08-03 22:00:41.844 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-03 22:00:41.847 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[Author], [e].[Body], [e].[LastModified], [e].[Title]
+FROM [Posts] AS [e]
+WHERE [e].[Id] = @__get_Item_0
+2019-08-03 22:00:41.859 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 16.45ms.
+2019-08-03 22:00:41.860 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Dynamic.ExpandoObject'.
+2019-08-03 22:00:41.866 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) in 25.219ms
+2019-08-03 22:00:41.867 +08:00 [INF] Request finished in 38.1515ms 200 application/json; charset=utf-8

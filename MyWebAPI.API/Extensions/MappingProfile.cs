@@ -23,6 +23,9 @@ namespace MyWebAPI.API.Extensions
             CreateMap<PostAddResource, Post>();
             CreateMap<Post, PostAddResource>();
 
+            CreateMap<PostUpdateResource, Post>();
+            CreateMap<Post, PostUpdateResource>();
+
         }
     }
 }

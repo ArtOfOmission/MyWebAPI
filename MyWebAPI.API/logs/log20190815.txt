@@ -1,0 +1,481 @@
+2019-08-15 00:08:30.963 +08:00 [INF] User profile is available. Using 'C:\Users\陈彦森\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-08-15 00:08:32.591 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/  
+2019-08-15 00:08:32.619 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-08-15 00:08:32.714 +08:00 [INF] Request finished in 125.0332ms 404 
+2019-08-15 00:08:32.757 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/favicon.ico  
+2019-08-15 00:08:32.759 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-08-15 00:08:32.762 +08:00 [INF] Request finished in 4.0827ms 404 
+2019-08-15 00:20:45.350 +08:00 [INF] User profile is available. Using 'C:\Users\陈彦森\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-08-15 00:21:34.015 +08:00 [INF] User profile is available. Using 'C:\Users\陈彦森\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-08-15 00:23:09.585 +08:00 [INF] User profile is available. Using 'C:\Users\陈彦森\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-08-15 21:42:13.523 +08:00 [INF] User profile is available. Using 'C:\Users\陈彦森\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-08-15 21:42:16.019 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/  
+2019-08-15 21:42:16.046 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-08-15 21:42:16.164 +08:00 [INF] Request finished in 146.9321ms 404 
+2019-08-15 21:42:42.130 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/posts/12  
+2019-08-15 21:42:42.131 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-08-15 21:42:42.168 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API)
+2019-08-15 21:42:42.181 +08:00 [INF] Authorization failed.
+2019-08-15 21:42:42.185 +08:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2019-08-15 21:42:42.192 +08:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2019-08-15 21:42:42.225 +08:00 [INF] AuthenticationScheme: BearerIdentityServerAuthenticationJwt was challenged.
+2019-08-15 21:42:42.226 +08:00 [INF] AuthenticationScheme: Bearer was challenged.
+2019-08-15 21:42:42.229 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) in 55.8337ms
+2019-08-15 21:42:42.234 +08:00 [INF] Request finished in 104.3337ms 401 
+2019-08-15 21:52:28.060 +08:00 [INF] User profile is available. Using 'C:\Users\陈彦森\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-08-15 21:52:28.793 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/  
+2019-08-15 21:52:28.815 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-08-15 21:52:28.901 +08:00 [INF] Request finished in 108.7834ms 404 
+2019-08-15 21:52:28.915 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/favicon.ico  
+2019-08-15 21:52:28.916 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-08-15 21:52:28.917 +08:00 [INF] Request finished in 2.12ms 0 
+2019-08-15 21:52:58.252 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/posts  
+2019-08-15 21:52:58.458 +08:00 [INF] Successfully validated the token.
+2019-08-15 21:52:58.464 +08:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2019-08-15 21:52:58.500 +08:00 [INF] Route matched with {action = "GetHateoas", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.GetHateoas (MyWebAPI.API)
+2019-08-15 21:52:58.512 +08:00 [INF] Authorization was successful.
+2019-08-15 21:52:58.886 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.GetHateoas (MyWebAPI.API) with arguments (["MyWebAPI.Core.EntityParameters.PostParameter"]) - Validation state: "Valid"
+2019-08-15 21:52:59.341 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-15 21:53:00.753 +08:00 [INF] Executed DbCommand (66ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Posts] AS [p]
+2019-08-15 21:53:00.834 +08:00 [WRN] Query: '(from Post <generated>_2 in DbSet<Post> select [<generated>_2]).Skip(__p_0).Take(__p_1)' uses a row limiting operation (Skip/Take) without OrderBy which may lead to unpredictable results.
+2019-08-15 21:53:00.961 +08:00 [INF] Executed DbCommand (62ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Author], [p].[Body], [p].[LastModified], [p].[Title]
+FROM [Posts] AS [p]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2019-08-15 21:53:01.030 +08:00 [ERR] An exception occurred while iterating over the results of a query for context type 'MyWebAPI.Infrastructure.DataBase.MyContext'.
+System.Data.SqlClient.SqlException (0x80131904): The offset specified in a OFFSET clause may not be negative.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at System.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at System.Data.SqlClient.SqlDataReader.<>c__DisplayClass190_0.<ReadAsync>b__1(Task t)
+   at System.Data.SqlClient.SqlDataReader.InvokeRetryable[T](Func`2 moreFunc, TaskCompletionSource`1 source, IDisposable objectToDispose)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.BufferlessMoveNext(DbContext _, Boolean buffer, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\Select.cs:line 106
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\AsyncIterator.cs:line 98
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+ClientConnectionId:a802e6b8-b29b-4de5-be78-0c429990deb2
+Error Number:10742,State:1,Class:15
+System.Data.SqlClient.SqlException (0x80131904): The offset specified in a OFFSET clause may not be negative.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at System.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at System.Data.SqlClient.SqlDataReader.<>c__DisplayClass190_0.<ReadAsync>b__1(Task t)
+   at System.Data.SqlClient.SqlDataReader.InvokeRetryable[T](Func`2 moreFunc, TaskCompletionSource`1 source, IDisposable objectToDispose)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.BufferlessMoveNext(DbContext _, Boolean buffer, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\Select.cs:line 106
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\AsyncIterator.cs:line 98
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+ClientConnectionId:a802e6b8-b29b-4de5-be78-0c429990deb2
+Error Number:10742,State:1,Class:15
+2019-08-15 21:53:01.070 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.GetHateoas (MyWebAPI.API) in 2565.5923000000003ms
+2019-08-15 21:53:01.074 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Data.SqlClient.SqlException (0x80131904): The offset specified in a OFFSET clause may not be negative.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at System.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at System.Data.SqlClient.SqlDataReader.<>c__DisplayClass190_0.<ReadAsync>b__1(Task t)
+   at System.Data.SqlClient.SqlDataReader.InvokeRetryable[T](Func`2 moreFunc, TaskCompletionSource`1 source, IDisposable objectToDispose)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.BufferlessMoveNext(DbContext _, Boolean buffer, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\Select.cs:line 106
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\AsyncIterator.cs:line 98
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.Aggregate_[TSource,TAccumulate,TResult](IAsyncEnumerable`1 source, TAccumulate seed, Func`3 accumulator, Func`2 resultSelector, CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\Aggregate.cs:line 120
+   at MyWebAPI.Infrastructure.Repositories.PostRepository.GetAllPostsAsync(PostParameter postParameters) in C:\Users\陈彦森\Desktop\MyGitHub\MyWebAPI\MyWebAPI.Infrastructure\Repositories\PostRepository.cs:line 51
+   at MyWebAPI.API.Controllers.PostController.GetHateoas(PostParameter postParameters) in C:\Users\陈彦森\Desktop\MyGitHub\MyWebAPI\MyWebAPI.API\Controllers\PostController.cs:line 67
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.Invoke(HttpContext context)
+ClientConnectionId:a802e6b8-b29b-4de5-be78-0c429990deb2
+Error Number:10742,State:1,Class:15
+2019-08-15 21:53:01.120 +08:00 [ERR] The offset specified in a OFFSET clause may not be negative.
+System.Data.SqlClient.SqlException (0x80131904): The offset specified in a OFFSET clause may not be negative.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at System.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at System.Data.SqlClient.SqlDataReader.<>c__DisplayClass190_0.<ReadAsync>b__1(Task t)
+   at System.Data.SqlClient.SqlDataReader.InvokeRetryable[T](Func`2 moreFunc, TaskCompletionSource`1 source, IDisposable objectToDispose)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.BufferlessMoveNext(DbContext _, Boolean buffer, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\Select.cs:line 106
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\AsyncIterator.cs:line 98
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.Aggregate_[TSource,TAccumulate,TResult](IAsyncEnumerable`1 source, TAccumulate seed, Func`3 accumulator, Func`2 resultSelector, CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\Aggregate.cs:line 120
+   at MyWebAPI.Infrastructure.Repositories.PostRepository.GetAllPostsAsync(PostParameter postParameters) in C:\Users\陈彦森\Desktop\MyGitHub\MyWebAPI\MyWebAPI.Infrastructure\Repositories\PostRepository.cs:line 51
+   at MyWebAPI.API.Controllers.PostController.GetHateoas(PostParameter postParameters) in C:\Users\陈彦森\Desktop\MyGitHub\MyWebAPI\MyWebAPI.API\Controllers\PostController.cs:line 67
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.Invoke(HttpContext context)
+ClientConnectionId:a802e6b8-b29b-4de5-be78-0c429990deb2
+Error Number:10742,State:1,Class:15
+2019-08-15 21:53:01.160 +08:00 [INF] Request finished in 2908.245ms 500 application/json
+2019-08-15 21:54:44.462 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/posts  
+2019-08-15 21:54:44.464 +08:00 [INF] Successfully validated the token.
+2019-08-15 21:54:44.465 +08:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2019-08-15 21:54:44.466 +08:00 [INF] Route matched with {action = "GetHateoas", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.GetHateoas (MyWebAPI.API)
+2019-08-15 21:54:44.468 +08:00 [INF] Authorization was successful.
+2019-08-15 21:54:44.470 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.GetHateoas (MyWebAPI.API) with arguments (["MyWebAPI.Core.EntityParameters.PostParameter"]) - Validation state: "Valid"
+2019-08-15 21:54:44.474 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-15 21:54:44.479 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Posts] AS [p]
+2019-08-15 21:54:44.485 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Author], [p].[Body], [p].[LastModified], [p].[Title]
+FROM [Posts] AS [p]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2019-08-15 21:54:44.489 +08:00 [ERR] An exception occurred while iterating over the results of a query for context type 'MyWebAPI.Infrastructure.DataBase.MyContext'.
+System.Data.SqlClient.SqlException (0x80131904): The offset specified in a OFFSET clause may not be negative.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at System.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at System.Data.SqlClient.SqlDataReader.<>c__DisplayClass190_0.<ReadAsync>b__1(Task t)
+   at System.Data.SqlClient.SqlDataReader.InvokeRetryable[T](Func`2 moreFunc, TaskCompletionSource`1 source, IDisposable objectToDispose)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.BufferlessMoveNext(DbContext _, Boolean buffer, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\Select.cs:line 106
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\AsyncIterator.cs:line 98
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+ClientConnectionId:a802e6b8-b29b-4de5-be78-0c429990deb2
+Error Number:10742,State:1,Class:15
+System.Data.SqlClient.SqlException (0x80131904): The offset specified in a OFFSET clause may not be negative.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at System.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at System.Data.SqlClient.SqlDataReader.<>c__DisplayClass190_0.<ReadAsync>b__1(Task t)
+   at System.Data.SqlClient.SqlDataReader.InvokeRetryable[T](Func`2 moreFunc, TaskCompletionSource`1 source, IDisposable objectToDispose)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.BufferlessMoveNext(DbContext _, Boolean buffer, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\Select.cs:line 106
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\AsyncIterator.cs:line 98
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+ClientConnectionId:a802e6b8-b29b-4de5-be78-0c429990deb2
+Error Number:10742,State:1,Class:15
+2019-08-15 21:54:44.516 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.GetHateoas (MyWebAPI.API) in 48.499700000000004ms
+2019-08-15 21:54:44.518 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Data.SqlClient.SqlException (0x80131904): The offset specified in a OFFSET clause may not be negative.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at System.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at System.Data.SqlClient.SqlDataReader.<>c__DisplayClass190_0.<ReadAsync>b__1(Task t)
+   at System.Data.SqlClient.SqlDataReader.InvokeRetryable[T](Func`2 moreFunc, TaskCompletionSource`1 source, IDisposable objectToDispose)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.BufferlessMoveNext(DbContext _, Boolean buffer, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\Select.cs:line 106
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\AsyncIterator.cs:line 98
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.Aggregate_[TSource,TAccumulate,TResult](IAsyncEnumerable`1 source, TAccumulate seed, Func`3 accumulator, Func`2 resultSelector, CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\Aggregate.cs:line 120
+   at MyWebAPI.Infrastructure.Repositories.PostRepository.GetAllPostsAsync(PostParameter postParameters) in C:\Users\陈彦森\Desktop\MyGitHub\MyWebAPI\MyWebAPI.Infrastructure\Repositories\PostRepository.cs:line 51
+   at MyWebAPI.API.Controllers.PostController.GetHateoas(PostParameter postParameters) in C:\Users\陈彦森\Desktop\MyGitHub\MyWebAPI\MyWebAPI.API\Controllers\PostController.cs:line 67
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.Invoke(HttpContext context)
+ClientConnectionId:a802e6b8-b29b-4de5-be78-0c429990deb2
+Error Number:10742,State:1,Class:15
+2019-08-15 21:54:44.557 +08:00 [ERR] The offset specified in a OFFSET clause may not be negative.
+System.Data.SqlClient.SqlException (0x80131904): The offset specified in a OFFSET clause may not be negative.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at System.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at System.Data.SqlClient.SqlDataReader.<>c__DisplayClass190_0.<ReadAsync>b__1(Task t)
+   at System.Data.SqlClient.SqlDataReader.InvokeRetryable[T](Func`2 moreFunc, TaskCompletionSource`1 source, IDisposable objectToDispose)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.BufferlessMoveNext(DbContext _, Boolean buffer, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\Select.cs:line 106
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\AsyncIterator.cs:line 98
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.Aggregate_[TSource,TAccumulate,TResult](IAsyncEnumerable`1 source, TAccumulate seed, Func`3 accumulator, Func`2 resultSelector, CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\Aggregate.cs:line 120
+   at MyWebAPI.Infrastructure.Repositories.PostRepository.GetAllPostsAsync(PostParameter postParameters) in C:\Users\陈彦森\Desktop\MyGitHub\MyWebAPI\MyWebAPI.Infrastructure\Repositories\PostRepository.cs:line 51
+   at MyWebAPI.API.Controllers.PostController.GetHateoas(PostParameter postParameters) in C:\Users\陈彦森\Desktop\MyGitHub\MyWebAPI\MyWebAPI.API\Controllers\PostController.cs:line 67
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.Invoke(HttpContext context)
+ClientConnectionId:a802e6b8-b29b-4de5-be78-0c429990deb2
+Error Number:10742,State:1,Class:15
+2019-08-15 21:54:44.593 +08:00 [INF] Request finished in 130.9062ms 500 application/json
+2019-08-15 21:58:14.202 +08:00 [INF] User profile is available. Using 'C:\Users\陈彦森\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-08-15 21:58:15.584 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/  
+2019-08-15 21:58:15.608 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-08-15 21:58:15.707 +08:00 [INF] Request finished in 124.8374ms 404 
+2019-08-15 21:58:15.756 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/favicon.ico  
+2019-08-15 21:58:15.758 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-08-15 21:58:15.759 +08:00 [INF] Request finished in 3.2212ms 0 
+2019-08-15 21:58:30.817 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/Posts?pageindex=6&pagesize=5  
+2019-08-15 21:58:30.818 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-08-15 21:58:30.855 +08:00 [INF] Route matched with {action = "GetHateoas", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.GetHateoas (MyWebAPI.API)
+2019-08-15 21:58:31.221 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.GetHateoas (MyWebAPI.API) with arguments (["MyWebAPI.Core.EntityParameters.PostParameter"]) - Validation state: "Valid"
+2019-08-15 21:58:31.670 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-15 21:58:32.181 +08:00 [INF] Executed DbCommand (55ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Posts] AS [p]
+2019-08-15 21:58:32.259 +08:00 [WRN] Query: '(from Post <generated>_2 in DbSet<Post> select [<generated>_2]).Skip(__p_0).Take(__p_1)' uses a row limiting operation (Skip/Take) without OrderBy which may lead to unpredictable results.
+2019-08-15 21:58:32.366 +08:00 [INF] Executed DbCommand (45ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Author], [p].[Body], [p].[LastModified], [p].[Title]
+FROM [Posts] AS [p]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2019-08-15 21:58:32.524 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.GetHateoas (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1289.3421ms.
+2019-08-15 21:58:32.540 +08:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Collections.Generic.IEnumerable`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IEnumerable`1[[MyWebAPI.Infrastructure.Resources.LinkResource, MyWebAPI.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2019-08-15 21:58:32.563 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.GetHateoas (MyWebAPI.API) in 1703.7351ms
+2019-08-15 21:58:32.570 +08:00 [INF] Request finished in 1752.7208ms 200 application/vnd.sen.hateoas+json; charset=utf-8
+2019-08-15 21:58:38.908 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/Posts  
+2019-08-15 21:58:38.908 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-08-15 21:58:38.910 +08:00 [INF] Route matched with {action = "GetHateoas", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.GetHateoas (MyWebAPI.API)
+2019-08-15 21:58:38.914 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.GetHateoas (MyWebAPI.API) with arguments (["MyWebAPI.Core.EntityParameters.PostParameter"]) - Validation state: "Valid"
+2019-08-15 21:58:38.919 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-15 21:58:38.925 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Posts] AS [p]
+2019-08-15 21:58:38.931 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Author], [p].[Body], [p].[LastModified], [p].[Title]
+FROM [Posts] AS [p]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2019-08-15 21:58:38.974 +08:00 [ERR] An exception occurred while iterating over the results of a query for context type 'MyWebAPI.Infrastructure.DataBase.MyContext'.
+System.Data.SqlClient.SqlException (0x80131904): The offset specified in a OFFSET clause may not be negative.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at System.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at System.Data.SqlClient.SqlDataReader.<>c__DisplayClass190_0.<ReadAsync>b__1(Task t)
+   at System.Data.SqlClient.SqlDataReader.InvokeRetryable[T](Func`2 moreFunc, TaskCompletionSource`1 source, IDisposable objectToDispose)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.BufferlessMoveNext(DbContext _, Boolean buffer, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\Select.cs:line 106
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\AsyncIterator.cs:line 98
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+ClientConnectionId:483bc8ef-ef3d-405c-90f6-f3de283f2fa2
+Error Number:10742,State:1,Class:15
+System.Data.SqlClient.SqlException (0x80131904): The offset specified in a OFFSET clause may not be negative.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at System.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at System.Data.SqlClient.SqlDataReader.<>c__DisplayClass190_0.<ReadAsync>b__1(Task t)
+   at System.Data.SqlClient.SqlDataReader.InvokeRetryable[T](Func`2 moreFunc, TaskCompletionSource`1 source, IDisposable objectToDispose)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.BufferlessMoveNext(DbContext _, Boolean buffer, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\Select.cs:line 106
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\AsyncIterator.cs:line 98
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+ClientConnectionId:483bc8ef-ef3d-405c-90f6-f3de283f2fa2
+Error Number:10742,State:1,Class:15
+2019-08-15 21:58:38.999 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.GetHateoas (MyWebAPI.API) in 86.8857ms
+2019-08-15 21:58:39.000 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Data.SqlClient.SqlException (0x80131904): The offset specified in a OFFSET clause may not be negative.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at System.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at System.Data.SqlClient.SqlDataReader.<>c__DisplayClass190_0.<ReadAsync>b__1(Task t)
+   at System.Data.SqlClient.SqlDataReader.InvokeRetryable[T](Func`2 moreFunc, TaskCompletionSource`1 source, IDisposable objectToDispose)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.BufferlessMoveNext(DbContext _, Boolean buffer, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\Select.cs:line 106
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\AsyncIterator.cs:line 98
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.Aggregate_[TSource,TAccumulate,TResult](IAsyncEnumerable`1 source, TAccumulate seed, Func`3 accumulator, Func`2 resultSelector, CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\Aggregate.cs:line 120
+   at MyWebAPI.Infrastructure.Repositories.PostRepository.GetAllPostsAsync(PostParameter postParameters) in C:\Users\陈彦森\Desktop\MyGitHub\MyWebAPI\MyWebAPI.Infrastructure\Repositories\PostRepository.cs:line 51
+   at MyWebAPI.API.Controllers.PostController.GetHateoas(PostParameter postParameters) in C:\Users\陈彦森\Desktop\MyGitHub\MyWebAPI\MyWebAPI.API\Controllers\PostController.cs:line 67
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.Invoke(HttpContext context)
+ClientConnectionId:483bc8ef-ef3d-405c-90f6-f3de283f2fa2
+Error Number:10742,State:1,Class:15
+2019-08-15 21:58:39.045 +08:00 [ERR] The offset specified in a OFFSET clause may not be negative.
+System.Data.SqlClient.SqlException (0x80131904): The offset specified in a OFFSET clause may not be negative.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at System.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at System.Data.SqlClient.SqlDataReader.<>c__DisplayClass190_0.<ReadAsync>b__1(Task t)
+   at System.Data.SqlClient.SqlDataReader.InvokeRetryable[T](Func`2 moreFunc, TaskCompletionSource`1 source, IDisposable objectToDispose)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.BufferlessMoveNext(DbContext _, Boolean buffer, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\Select.cs:line 106
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\AsyncIterator.cs:line 98
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.Aggregate_[TSource,TAccumulate,TResult](IAsyncEnumerable`1 source, TAccumulate seed, Func`3 accumulator, Func`2 resultSelector, CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\Aggregate.cs:line 120
+   at MyWebAPI.Infrastructure.Repositories.PostRepository.GetAllPostsAsync(PostParameter postParameters) in C:\Users\陈彦森\Desktop\MyGitHub\MyWebAPI\MyWebAPI.Infrastructure\Repositories\PostRepository.cs:line 51
+   at MyWebAPI.API.Controllers.PostController.GetHateoas(PostParameter postParameters) in C:\Users\陈彦森\Desktop\MyGitHub\MyWebAPI\MyWebAPI.API\Controllers\PostController.cs:line 67
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.Invoke(HttpContext context)
+ClientConnectionId:483bc8ef-ef3d-405c-90f6-f3de283f2fa2
+Error Number:10742,State:1,Class:15
+2019-08-15 21:58:39.080 +08:00 [INF] Request finished in 172.6476ms 500 application/json
+2019-08-15 21:58:48.590 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/posts/12  
+2019-08-15 21:58:48.592 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-08-15 21:58:48.602 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API)
+2019-08-15 21:58:48.605 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) with arguments (["12",""]) - Validation state: "Valid"
+2019-08-15 21:58:48.610 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-15 21:58:48.691 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[Author], [e].[Body], [e].[LastModified], [e].[Title]
+FROM [Posts] AS [e]
+WHERE [e].[Id] = @__get_Item_0
+2019-08-15 21:58:48.716 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 109.7787ms.
+2019-08-15 21:58:48.719 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Dynamic.ExpandoObject'.
+2019-08-15 21:58:48.720 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) in 115.8846ms
+2019-08-15 21:58:48.721 +08:00 [INF] Request finished in 131.1702ms 200 application/json; charset=utf-8
+2019-08-15 21:59:38.235 +08:00 [INF] User profile is available. Using 'C:\Users\陈彦森\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-08-15 21:59:38.958 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/  
+2019-08-15 21:59:38.980 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-08-15 21:59:39.066 +08:00 [INF] Request finished in 109.2725ms 404 
+2019-08-15 22:00:25.060 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/posts/12  
+2019-08-15 22:00:25.265 +08:00 [INF] Successfully validated the token.
+2019-08-15 22:00:25.270 +08:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2019-08-15 22:00:25.306 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API)
+2019-08-15 22:00:25.316 +08:00 [INF] Authorization was successful.
+2019-08-15 22:00:25.681 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) with arguments (["12",""]) - Validation state: "Valid"
+2019-08-15 22:00:26.116 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-15 22:00:26.772 +08:00 [INF] Executed DbCommand (91ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[Author], [e].[Body], [e].[LastModified], [e].[Title]
+FROM [Posts] AS [e]
+WHERE [e].[Id] = @__get_Item_0
+2019-08-15 22:00:26.921 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1224.4323000000002ms.
+2019-08-15 22:00:26.932 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Dynamic.ExpandoObject'.
+2019-08-15 22:00:26.952 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) in 1642.9865ms
+2019-08-15 22:00:26.960 +08:00 [INF] Request finished in 1900.1486ms 200 application/json; charset=utf-8
+2019-08-15 22:01:42.114 +08:00 [INF] User profile is available. Using 'C:\Users\陈彦森\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-08-15 22:01:43.455 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/  
+2019-08-15 22:01:43.480 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-08-15 22:01:43.577 +08:00 [INF] Request finished in 123.0629ms 404 
+2019-08-15 22:01:43.632 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/favicon.ico  
+2019-08-15 22:01:43.634 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-08-15 22:01:43.636 +08:00 [INF] Request finished in 3.8217ms 404 
+2019-08-15 22:02:35.393 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/posts/12  
+2019-08-15 22:02:35.607 +08:00 [INF] Successfully validated the token.
+2019-08-15 22:02:35.612 +08:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2019-08-15 22:02:35.643 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API)
+2019-08-15 22:02:35.653 +08:00 [INF] Authorization was successful.
+2019-08-15 22:02:36.010 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) with arguments (["12",""]) - Validation state: "Valid"
+2019-08-15 22:02:36.467 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-15 22:02:37.122 +08:00 [INF] Executed DbCommand (97ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[Author], [e].[Body], [e].[LastModified], [e].[Title]
+FROM [Posts] AS [e]
+WHERE [e].[Id] = @__get_Item_0
+2019-08-15 22:02:37.289 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1257.7271ms.
+2019-08-15 22:02:37.301 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Dynamic.ExpandoObject'.
+2019-08-15 22:02:37.321 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) in 1674.6889ms
+2019-08-15 22:02:37.327 +08:00 [INF] Request finished in 1933.9297ms 200 application/vnd.sen.hateoas+json; charset=utf-8

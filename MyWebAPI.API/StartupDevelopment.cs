@@ -26,6 +26,10 @@ using Microsoft.AspNetCore.Mvc.Routing;
 using MyWebAPI.Infrastructure.Services;
 using Newtonsoft.Json.Serialization;
 using FluentValidation.AspNetCore;
+using IdentityServer4.AccessTokenValidation;
+using Microsoft.AspNetCore.Mvc.Cors.Internal;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc.Authorization;
 
 namespace MyWebAPI.API
 {
@@ -85,9 +89,19 @@ namespace MyWebAPI.API
             services.AddHttpsRedirection(options =>
             {
                 options.RedirectStatusCode = StatusCodes.Status307TemporaryRedirect;
-                options.HttpsPort = 5001;
+                options.HttpsPort = 6001;
 
             });
+
+            //IdentityServer4.AccessTokenValidation
+            services
+                .AddAuthentication(IdentityServerAuthenticationDefaults.AuthenticationScheme)
+                .AddIdentityServerAuthentication(options =>
+                {
+                    options.Authority = "https://localhost:5001";
+                    options.ApiName = "restapi";
+                });
+
 
             #region 添加仓储类(按字母顺序排序)
 
@@ -121,6 +135,17 @@ namespace MyWebAPI.API
 
             services.AddTransient<ITypeHelperService, TypeHelperService>();
 
+            //全局设定只有认证用户才能访问资源
+            services.Configure<MvcOptions>(options =>
+            {
+                options.Filters.Add(new CorsAuthorizationFilterFactory("AllowAngularDevOrigin"));
+
+                var policy = new AuthorizationPolicyBuilder()
+                    .RequireAuthenticatedUser()
+                    .Build();
+                options.Filters.Add(new AuthorizeFilter(policy));
+            });
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -131,6 +156,8 @@ namespace MyWebAPI.API
             app.UseMyExceptionHandler(loggerFactory);
 
             app.UseHttpsRedirection();//https重定向
+
+            app.UseAuthentication();
 
             app.UseMvc();           
 

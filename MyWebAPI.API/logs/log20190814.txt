@@ -1,0 +1,29 @@
+2019-08-14 23:50:09.170 +08:00 [INF] User profile is available. Using 'C:\Users\陈彦森\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-08-14 23:50:09.895 +08:00 [INF] Connection id "0HLP0PSB1BQBU" request processing ended abnormally.
+System.IO.IOException: The decryption operation failed, see inner exception. ---> System.ComponentModel.Win32Exception: 处理证书时，出现了一个未知错误。
+   --- End of inner exception stack trace ---
+   at System.Net.Security.SslStreamInternal.ReadAsyncInternal[TReadAdapter](TReadAdapter adapter, Memory`1 buffer)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Adapter.Internal.AdaptedPipeline.ReadInputAsync(Stream stream)
+   at System.IO.Pipelines.PipeCompletion.ThrowLatchedException()
+   at System.IO.Pipelines.Pipe.GetReadResult(ReadResult& result)
+   at System.IO.Pipelines.Pipe.ReadAsync(CancellationToken token)
+   at System.IO.Pipelines.Pipe.DefaultPipeReader.ReadAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.Http1Connection.BeginRead(ValueTask`1& awaitable)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequestsAsync[TContext](IHttpApplication`1 application)
+2019-08-14 23:50:23.370 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/  
+2019-08-14 23:50:23.391 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-08-14 23:50:23.485 +08:00 [INF] Request finished in 115.7645ms 404 
+2019-08-14 23:50:23.498 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/favicon.ico  
+2019-08-14 23:50:23.499 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-08-14 23:50:23.500 +08:00 [INF] Request finished in 2.6361ms 404 
+2019-08-14 23:51:24.398 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/posts/12  
+2019-08-14 23:51:24.399 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-08-14 23:51:24.437 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API)
+2019-08-14 23:51:24.449 +08:00 [INF] Authorization failed.
+2019-08-14 23:51:24.453 +08:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2019-08-14 23:51:24.460 +08:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2019-08-14 23:51:24.481 +08:00 [INF] AuthenticationScheme: BearerIdentityServerAuthenticationJwt was challenged.
+2019-08-14 23:51:24.482 +08:00 [INF] AuthenticationScheme: Bearer was challenged.
+2019-08-14 23:51:24.486 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) in 44.0876ms
+2019-08-14 23:51:24.492 +08:00 [INF] Request finished in 94.2674ms 401 

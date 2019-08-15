@@ -52,15 +52,19 @@
           "dependencies": {
             "AutoMapper": {
               "target": "Package",
-              "version": "[8.1.1, )"
+              "version": "[9.0.0, )"
             },
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
-              "version": "[6.1.1, )"
+              "version": "[7.0.0, )"
             },
             "FluentValidation.AspNetCore": {
               "target": "Package",
               "version": "[8.4.0, )"
+            },
+            "IdentityServer4.AccessTokenValidation": {
+              "target": "Package",
+              "version": "[2.7.0, )"
             },
             "Microsoft.AspNetCore.App": {
               "suppressParent": "All",

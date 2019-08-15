@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.2": {
-      "AutoMapper/8.1.1": {
+      "AutoMapper/9.0.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.CSharp": "4.5.0",
@@ -15,10 +15,10 @@
           "lib/netstandard2.0/AutoMapper.dll": {}
         }
       },
-      "AutoMapper.Extensions.Microsoft.DependencyInjection/6.1.1": {
+      "AutoMapper.Extensions.Microsoft.DependencyInjection/7.0.0": {
         "type": "package",
         "dependencies": {
-          "AutoMapper": "8.1.1",
+          "AutoMapper": "9.0.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "2.0.0"
         },
         "compile": {
@@ -65,6 +65,48 @@
         },
         "runtime": {
           "lib/netstandard2.0/FluentValidation.DependencyInjectionExtensions.dll": {}
+        }
+      },
+      "IdentityModel/3.10.0": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "11.0.1",
+          "System.Text.Encodings.Web": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/IdentityModel.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/IdentityModel.dll": {}
+        }
+      },
+      "IdentityModel.AspNetCore.OAuth2Introspection/3.5.0": {
+        "type": "package",
+        "dependencies": {
+          "IdentityModel": "3.10.0",
+          "Microsoft.AspNetCore.Authentication": "2.0.0",
+          "Microsoft.AspNetCore.Http.Abstractions": "2.0.0",
+          "Microsoft.Extensions.Caching.Memory": "2.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/IdentityModel.AspNetCore.OAuth2Introspection.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/IdentityModel.AspNetCore.OAuth2Introspection.dll": {}
+        }
+      },
+      "IdentityServer4.AccessTokenValidation/2.7.0": {
+        "type": "package",
+        "dependencies": {
+          "IdentityModel.AspNetCore.OAuth2Introspection": "3.5.0",
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "2.1.0",
+          "Microsoft.AspNetCore.Authorization": "2.1.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/IdentityServer4.AccessTokenValidation.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/IdentityServer4.AccessTokenValidation.dll": {}
         }
       },
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
@@ -4967,14 +5009,14 @@
     }
   },
   "libraries": {
-    "AutoMapper/8.1.1": {
-      "sha512": "GKBliBukkLG0z/U0T4Jy+yEpr5bKDImQ9nEy/T8jqNulwNkWDjiEWa9TL4yCxIhleDbmVmw2xYSaJ3Eb2OcSUg==",
+    "AutoMapper/9.0.0": {
+      "sha512": "xCqvoxT4HIrNY/xlXG9W+BA/awdrhWvMTKTK/igkGSRbhOhpl3Q8O8Gxlhzjc9JsYqE7sS6AxgyuUUvZ6R5/Bw==",
       "type": "package",
-      "path": "automapper/8.1.1",
+      "path": "automapper/9.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "automapper.8.1.1.nupkg.sha512",
+        "automapper.9.0.0.nupkg.sha512",
         "automapper.nuspec",
         "lib/net461/AutoMapper.dll",
         "lib/net461/AutoMapper.pdb",
@@ -4984,14 +5026,14 @@
         "lib/netstandard2.0/AutoMapper.xml"
       ]
     },
-    "AutoMapper.Extensions.Microsoft.DependencyInjection/6.1.1": {
-      "sha512": "MPMgL6JGEH2Egmgh3+tw2UVX05ph8As7YtYWzt2ZDCc0STHGG5EsV3UMWH/g4aHaN1q20Bbc0PTMy3I0PwgBGQ==",
+    "AutoMapper.Extensions.Microsoft.DependencyInjection/7.0.0": {
+      "sha512": "szI4yeRIM7GWe9JyekW0dKYehPB0t6M+I55fPeCebN6PhS7zQZa0eG3bgOnOx+eP3caSNoE7KEJs2rk7MLsh8w==",
       "type": "package",
-      "path": "automapper.extensions.microsoft.dependencyinjection/6.1.1",
+      "path": "automapper.extensions.microsoft.dependencyinjection/7.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "automapper.extensions.microsoft.dependencyinjection.6.1.1.nupkg.sha512",
+        "automapper.extensions.microsoft.dependencyinjection.7.0.0.nupkg.sha512",
         "automapper.extensions.microsoft.dependencyinjection.nuspec",
         "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll",
         "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.pdb"
@@ -5040,6 +5082,57 @@
         "fluentvalidation.dependencyinjectionextensions.nuspec",
         "lib/netstandard2.0/FluentValidation.DependencyInjectionExtensions.dll",
         "lib/netstandard2.0/FluentValidation.DependencyInjectionExtensions.xml"
+      ]
+    },
+    "IdentityModel/3.10.0": {
+      "sha512": "PJ8F5HOauI52OhiJZ7E46/AyNmqKMOWGmruHx6Ajv2evNFB/9P+MknY72zr8V5cjnwbVPDHNUS3IUUSG/l3/kA==",
+      "type": "package",
+      "path": "identitymodel/3.10.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "identitymodel.3.10.0.nupkg.sha512",
+        "identitymodel.nuspec",
+        "lib/net452/IdentityModel.dll",
+        "lib/net452/IdentityModel.pdb",
+        "lib/net452/IdentityModel.xml",
+        "lib/netstandard1.4/IdentityModel.dll",
+        "lib/netstandard1.4/IdentityModel.pdb",
+        "lib/netstandard1.4/IdentityModel.xml",
+        "lib/netstandard2.0/IdentityModel.dll",
+        "lib/netstandard2.0/IdentityModel.pdb",
+        "lib/netstandard2.0/IdentityModel.xml"
+      ]
+    },
+    "IdentityModel.AspNetCore.OAuth2Introspection/3.5.0": {
+      "sha512": "xhUokByBfzpp9cNn4EbXA2KbrSgGaTM16Aj2UlNE/6PYrC+bXF/Ns5K9OrAy7XBGfpfyzG8l6y5WYzn0rDNnqw==",
+      "type": "package",
+      "path": "identitymodel.aspnetcore.oauth2introspection/3.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "identitymodel.aspnetcore.oauth2introspection.3.5.0.nupkg.sha512",
+        "identitymodel.aspnetcore.oauth2introspection.nuspec",
+        "lib/net461/IdentityModel.AspNetCore.OAuth2Introspection.dll",
+        "lib/net461/IdentityModel.AspNetCore.OAuth2Introspection.pdb",
+        "lib/net461/IdentityModel.AspNetCore.OAuth2Introspection.xml",
+        "lib/netstandard2.0/IdentityModel.AspNetCore.OAuth2Introspection.dll",
+        "lib/netstandard2.0/IdentityModel.AspNetCore.OAuth2Introspection.pdb",
+        "lib/netstandard2.0/IdentityModel.AspNetCore.OAuth2Introspection.xml"
+      ]
+    },
+    "IdentityServer4.AccessTokenValidation/2.7.0": {
+      "sha512": "gMdcaTsi4heNv233NRFcVClf6Ixm2E4rFBYODuUqp88UhsTBa1uUS9d6KD4+lFP6Huj8jyJnSStAytTUUyJe8Q==",
+      "type": "package",
+      "path": "identityserver4.accesstokenvalidation/2.7.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "identityserver4.accesstokenvalidation.2.7.0.nupkg.sha512",
+        "identityserver4.accesstokenvalidation.nuspec",
+        "lib/netstandard2.0/IdentityServer4.AccessTokenValidation.dll",
+        "lib/netstandard2.0/IdentityServer4.AccessTokenValidation.pdb",
+        "lib/netstandard2.0/IdentityServer4.AccessTokenValidation.xml"
       ]
     },
     "Microsoft.AspNet.WebApi.Client/5.2.6": {
@@ -13553,9 +13646,10 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.2": [
-      "AutoMapper >= 8.1.1",
-      "AutoMapper.Extensions.Microsoft.DependencyInjection >= 6.1.1",
+      "AutoMapper >= 9.0.0",
+      "AutoMapper.Extensions.Microsoft.DependencyInjection >= 7.0.0",
       "FluentValidation.AspNetCore >= 8.4.0",
+      "IdentityServer4.AccessTokenValidation >= 2.7.0",
       "Microsoft.AspNetCore.App >= 2.2.0",
       "Microsoft.AspNetCore.Razor.Design >= 2.2.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 2.2.6",
@@ -13623,15 +13717,19 @@
         "dependencies": {
           "AutoMapper": {
             "target": "Package",
-            "version": "[8.1.1, )"
+            "version": "[9.0.0, )"
           },
           "AutoMapper.Extensions.Microsoft.DependencyInjection": {
             "target": "Package",
-            "version": "[6.1.1, )"
+            "version": "[7.0.0, )"
           },
           "FluentValidation.AspNetCore": {
             "target": "Package",
             "version": "[8.4.0, )"
+          },
+          "IdentityServer4.AccessTokenValidation": {
+            "target": "Package",
+            "version": "[2.7.0, )"
           },
           "Microsoft.AspNetCore.App": {
             "suppressParent": "All",
@@ -13680,12 +13778,7 @@
           }
         },
         "imports": [
-          "net461",
-          "net462",
-          "net47",
-          "net471",
-          "net472",
-          "net48"
+          "net461"
         ],
         "assetTargetFallback": true,
         "warn": true

@@ -1,0 +1,269 @@
+2019-08-27 23:22:11.930 +08:00 [INF] User profile is available. Using 'C:\Users\陈彦森\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-08-27 23:22:14.479 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/  
+2019-08-27 23:22:14.508 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-08-27 23:22:14.628 +08:00 [INF] Request finished in 150.4503ms 404 
+2019-08-27 23:22:21.049 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/posts/12  
+2019-08-27 23:22:21.051 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-08-27 23:22:21.088 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API)
+2019-08-27 23:22:21.491 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) with arguments (["12",""]) - Validation state: "Valid"
+2019-08-27 23:22:21.965 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-27 23:22:26.710 +08:00 [INF] Executed DbCommand (90ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[Author], [e].[Body], [e].[LastModified], [e].[Title]
+FROM [Posts] AS [e]
+WHERE [e].[Id] = @__get_Item_0
+2019-08-27 23:22:26.924 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 5418.0804ms.
+2019-08-27 23:22:26.936 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Dynamic.ExpandoObject'.
+2019-08-27 23:22:26.999 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) in 5906.9949000000006ms
+2019-08-27 23:22:27.007 +08:00 [INF] Request finished in 5957.1825ms 200 application/json; charset=utf-8
+2019-08-27 23:23:10.614 +08:00 [INF] Connection id "0HLPB09ATDUPS" request processing ended abnormally.
+System.IO.IOException: The decryption operation failed, see inner exception. ---> System.ComponentModel.Win32Exception: 处理证书时，出现了一个未知错误。
+   --- End of inner exception stack trace ---
+   at System.Net.Security.SslStreamInternal.ReadAsyncInternal[TReadAdapter](TReadAdapter adapter, Memory`1 buffer)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Adapter.Internal.AdaptedPipeline.ReadInputAsync(Stream stream)
+   at System.IO.Pipelines.PipeCompletion.ThrowLatchedException()
+   at System.IO.Pipelines.Pipe.GetReadResult(ReadResult& result)
+   at System.IO.Pipelines.Pipe.GetReadAsyncResult()
+   at System.IO.Pipelines.Pipe.DefaultPipeReader.GetResult(Int16 token)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequestsAsync[TContext](IHttpApplication`1 application)
+2019-08-27 23:28:47.792 +08:00 [INF] Connection id "0HLPB09ATDUPT" request processing ended abnormally.
+System.IO.IOException: The decryption operation failed, see inner exception. ---> System.ComponentModel.Win32Exception: 处理证书时，出现了一个未知错误。
+   --- End of inner exception stack trace ---
+   at System.Net.Security.SslStreamInternal.ReadAsyncInternal[TReadAdapter](TReadAdapter adapter, Memory`1 buffer)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Adapter.Internal.AdaptedPipeline.ReadInputAsync(Stream stream)
+   at System.IO.Pipelines.PipeCompletion.ThrowLatchedException()
+   at System.IO.Pipelines.Pipe.GetReadResult(ReadResult& result)
+   at System.IO.Pipelines.Pipe.GetReadAsyncResult()
+   at System.IO.Pipelines.Pipe.DefaultPipeReader.GetResult(Int16 token)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequestsAsync[TContext](IHttpApplication`1 application)
+2019-08-27 23:29:15.240 +08:00 [INF] Connection id "0HLPB09ATDUPU" request processing ended abnormally.
+System.IO.IOException: The decryption operation failed, see inner exception. ---> System.ComponentModel.Win32Exception: 处理证书时，出现了一个未知错误。
+   --- End of inner exception stack trace ---
+   at System.Net.Security.SslStreamInternal.ReadAsyncInternal[TReadAdapter](TReadAdapter adapter, Memory`1 buffer)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Adapter.Internal.AdaptedPipeline.ReadInputAsync(Stream stream)
+   at System.IO.Pipelines.PipeCompletion.ThrowLatchedException()
+   at System.IO.Pipelines.Pipe.GetReadResult(ReadResult& result)
+   at System.IO.Pipelines.Pipe.GetReadAsyncResult()
+   at System.IO.Pipelines.Pipe.DefaultPipeReader.GetResult(Int16 token)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequestsAsync[TContext](IHttpApplication`1 application)
+2019-08-27 23:30:00.451 +08:00 [INF] Connection id "0HLPB09ATDUPV" request processing ended abnormally.
+System.IO.IOException: The decryption operation failed, see inner exception. ---> System.ComponentModel.Win32Exception: 处理证书时，出现了一个未知错误。
+   --- End of inner exception stack trace ---
+   at System.Net.Security.SslStreamInternal.ReadAsyncInternal[TReadAdapter](TReadAdapter adapter, Memory`1 buffer)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Adapter.Internal.AdaptedPipeline.ReadInputAsync(Stream stream)
+   at System.IO.Pipelines.PipeCompletion.ThrowLatchedException()
+   at System.IO.Pipelines.Pipe.GetReadResult(ReadResult& result)
+   at System.IO.Pipelines.Pipe.GetReadAsyncResult()
+   at System.IO.Pipelines.Pipe.DefaultPipeReader.GetResult(Int16 token)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequestsAsync[TContext](IHttpApplication`1 application)
+2019-08-27 23:30:09.861 +08:00 [INF] Connection id "0HLPB09ATDUQ0" request processing ended abnormally.
+System.IO.IOException: The decryption operation failed, see inner exception. ---> System.ComponentModel.Win32Exception: 处理证书时，出现了一个未知错误。
+   --- End of inner exception stack trace ---
+   at System.Net.Security.SslStreamInternal.ReadAsyncInternal[TReadAdapter](TReadAdapter adapter, Memory`1 buffer)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Adapter.Internal.AdaptedPipeline.ReadInputAsync(Stream stream)
+   at System.IO.Pipelines.PipeCompletion.ThrowLatchedException()
+   at System.IO.Pipelines.Pipe.GetReadResult(ReadResult& result)
+   at System.IO.Pipelines.Pipe.GetReadAsyncResult()
+   at System.IO.Pipelines.Pipe.DefaultPipeReader.GetResult(Int16 token)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequestsAsync[TContext](IHttpApplication`1 application)
+2019-08-27 23:30:14.036 +08:00 [INF] Connection id "0HLPB09ATDUQ1" request processing ended abnormally.
+System.IO.IOException: The decryption operation failed, see inner exception. ---> System.ComponentModel.Win32Exception: 处理证书时，出现了一个未知错误。
+   --- End of inner exception stack trace ---
+   at System.Net.Security.SslStreamInternal.ReadAsyncInternal[TReadAdapter](TReadAdapter adapter, Memory`1 buffer)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Adapter.Internal.AdaptedPipeline.ReadInputAsync(Stream stream)
+   at System.IO.Pipelines.PipeCompletion.ThrowLatchedException()
+   at System.IO.Pipelines.Pipe.GetReadResult(ReadResult& result)
+   at System.IO.Pipelines.Pipe.GetReadAsyncResult()
+   at System.IO.Pipelines.Pipe.DefaultPipeReader.GetResult(Int16 token)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequestsAsync[TContext](IHttpApplication`1 application)
+2019-08-27 23:32:32.506 +08:00 [INF] Connection id "0HLPB09ATDUQ2" request processing ended abnormally.
+System.IO.IOException: The decryption operation failed, see inner exception. ---> System.ComponentModel.Win32Exception: 处理证书时，出现了一个未知错误。
+   --- End of inner exception stack trace ---
+   at System.Net.Security.SslStreamInternal.ReadAsyncInternal[TReadAdapter](TReadAdapter adapter, Memory`1 buffer)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Adapter.Internal.AdaptedPipeline.ReadInputAsync(Stream stream)
+   at System.IO.Pipelines.PipeCompletion.ThrowLatchedException()
+   at System.IO.Pipelines.Pipe.GetReadResult(ReadResult& result)
+   at System.IO.Pipelines.Pipe.GetReadAsyncResult()
+   at System.IO.Pipelines.Pipe.DefaultPipeReader.GetResult(Int16 token)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequestsAsync[TContext](IHttpApplication`1 application)
+2019-08-27 23:32:32.542 +08:00 [INF] Connection id "0HLPB09ATDUQ3" request processing ended abnormally.
+System.IO.IOException: The decryption operation failed, see inner exception. ---> System.ComponentModel.Win32Exception: 处理证书时，出现了一个未知错误。
+   --- End of inner exception stack trace ---
+   at System.Net.Security.SslStreamInternal.ReadAsyncInternal[TReadAdapter](TReadAdapter adapter, Memory`1 buffer)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Adapter.Internal.AdaptedPipeline.ReadInputAsync(Stream stream)
+   at System.IO.Pipelines.PipeCompletion.ThrowLatchedException()
+   at System.IO.Pipelines.Pipe.GetReadResult(ReadResult& result)
+   at System.IO.Pipelines.Pipe.GetReadAsyncResult()
+   at System.IO.Pipelines.Pipe.DefaultPipeReader.GetResult(Int16 token)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequestsAsync[TContext](IHttpApplication`1 application)
+2019-08-27 23:32:32.543 +08:00 [INF] Connection id "0HLPB09ATDUQ4" request processing ended abnormally.
+System.IO.IOException: The decryption operation failed, see inner exception. ---> System.ComponentModel.Win32Exception: 处理证书时，出现了一个未知错误。
+   --- End of inner exception stack trace ---
+   at System.Net.Security.SslStreamInternal.ReadAsyncInternal[TReadAdapter](TReadAdapter adapter, Memory`1 buffer)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Adapter.Internal.AdaptedPipeline.ReadInputAsync(Stream stream)
+   at System.IO.Pipelines.PipeCompletion.ThrowLatchedException()
+   at System.IO.Pipelines.Pipe.GetReadResult(ReadResult& result)
+   at System.IO.Pipelines.Pipe.GetReadAsyncResult()
+   at System.IO.Pipelines.Pipe.DefaultPipeReader.GetResult(Int16 token)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequestsAsync[TContext](IHttpApplication`1 application)
+2019-08-27 23:32:37.222 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/posts/12  
+2019-08-27 23:32:37.223 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-08-27 23:32:37.224 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API)
+2019-08-27 23:32:37.228 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) with arguments (["12",""]) - Validation state: "Valid"
+2019-08-27 23:32:37.232 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-27 23:32:37.299 +08:00 [INF] Executed DbCommand (7ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[Author], [e].[Body], [e].[LastModified], [e].[Title]
+FROM [Posts] AS [e]
+WHERE [e].[Id] = @__get_Item_0
+2019-08-27 23:32:37.305 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 74.7977ms.
+2019-08-27 23:32:37.308 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Dynamic.ExpandoObject'.
+2019-08-27 23:32:37.310 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) in 83.7613ms
+2019-08-27 23:32:37.311 +08:00 [INF] Request finished in 89.4737ms 200 application/json; charset=utf-8
+2019-08-27 23:49:40.812 +08:00 [INF] User profile is available. Using 'C:\Users\陈彦森\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-08-27 23:49:42.203 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/  
+2019-08-27 23:49:42.240 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-08-27 23:49:42.376 +08:00 [INF] Request finished in 176.4211ms 404 
+2019-08-27 23:50:03.645 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/posts/12  
+2019-08-27 23:50:03.649 +08:00 [INF] CORS policy execution failed.
+2019-08-27 23:50:03.651 +08:00 [INF] Request origin http://192.168.3.3:8080 does not have permission to access the resource.
+2019-08-27 23:50:03.654 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-08-27 23:50:03.702 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API)
+2019-08-27 23:50:03.706 +08:00 [INF] CORS policy execution failed.
+2019-08-27 23:50:03.707 +08:00 [INF] Request origin http://192.168.3.3:8080 does not have permission to access the resource.
+2019-08-27 23:50:04.162 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) with arguments (["12",""]) - Validation state: "Valid"
+2019-08-27 23:50:04.673 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-27 23:50:06.190 +08:00 [INF] Executed DbCommand (100ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[Author], [e].[Body], [e].[LastModified], [e].[Title]
+FROM [Posts] AS [e]
+WHERE [e].[Id] = @__get_Item_0
+2019-08-27 23:50:06.364 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 2184.876ms.
+2019-08-27 23:50:06.379 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Dynamic.ExpandoObject'.
+2019-08-27 23:50:06.447 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) in 2740.7765ms
+2019-08-27 23:50:06.457 +08:00 [INF] Request finished in 2812.2691ms 200 application/json; charset=utf-8
+2019-08-27 23:50:09.285 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/posts/12  
+2019-08-27 23:50:09.287 +08:00 [INF] CORS policy execution failed.
+2019-08-27 23:50:09.288 +08:00 [INF] Request origin http://192.168.3.3:8080 does not have permission to access the resource.
+2019-08-27 23:50:09.290 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-08-27 23:50:09.292 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API)
+2019-08-27 23:50:09.295 +08:00 [INF] CORS policy execution failed.
+2019-08-27 23:50:09.296 +08:00 [INF] Request origin http://192.168.3.3:8080 does not have permission to access the resource.
+2019-08-27 23:50:09.301 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) with arguments (["12",""]) - Validation state: "Valid"
+2019-08-27 23:50:09.307 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-27 23:50:09.327 +08:00 [INF] Executed DbCommand (6ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[Author], [e].[Body], [e].[LastModified], [e].[Title]
+FROM [Posts] AS [e]
+WHERE [e].[Id] = @__get_Item_0
+2019-08-27 23:50:09.332 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 27.3062ms.
+2019-08-27 23:50:09.335 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Dynamic.ExpandoObject'.
+2019-08-27 23:50:09.337 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) in 41.597500000000004ms
+2019-08-27 23:50:09.341 +08:00 [INF] Request finished in 55.2954ms 200 application/json; charset=utf-8
+2019-08-27 23:50:23.132 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/posts/12  
+2019-08-27 23:50:23.133 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-08-27 23:50:23.135 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API)
+2019-08-27 23:50:23.137 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) with arguments (["12",""]) - Validation state: "Valid"
+2019-08-27 23:50:23.139 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-27 23:50:23.143 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[Author], [e].[Body], [e].[LastModified], [e].[Title]
+FROM [Posts] AS [e]
+WHERE [e].[Id] = @__get_Item_0
+2019-08-27 23:50:23.146 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 6.9429000000000007ms.
+2019-08-27 23:50:23.148 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Dynamic.ExpandoObject'.
+2019-08-27 23:50:23.149 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) in 12.757900000000001ms
+2019-08-27 23:50:23.151 +08:00 [INF] Request finished in 19.1876ms 200 application/json; charset=utf-8
+2019-08-27 23:51:17.590 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/posts/12  
+2019-08-27 23:51:17.591 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-08-27 23:51:17.593 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API)
+2019-08-27 23:51:17.595 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) with arguments (["12",""]) - Validation state: "Valid"
+2019-08-27 23:51:17.598 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-27 23:51:17.601 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[Author], [e].[Body], [e].[LastModified], [e].[Title]
+FROM [Posts] AS [e]
+WHERE [e].[Id] = @__get_Item_0
+2019-08-27 23:51:17.604 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 6.5816ms.
+2019-08-27 23:51:17.607 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Dynamic.ExpandoObject'.
+2019-08-27 23:51:17.608 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) in 13.4817ms
+2019-08-27 23:51:17.610 +08:00 [INF] Request finished in 19.223ms 200 application/json; charset=utf-8
+2019-08-27 23:52:19.853 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/posts/12  
+2019-08-27 23:52:19.854 +08:00 [INF] CORS policy execution failed.
+2019-08-27 23:52:19.855 +08:00 [INF] Request origin http://192.168.3.3:8080 does not have permission to access the resource.
+2019-08-27 23:52:19.859 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-08-27 23:52:19.861 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API)
+2019-08-27 23:52:19.863 +08:00 [INF] CORS policy execution failed.
+2019-08-27 23:52:19.864 +08:00 [INF] Request origin http://192.168.3.3:8080 does not have permission to access the resource.
+2019-08-27 23:52:19.866 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) with arguments (["12",""]) - Validation state: "Valid"
+2019-08-27 23:52:19.868 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-27 23:52:19.871 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[Author], [e].[Body], [e].[LastModified], [e].[Title]
+FROM [Posts] AS [e]
+WHERE [e].[Id] = @__get_Item_0
+2019-08-27 23:52:19.874 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 6.6349ms.
+2019-08-27 23:52:19.876 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Dynamic.ExpandoObject'.
+2019-08-27 23:52:19.878 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) in 15.1218ms
+2019-08-27 23:52:19.880 +08:00 [INF] Request finished in 26.6867ms 200 application/json; charset=utf-8
+2019-08-27 23:53:01.319 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/posts/12  
+2019-08-27 23:53:01.321 +08:00 [INF] CORS policy execution failed.
+2019-08-27 23:53:01.322 +08:00 [INF] Request origin http://192.168.3.3:8080 does not have permission to access the resource.
+2019-08-27 23:53:01.324 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-08-27 23:53:01.326 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API)
+2019-08-27 23:53:01.328 +08:00 [INF] CORS policy execution failed.
+2019-08-27 23:53:01.329 +08:00 [INF] Request origin http://192.168.3.3:8080 does not have permission to access the resource.
+2019-08-27 23:53:01.331 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) with arguments (["12",""]) - Validation state: "Valid"
+2019-08-27 23:53:01.335 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-27 23:53:01.339 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[Author], [e].[Body], [e].[LastModified], [e].[Title]
+FROM [Posts] AS [e]
+WHERE [e].[Id] = @__get_Item_0
+2019-08-27 23:53:01.345 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 10.2142ms.
+2019-08-27 23:53:01.347 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Dynamic.ExpandoObject'.
+2019-08-27 23:53:01.349 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) in 21.218ms
+2019-08-27 23:53:01.352 +08:00 [INF] Request finished in 32.535ms 200 application/json; charset=utf-8
+2019-08-27 23:54:10.702 +08:00 [INF] User profile is available. Using 'C:\Users\陈彦森\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-08-27 23:54:11.357 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/  
+2019-08-27 23:54:11.390 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-08-27 23:54:11.496 +08:00 [INF] Request finished in 140.5043ms 404 
+2019-08-27 23:54:25.500 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/posts/12  
+2019-08-27 23:54:25.505 +08:00 [INF] CORS policy execution failed.
+2019-08-27 23:54:25.506 +08:00 [INF] Request origin http://192.168.3.3:8080 does not have permission to access the resource.
+2019-08-27 23:54:25.508 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-08-27 23:54:25.557 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API)
+2019-08-27 23:54:25.562 +08:00 [INF] CORS policy execution failed.
+2019-08-27 23:54:25.563 +08:00 [INF] Request origin http://192.168.3.3:8080 does not have permission to access the resource.
+2019-08-27 23:54:26.037 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) with arguments (["12",""]) - Validation state: "Valid"
+2019-08-27 23:54:26.513 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-27 23:54:27.227 +08:00 [INF] Executed DbCommand (92ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[Author], [e].[Body], [e].[LastModified], [e].[Title]
+FROM [Posts] AS [e]
+WHERE [e].[Id] = @__get_Item_0
+2019-08-27 23:54:27.386 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1331.4274ms.
+2019-08-27 23:54:27.398 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Dynamic.ExpandoObject'.
+2019-08-27 23:54:27.450 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) in 1888.3141ms
+2019-08-27 23:54:27.460 +08:00 [INF] Request finished in 1959.7292ms 200 application/json; charset=utf-8
+2019-08-27 23:56:03.930 +08:00 [INF] User profile is available. Using 'C:\Users\陈彦森\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-08-27 23:56:04.624 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/  
+2019-08-27 23:56:04.657 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-08-27 23:56:04.779 +08:00 [INF] Request finished in 157.2658ms 404 
+2019-08-27 23:56:12.645 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/posts/12  
+2019-08-27 23:56:12.649 +08:00 [INF] CORS policy execution failed.
+2019-08-27 23:56:12.650 +08:00 [INF] Request origin http://192.168.3.3:8080 does not have permission to access the resource.
+2019-08-27 23:56:12.652 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-08-27 23:56:12.697 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API)
+2019-08-27 23:56:12.702 +08:00 [INF] CORS policy execution failed.
+2019-08-27 23:56:12.703 +08:00 [INF] Request origin http://192.168.3.3:8080 does not have permission to access the resource.
+2019-08-27 23:56:13.170 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) with arguments (["12",""]) - Validation state: "Valid"
+2019-08-27 23:56:13.662 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-27 23:56:14.379 +08:00 [INF] Executed DbCommand (96ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[Author], [e].[Body], [e].[LastModified], [e].[Title]
+FROM [Posts] AS [e]
+WHERE [e].[Id] = @__get_Item_0
+2019-08-27 23:56:14.573 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1385.7203000000002ms.
+2019-08-27 23:56:14.587 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Dynamic.ExpandoObject'.
+2019-08-27 23:56:14.642 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) in 1940.2302000000002ms
+2019-08-27 23:56:14.651 +08:00 [INF] Request finished in 2005.5488ms 200 application/json; charset=utf-8

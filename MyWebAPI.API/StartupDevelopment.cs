@@ -135,10 +135,20 @@ namespace MyWebAPI.API
 
             services.AddTransient<ITypeHelperService, TypeHelperService>();
 
+            //允许跨域
+            services.AddCors(options =>
+            {
+                options.AddPolicy("AllowVueDevOrigin",
+                    builder => builder.WithOrigins("http://192.168.3.3:8080") //http://localhost:8080
+                        .WithExposedHeaders("X-Pagination")
+                        .AllowAnyHeader()
+                        .AllowAnyMethod());
+            });
+          
             //全局设定只有认证用户才能访问资源
             services.Configure<MvcOptions>(options =>
             {
-                options.Filters.Add(new CorsAuthorizationFilterFactory("AllowAngularDevOrigin"));
+                options.Filters.Add(new CorsAuthorizationFilterFactory("AllowVueDevOrigin"));
 
                 var policy = new AuthorizationPolicyBuilder()
                     .RequireAuthenticatedUser()
@@ -154,6 +164,8 @@ namespace MyWebAPI.API
             //app.UseDeveloperExceptionPage();
 
             app.UseMyExceptionHandler(loggerFactory);
+
+            app.UseCors("AllowVueDevOrigin");
 
             app.UseHttpsRedirection();//https重定向
 

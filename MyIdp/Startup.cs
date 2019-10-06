@@ -92,6 +92,16 @@ namespace MyIdp
                 options.HttpsPort = 5001;
             });
 
+            //允许跨域
+            services.AddCors(options =>
+            {
+                options.AddPolicy("AllowVueDevOrigin",
+                    policy => policy.WithOrigins("http://localhost:8080")
+                        .AllowAnyHeader()
+                        .AllowAnyMethod());
+            });
+
+
         }
 
         public void Configure(IApplicationBuilder app)

@@ -29,16 +29,16 @@ namespace MyWebAPI.API
             CreateWebHostBuilder(args).Build().Run();
         }
 
-        //public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
-        //    WebHost.CreateDefaultBuilder(args)
-        //        .UseStartup<Startup>();
+        public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
+            WebHost.CreateDefaultBuilder(args)
+                .UseStartup<Startup>();
 
-        public static IWebHostBuilder CreateWebHostBuilder(string[] args)
-        {
-            var assemblyName = typeof(StartupDevelopment).GetTypeInfo().Assembly.FullName;
-            return WebHost.CreateDefaultBuilder(args)
-                .UseStartup(assemblyName)
-                .UseSerilog();                
-        }
+        //public static IWebHostBuilder CreateWebHostBuilder(string[] args)
+        //{
+        //    var assemblyName = typeof(StartupDevelopment).GetTypeInfo().Assembly.FullName;
+        //    return WebHost.CreateDefaultBuilder(args)
+        //        .UseStartup(assemblyName)
+        //        .UseSerilog();                
+        //}
     }
 }

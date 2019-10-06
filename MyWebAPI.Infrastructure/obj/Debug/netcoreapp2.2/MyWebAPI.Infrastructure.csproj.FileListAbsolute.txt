@@ -16,7 +16,6 @@ C:\Users\陈彦森\Desktop\MyGitHub\MyWebAPI\MyWebAPI.Infrastructure\bin\Debug\n
 C:\Users\陈彦森\Desktop\MyGitHub\MyWebAPI\MyWebAPI.Infrastructure\bin\Debug\netcoreapp2.2\MyWebAPI.Core.dll
 C:\Users\陈彦森\Desktop\MyGitHub\MyWebAPI\MyWebAPI.Infrastructure\bin\Debug\netcoreapp2.2\MyWebAPI.Core.pdb
 C:\Users\陈彦森\Desktop\MyGitHub\MyWebAPI\MyWebAPI.Infrastructure\obj\Debug\netcoreapp2.2\MyWebAPI.Infrastructure.csprojAssemblyReference.cache
-C:\Users\陈彦森\Desktop\MyGitHub\MyWebAPI\MyWebAPI.Infrastructure\obj\Debug\netcoreapp2.2\MyWebAPI.Infrastructure.csproj.CoreCompileInputs.cache
 C:\Users\陈彦森\Desktop\MyGitHub\MyWebAPI\MyWebAPI.Infrastructure\obj\Debug\netcoreapp2.2\MyWebAPI.Infrastructure.AssemblyInfoInputs.cache
 C:\Users\陈彦森\Desktop\MyGitHub\MyWebAPI\MyWebAPI.Infrastructure\obj\Debug\netcoreapp2.2\MyWebAPI.Infrastructure.AssemblyInfo.cs
 C:\Users\陈彦森\Desktop\MyGitHub\MyWebAPI\MyWebAPI.Infrastructure\obj\Debug\netcoreapp2.2\MyWebAPI.Infrastructure.csproj.CopyComplete

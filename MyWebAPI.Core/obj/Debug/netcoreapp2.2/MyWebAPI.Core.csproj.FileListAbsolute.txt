@@ -10,8 +10,8 @@ C:\Users\陈彦森\Desktop\MyGitHub\MyWebAPI\MyWebAPI\MyWebAPI.Core\obj\Debug\ne
 C:\Users\陈彦森\Desktop\MyGitHub\MyWebAPI\MyWebAPI.Core\bin\Debug\netcoreapp2.2\MyWebAPI.Core.deps.json
 C:\Users\陈彦森\Desktop\MyGitHub\MyWebAPI\MyWebAPI.Core\bin\Debug\netcoreapp2.2\MyWebAPI.Core.dll
 C:\Users\陈彦森\Desktop\MyGitHub\MyWebAPI\MyWebAPI.Core\bin\Debug\netcoreapp2.2\MyWebAPI.Core.pdb
-C:\Users\陈彦森\Desktop\MyGitHub\MyWebAPI\MyWebAPI.Core\obj\Debug\netcoreapp2.2\MyWebAPI.Core.csproj.CoreCompileInputs.cache
 C:\Users\陈彦森\Desktop\MyGitHub\MyWebAPI\MyWebAPI.Core\obj\Debug\netcoreapp2.2\MyWebAPI.Core.AssemblyInfoInputs.cache
 C:\Users\陈彦森\Desktop\MyGitHub\MyWebAPI\MyWebAPI.Core\obj\Debug\netcoreapp2.2\MyWebAPI.Core.AssemblyInfo.cs
 C:\Users\陈彦森\Desktop\MyGitHub\MyWebAPI\MyWebAPI.Core\obj\Debug\netcoreapp2.2\MyWebAPI.Core.dll
 C:\Users\陈彦森\Desktop\MyGitHub\MyWebAPI\MyWebAPI.Core\obj\Debug\netcoreapp2.2\MyWebAPI.Core.pdb
+C:\Users\陈彦森\Desktop\MyGitHub\MyWebAPI\MyWebAPI.Core\obj\Debug\netcoreapp2.2\MyWebAPI.Core.csprojAssemblyReference.cache

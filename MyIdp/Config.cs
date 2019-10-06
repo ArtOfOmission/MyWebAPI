@@ -57,29 +57,39 @@ namespace MyIdp
                     }
                 },
 
-                // SPA client using code flow + pkce
+                // Vue client using code flow + pkce
                 new Client
                 {
-                    ClientId = "spa",
-                    ClientName = "SPA Client",
-                    ClientUri = "http://identityserver.io",
+                    ClientId = "vuejsclient",//必须对应前端项目中的client_id属性的值
+                    ClientName = "Vue Client",
+                    ClientUri = "http://localhost:8080",//前端项目地址
 
-                    AllowedGrantTypes = GrantTypes.Code,
-                    RequirePkce = true,
-                    RequireClientSecret = false,
+                    AllowedGrantTypes = GrantTypes.Implicit,
+                    AllowAccessTokensViaBrowser = true,
+                    RequireConsent = false,
+
+                    AccessTokenLifetime = 180,
+
+                    //RequirePkce = true,
+                    //RequireClientSecret = false,
 
                     RedirectUris =
-                    {
-                        "http://localhost:5002/index.html",
-                        "http://localhost:5002/callback.html",
-                        "http://localhost:5002/silent.html",
-                        "http://localhost:5002/popup.html",
+                    {                        
+                        "http://localhost:8080/callback.html",
+                        "http://localhost:8080/silent.html",
+                        "http://localhost:8080/popup.html",
+                        "http://localhost:8080/freeuser"
                     },
 
-                    PostLogoutRedirectUris = { "http://localhost:5002/index.html" },
-                    AllowedCorsOrigins = { "http://localhost:5002" },
+                    PostLogoutRedirectUris = { "http://localhost:8080/"},
+                    AllowedCorsOrigins = { "http://localhost:8080" },
 
-                    AllowedScopes = { "openid", "profile", "api1" }
+                    AllowedScopes = {
+                        IdentityServerConstants.StandardScopes.OpenId,
+                        IdentityServerConstants.StandardScopes.Profile,
+                        IdentityServerConstants.StandardScopes.Email,
+                        "restapi"
+                    }
                 }
             };
         }

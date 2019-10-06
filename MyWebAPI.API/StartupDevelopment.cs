@@ -139,7 +139,7 @@ namespace MyWebAPI.API
             services.AddCors(options =>
             {
                 options.AddPolicy("AllowVueDevOrigin",
-                    builder => builder.WithOrigins("http://192.168.3.3:8080") //http://localhost:8080
+                    builder => builder.WithOrigins("http://localhost:8020", "https://localhost:8020") 
                         .WithExposedHeaders("X-Pagination")
                         .AllowAnyHeader()
                         .AllowAnyMethod());
@@ -165,7 +165,7 @@ namespace MyWebAPI.API
 
             app.UseMyExceptionHandler(loggerFactory);
 
-            app.UseCors("AllowVueDevOrigin");
+            app.UseCors("AllowVueDevOrigin");//允许跨域
 
             app.UseHttpsRedirection();//https重定向
 

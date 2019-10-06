@@ -1,0 +1,1304 @@
+2019-10-06 09:15:37.712 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/posts/12  
+2019-10-06 09:15:37.795 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 09:15:37.813 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API)
+2019-10-06 09:15:37.901 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) with arguments (["12",""]) - Validation state: "Valid"
+2019-10-06 09:18:14.660 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-10-06 09:18:19.560 +08:00 [INF] Executed DbCommand (9ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[Author], [e].[Body], [e].[LastModified], [e].[Title]
+FROM [Posts] AS [e]
+WHERE [e].[Id] = @__get_Item_0
+2019-10-06 09:18:19.585 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 161680.23140000002ms.
+2019-10-06 09:18:19.590 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Dynamic.ExpandoObject'.
+2019-10-06 09:18:19.605 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) in 161789.7495ms
+2019-10-06 09:18:19.607 +08:00 [INF] Request finished in 161903.9371ms 200 application/json; charset=utf-8
+2019-10-06 09:48:01.377 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/posts  
+2019-10-06 09:48:01.381 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 09:48:01.390 +08:00 [INF] Request finished in 13.2045ms 404 
+2019-10-06 09:48:04.974 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/posts  
+2019-10-06 09:48:04.975 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 09:48:04.976 +08:00 [INF] Request finished in 2.5729ms 404 
+2019-10-06 09:49:16.455 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/posts  
+2019-10-06 09:49:16.456 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 09:49:16.458 +08:00 [INF] Request finished in 3.077ms 404 
+2019-10-06 09:52:42.244 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/posts?ID=12  
+2019-10-06 09:52:42.246 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 09:52:42.248 +08:00 [INF] Request finished in 4.8172ms 404 
+2019-10-06 09:52:50.369 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/posts?ID=12  
+2019-10-06 09:52:50.371 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 09:52:50.374 +08:00 [INF] Request finished in 5.1792ms 404 
+2019-10-06 09:52:54.820 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/posts?ID=12  
+2019-10-06 09:52:54.823 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 09:52:54.824 +08:00 [INF] Request finished in 3.9254ms 404 
+2019-10-06 09:53:04.609 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/posts?ID=12  
+2019-10-06 09:53:04.610 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 09:53:04.612 +08:00 [INF] Request finished in 2.6715ms 404 
+2019-10-06 09:53:07.437 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/posts?ID=12  
+2019-10-06 09:53:07.440 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 09:53:07.442 +08:00 [INF] Request finished in 4.8917ms 404 
+2019-10-06 09:54:04.377 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/posts?ID=12  
+2019-10-06 09:54:04.378 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 09:54:04.380 +08:00 [INF] Request finished in 3.6794ms 404 
+2019-10-06 09:58:18.953 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/posts?ID=12  
+2019-10-06 09:58:18.955 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 09:58:18.958 +08:00 [INF] Request finished in 4.6576ms 404 
+2019-10-06 10:02:16.393 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/posts?ID=12  
+2019-10-06 10:02:16.395 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 10:02:16.396 +08:00 [INF] Request finished in 3.3284ms 404 
+2019-10-06 10:02:42.526 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/posts?ID=12  
+2019-10-06 10:02:42.528 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 10:02:42.530 +08:00 [INF] Request finished in 3.7699ms 404 
+2019-10-06 10:03:54.249 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/posts?ID=12  
+2019-10-06 10:03:54.250 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 10:03:54.252 +08:00 [INF] Request finished in 3.0305ms 404 
+2019-10-06 10:06:53.030 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/posts?ID=12  
+2019-10-06 10:06:53.032 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 10:06:53.034 +08:00 [INF] Request finished in 4.1884ms 404 
+2019-10-06 10:10:30.205 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/posts?ID=12  
+2019-10-06 10:10:30.207 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 10:10:30.208 +08:00 [INF] Request finished in 3.0983ms 404 
+2019-10-06 10:12:09.812 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/posts?ID=12  
+2019-10-06 10:12:09.814 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 10:12:09.816 +08:00 [INF] Request finished in 4.2969ms 404 
+2019-10-06 10:13:03.692 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/posts?ID=12  
+2019-10-06 10:13:03.695 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 10:13:03.697 +08:00 [INF] Request finished in 4.5061ms 404 
+2019-10-06 10:19:31.202 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/posts?ID=12  
+2019-10-06 10:19:31.204 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 10:19:31.205 +08:00 [INF] Request finished in 3.081ms 404 
+2019-10-06 10:19:37.093 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/posts?ID=12  
+2019-10-06 10:19:37.095 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 10:19:37.097 +08:00 [INF] Request finished in 3.6354ms 404 
+2019-10-06 10:25:57.115 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/posts?ID=12  
+2019-10-06 10:25:57.117 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 10:25:57.119 +08:00 [INF] Request finished in 4.0523ms 404 
+2019-10-06 10:35:08.180 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/api/posts?ID=12  
+2019-10-06 10:35:08.181 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 10:35:08.183 +08:00 [INF] Request finished in 4.3565ms 404 
+2019-10-06 10:35:55.958 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/api/posts?ID=12  
+2019-10-06 10:35:55.959 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 10:35:55.961 +08:00 [INF] Request finished in 4.906ms 404 
+2019-10-06 10:36:50.911 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/api/posts?ID=12  
+2019-10-06 10:36:50.913 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 10:36:50.916 +08:00 [INF] Request finished in 4.4042ms 404 
+2019-10-06 10:37:08.509 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/api/posts?ID=12  
+2019-10-06 10:37:08.510 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 10:37:08.513 +08:00 [INF] Request finished in 4.1641ms 404 
+2019-10-06 10:41:19.347 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/posts?ID=12  
+2019-10-06 10:41:19.348 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 10:41:19.350 +08:00 [INF] Request finished in 3.1638ms 404 
+2019-10-06 10:46:06.033 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/posts?ID=12  
+2019-10-06 10:46:06.034 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 10:46:06.036 +08:00 [INF] Request finished in 2.9619ms 404 
+2019-10-06 10:48:10.461 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/posts?ID=12  
+2019-10-06 10:48:10.463 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 10:48:10.465 +08:00 [INF] Request finished in 3.3914ms 404 
+2019-10-06 10:51:37.913 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/posts?ID=12  
+2019-10-06 10:51:37.914 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 10:51:37.916 +08:00 [INF] Request finished in 2.6491ms 404 
+2019-10-06 10:51:39.081 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/sockjs-node/076/vaqaaf1k/websocket  
+2019-10-06 10:51:39.137 +08:00 [INF] CORS policy execution failed.
+2019-10-06 10:51:39.138 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 10:51:39.148 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 10:51:39.151 +08:00 [INF] Request finished in 69.5625ms 404 
+2019-10-06 10:51:40.274 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/sockjs-node/019/gtezomvz/websocket  
+2019-10-06 10:51:40.277 +08:00 [INF] CORS policy execution failed.
+2019-10-06 10:51:40.278 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 10:51:40.279 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 10:51:40.281 +08:00 [INF] Request finished in 6.6793ms 404 
+2019-10-06 10:51:41.409 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/sockjs-node/047/u4wybdto/websocket  
+2019-10-06 10:51:41.411 +08:00 [INF] CORS policy execution failed.
+2019-10-06 10:51:41.412 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 10:51:41.413 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 10:51:41.414 +08:00 [INF] Request finished in 4.711ms 404 
+2019-10-06 10:51:42.486 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/sockjs-node/721/55uwdm5s/websocket  
+2019-10-06 10:51:42.488 +08:00 [INF] CORS policy execution failed.
+2019-10-06 10:51:42.489 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 10:51:42.491 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 10:51:42.492 +08:00 [INF] Request finished in 6.2367ms 404 
+2019-10-06 10:51:43.642 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/sockjs-node/316/s5ix4t5v/websocket  
+2019-10-06 10:51:43.645 +08:00 [INF] CORS policy execution failed.
+2019-10-06 10:51:43.646 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 10:51:43.649 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 10:51:43.650 +08:00 [INF] Request finished in 7.6796ms 404 
+2019-10-06 10:51:44.775 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/sockjs-node/230/eafnonjp/websocket  
+2019-10-06 10:51:44.776 +08:00 [INF] CORS policy execution failed.
+2019-10-06 10:51:44.777 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 10:51:44.779 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 10:51:44.780 +08:00 [INF] Request finished in 4.5023ms 404 
+2019-10-06 10:51:45.838 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/sockjs-node/313/5m1xwqvy/websocket  
+2019-10-06 10:51:45.839 +08:00 [INF] CORS policy execution failed.
+2019-10-06 10:51:45.840 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 10:51:45.843 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 10:51:45.844 +08:00 [INF] Request finished in 6.0985ms 404 
+2019-10-06 10:51:47.977 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/sockjs-node/980/1rpzrc5h/websocket  
+2019-10-06 10:51:47.978 +08:00 [INF] CORS policy execution failed.
+2019-10-06 10:51:47.979 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 10:51:47.980 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 10:51:47.982 +08:00 [INF] Request finished in 5.1476ms 404 
+2019-10-06 10:51:49.058 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/sockjs-node/613/hrwyt3po/websocket  
+2019-10-06 10:51:49.060 +08:00 [INF] CORS policy execution failed.
+2019-10-06 10:51:49.062 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 10:51:49.063 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 10:51:49.065 +08:00 [INF] Request finished in 6.4162ms 404 
+2019-10-06 10:51:50.221 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/sockjs-node/159/x5wpzoyk/websocket  
+2019-10-06 10:51:50.222 +08:00 [INF] CORS policy execution failed.
+2019-10-06 10:51:50.224 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 10:51:50.225 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 10:51:50.227 +08:00 [INF] Request finished in 5.7176ms 404 
+2019-10-06 10:51:51.296 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/sockjs-node/069/wlb0qhn4/websocket  
+2019-10-06 10:51:51.297 +08:00 [INF] CORS policy execution failed.
+2019-10-06 10:51:51.298 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 10:51:51.300 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 10:51:51.301 +08:00 [INF] Request finished in 4.5396ms 404 
+2019-10-06 10:51:52.398 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/sockjs-node/084/u3z5cajy/websocket  
+2019-10-06 10:51:52.399 +08:00 [INF] CORS policy execution failed.
+2019-10-06 10:51:52.401 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 10:51:52.402 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 10:51:52.404 +08:00 [INF] Request finished in 5.1951ms 404 
+2019-10-06 10:51:53.524 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/sockjs-node/339/onqtwwis/websocket  
+2019-10-06 10:51:53.525 +08:00 [INF] CORS policy execution failed.
+2019-10-06 10:51:53.526 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 10:51:53.528 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 10:51:53.529 +08:00 [INF] Request finished in 5.4949ms 404 
+2019-10-06 10:51:54.638 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/sockjs-node/690/5bysc12b/websocket  
+2019-10-06 10:51:54.641 +08:00 [INF] CORS policy execution failed.
+2019-10-06 10:51:54.642 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 10:51:54.644 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 10:51:54.645 +08:00 [INF] Request finished in 7.7591ms 404 
+2019-10-06 10:51:55.765 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/sockjs-node/549/cpew2szu/websocket  
+2019-10-06 10:51:55.766 +08:00 [INF] CORS policy execution failed.
+2019-10-06 10:51:55.767 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 10:51:55.768 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 10:51:55.770 +08:00 [INF] Request finished in 5.5527ms 404 
+2019-10-06 10:51:56.863 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/sockjs-node/405/v3dep0im/websocket  
+2019-10-06 10:51:56.865 +08:00 [INF] CORS policy execution failed.
+2019-10-06 10:51:56.866 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 10:51:56.868 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 10:51:56.869 +08:00 [INF] Request finished in 6.5123ms 404 
+2019-10-06 10:51:57.985 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/sockjs-node/925/bmt2gcxk/websocket  
+2019-10-06 10:51:57.986 +08:00 [INF] CORS policy execution failed.
+2019-10-06 10:51:57.988 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 10:51:57.990 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 10:51:57.991 +08:00 [INF] Request finished in 13.4469ms 404 
+2019-10-06 10:51:59.137 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/sockjs-node/152/xg01gboe/websocket  
+2019-10-06 10:51:59.138 +08:00 [INF] CORS policy execution failed.
+2019-10-06 10:51:59.139 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 10:51:59.141 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 10:51:59.142 +08:00 [INF] Request finished in 5.5366ms 404 
+2019-10-06 10:52:00.244 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/sockjs-node/706/3stzm1uh/websocket  
+2019-10-06 10:52:00.245 +08:00 [INF] CORS policy execution failed.
+2019-10-06 10:52:00.247 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 10:52:00.248 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 10:52:00.250 +08:00 [INF] Request finished in 6.2819ms 404 
+2019-10-06 10:52:01.422 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/sockjs-node/600/lgvospgu/websocket  
+2019-10-06 10:52:01.423 +08:00 [INF] CORS policy execution failed.
+2019-10-06 10:52:01.424 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 10:52:01.426 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 10:52:01.427 +08:00 [INF] Request finished in 4.5831ms 404 
+2019-10-06 10:52:02.567 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/sockjs-node/888/muckvwoc/websocket  
+2019-10-06 10:52:02.568 +08:00 [INF] CORS policy execution failed.
+2019-10-06 10:52:02.569 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 10:52:02.570 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 10:52:02.571 +08:00 [INF] Request finished in 4.0578ms 404 
+2019-10-06 10:52:03.688 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/sockjs-node/296/djz3hpie/websocket  
+2019-10-06 10:52:03.689 +08:00 [INF] CORS policy execution failed.
+2019-10-06 10:52:03.690 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 10:52:03.692 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 10:52:03.693 +08:00 [INF] Request finished in 5.7882ms 404 
+2019-10-06 10:52:04.771 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/sockjs-node/950/ustqhuiq/websocket  
+2019-10-06 10:52:04.772 +08:00 [INF] CORS policy execution failed.
+2019-10-06 10:52:04.773 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 10:52:04.775 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 10:52:04.776 +08:00 [INF] Request finished in 5.4191ms 404 
+2019-10-06 10:52:05.956 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/sockjs-node/242/lp0fu3ft/websocket  
+2019-10-06 10:52:05.957 +08:00 [INF] CORS policy execution failed.
+2019-10-06 10:52:05.959 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 10:52:05.961 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 10:52:05.962 +08:00 [INF] Request finished in 5.448ms 404 
+2019-10-06 10:52:07.094 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/sockjs-node/521/0pfqsv3c/websocket  
+2019-10-06 10:52:07.095 +08:00 [INF] CORS policy execution failed.
+2019-10-06 10:52:07.096 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 10:52:07.097 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 10:52:07.098 +08:00 [INF] Request finished in 4.1221ms 404 
+2019-10-06 10:52:08.177 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/sockjs-node/554/i35xzyww/websocket  
+2019-10-06 10:52:08.178 +08:00 [INF] CORS policy execution failed.
+2019-10-06 10:52:08.180 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 10:52:08.182 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 10:52:08.183 +08:00 [INF] Request finished in 5.9192ms 404 
+2019-10-06 10:52:09.351 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/sockjs-node/197/bj4sohiw/websocket  
+2019-10-06 10:52:09.352 +08:00 [INF] CORS policy execution failed.
+2019-10-06 10:52:09.353 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 10:52:09.354 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 10:52:09.355 +08:00 [INF] Request finished in 4.24ms 404 
+2019-10-06 10:52:10.463 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/sockjs-node/600/0koy0ojc/websocket  
+2019-10-06 10:52:10.464 +08:00 [INF] CORS policy execution failed.
+2019-10-06 10:52:10.465 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 10:52:10.467 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 10:52:10.468 +08:00 [INF] Request finished in 4.4833ms 404 
+2019-10-06 10:52:11.647 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/sockjs-node/875/z25wmxm4/websocket  
+2019-10-06 10:52:11.648 +08:00 [INF] CORS policy execution failed.
+2019-10-06 10:52:11.649 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 10:52:11.650 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 10:52:11.652 +08:00 [INF] Request finished in 4.2193ms 404 
+2019-10-06 10:52:12.728 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/sockjs-node/132/ky32gp1q/websocket  
+2019-10-06 10:52:12.729 +08:00 [INF] CORS policy execution failed.
+2019-10-06 10:52:12.730 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 10:52:12.731 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 10:52:12.732 +08:00 [INF] Request finished in 4.355ms 404 
+2019-10-06 10:52:13.803 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/sockjs-node/255/g5xww4jf/websocket  
+2019-10-06 10:52:13.804 +08:00 [INF] CORS policy execution failed.
+2019-10-06 10:52:13.805 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 10:52:13.806 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 10:52:13.808 +08:00 [INF] Request finished in 5.1154ms 404 
+2019-10-06 10:52:14.542 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/posts?ID=12  
+2019-10-06 10:52:14.544 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 10:52:14.545 +08:00 [INF] Request finished in 3.3515ms 404 
+2019-10-06 10:52:14.844 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/sockjs-node/261/x42r4a4f/websocket  
+2019-10-06 10:52:14.845 +08:00 [INF] CORS policy execution failed.
+2019-10-06 10:52:14.846 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 10:52:14.848 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 10:52:14.849 +08:00 [INF] Request finished in 4.8905ms 404 
+2019-10-06 10:52:17.065 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/sockjs-node/390/2gocns5j/websocket  
+2019-10-06 10:52:17.066 +08:00 [INF] CORS policy execution failed.
+2019-10-06 10:52:17.067 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 10:52:17.069 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 10:52:17.071 +08:00 [INF] Request finished in 6.1223ms 404 
+2019-10-06 10:52:18.147 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/sockjs-node/083/2s4x3vje/websocket  
+2019-10-06 10:52:18.148 +08:00 [INF] CORS policy execution failed.
+2019-10-06 10:52:18.149 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 10:52:18.150 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 10:52:18.152 +08:00 [INF] Request finished in 4.1448ms 404 
+2019-10-06 10:52:19.225 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/sockjs-node/927/u2yrmf2e/websocket  
+2019-10-06 10:52:19.226 +08:00 [INF] CORS policy execution failed.
+2019-10-06 10:52:19.227 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 10:52:19.228 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 10:52:19.229 +08:00 [INF] Request finished in 4.2011ms 404 
+2019-10-06 10:52:20.374 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/sockjs-node/937/iqkgovoq/websocket  
+2019-10-06 10:52:20.375 +08:00 [INF] CORS policy execution failed.
+2019-10-06 10:52:20.376 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 10:52:20.377 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 10:52:20.378 +08:00 [INF] Request finished in 4.0555ms 404 
+2019-10-06 10:52:21.487 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/sockjs-node/773/43ggvztm/websocket  
+2019-10-06 10:52:21.488 +08:00 [INF] CORS policy execution failed.
+2019-10-06 10:52:21.489 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 10:52:21.491 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 10:52:21.493 +08:00 [INF] Request finished in 6.1661ms 404 
+2019-10-06 10:52:22.648 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/sockjs-node/748/rg1pwacq/websocket  
+2019-10-06 10:52:22.649 +08:00 [INF] CORS policy execution failed.
+2019-10-06 10:52:22.650 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 10:52:22.651 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 10:52:22.652 +08:00 [INF] Request finished in 5.0457ms 404 
+2019-10-06 10:52:23.756 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/sockjs-node/336/ctu4vvic/websocket  
+2019-10-06 10:52:23.757 +08:00 [INF] CORS policy execution failed.
+2019-10-06 10:52:23.759 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 10:52:23.760 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 10:52:23.761 +08:00 [INF] Request finished in 5.0496ms 404 
+2019-10-06 10:52:24.851 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/sockjs-node/904/edq4oci0/websocket  
+2019-10-06 10:52:24.852 +08:00 [INF] CORS policy execution failed.
+2019-10-06 10:52:24.853 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 10:52:24.855 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 10:52:24.856 +08:00 [INF] Request finished in 5.5159ms 404 
+2019-10-06 10:52:26.002 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/sockjs-node/928/eeqkqns2/websocket  
+2019-10-06 10:52:26.003 +08:00 [INF] CORS policy execution failed.
+2019-10-06 10:52:26.005 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 10:52:26.006 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 10:52:26.007 +08:00 [INF] Request finished in 5.9182ms 404 
+2019-10-06 10:52:27.100 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/sockjs-node/508/bwupsqlb/websocket  
+2019-10-06 10:52:27.101 +08:00 [INF] CORS policy execution failed.
+2019-10-06 10:52:27.102 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 10:52:27.104 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 10:52:27.105 +08:00 [INF] Request finished in 5.3331ms 404 
+2019-10-06 10:52:28.222 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/sockjs-node/252/kfm0ww3o/websocket  
+2019-10-06 10:52:28.223 +08:00 [INF] CORS policy execution failed.
+2019-10-06 10:52:28.224 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 10:52:28.226 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 10:52:28.227 +08:00 [INF] Request finished in 5.2244ms 404 
+2019-10-06 10:52:29.353 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/sockjs-node/758/yqualwvi/websocket  
+2019-10-06 10:52:29.354 +08:00 [INF] CORS policy execution failed.
+2019-10-06 10:52:29.355 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 10:52:29.356 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 10:52:29.357 +08:00 [INF] Request finished in 4.4276ms 404 
+2019-10-06 10:52:30.502 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/sockjs-node/554/ebeijfc5/websocket  
+2019-10-06 10:52:30.503 +08:00 [INF] CORS policy execution failed.
+2019-10-06 10:52:30.505 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 10:52:30.506 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 10:52:30.507 +08:00 [INF] Request finished in 5.8345ms 404 
+2019-10-06 10:52:31.632 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/sockjs-node/146/omxu50kf/websocket  
+2019-10-06 10:52:31.633 +08:00 [INF] CORS policy execution failed.
+2019-10-06 10:52:31.634 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 10:52:31.635 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 10:52:31.636 +08:00 [INF] Request finished in 4.1241ms 404 
+2019-10-06 10:52:32.798 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/sockjs-node/859/f4kaoxdm/websocket  
+2019-10-06 10:52:32.800 +08:00 [INF] CORS policy execution failed.
+2019-10-06 10:52:32.801 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 10:52:32.803 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 10:52:32.805 +08:00 [INF] Request finished in 6.0981ms 404 
+2019-10-06 10:52:33.948 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/sockjs-node/279/5xcljtv0/websocket  
+2019-10-06 10:52:33.949 +08:00 [INF] CORS policy execution failed.
+2019-10-06 10:52:33.950 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 10:52:33.951 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 10:52:33.952 +08:00 [INF] Request finished in 4.3386ms 404 
+2019-10-06 10:52:35.069 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/sockjs-node/218/xhmxex1w/websocket  
+2019-10-06 10:52:35.070 +08:00 [INF] CORS policy execution failed.
+2019-10-06 10:52:35.072 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 10:52:35.073 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 10:52:35.075 +08:00 [INF] Request finished in 5.5558ms 404 
+2019-10-06 10:52:36.210 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/sockjs-node/106/ztuqt1ym/websocket  
+2019-10-06 10:52:36.211 +08:00 [INF] CORS policy execution failed.
+2019-10-06 10:52:36.213 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 10:52:36.214 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 10:52:36.215 +08:00 [INF] Request finished in 5.1273ms 404 
+2019-10-06 10:52:37.332 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/sockjs-node/966/3bvftg3h/websocket  
+2019-10-06 10:52:37.333 +08:00 [INF] CORS policy execution failed.
+2019-10-06 10:52:37.334 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 10:52:37.335 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 10:52:37.336 +08:00 [INF] Request finished in 4.4295ms 404 
+2019-10-06 10:52:38.422 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/sockjs-node/266/ikopqqfw/websocket  
+2019-10-06 10:52:38.423 +08:00 [INF] CORS policy execution failed.
+2019-10-06 10:52:38.425 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 10:52:38.435 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 10:52:38.436 +08:00 [INF] Request finished in 13.7317ms 404 
+2019-10-06 10:52:39.513 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/sockjs-node/832/sj0pnxky/websocket  
+2019-10-06 10:52:39.514 +08:00 [INF] CORS policy execution failed.
+2019-10-06 10:52:39.515 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 10:52:39.516 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 10:52:39.517 +08:00 [INF] Request finished in 4.2948ms 404 
+2019-10-06 10:52:40.630 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/sockjs-node/789/lmj4eyus/websocket  
+2019-10-06 10:52:40.631 +08:00 [INF] CORS policy execution failed.
+2019-10-06 10:52:40.633 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 10:52:40.634 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 10:52:40.635 +08:00 [INF] Request finished in 4.7334ms 404 
+2019-10-06 10:52:41.694 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/sockjs-node/902/gfvj0glj/websocket  
+2019-10-06 10:52:41.695 +08:00 [INF] CORS policy execution failed.
+2019-10-06 10:52:41.696 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 10:52:41.698 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 10:52:41.698 +08:00 [INF] Request finished in 4.7662ms 404 
+2019-10-06 10:52:42.810 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/sockjs-node/646/wclsuc3g/websocket  
+2019-10-06 10:52:42.811 +08:00 [INF] CORS policy execution failed.
+2019-10-06 10:52:42.813 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 10:52:42.814 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 10:52:42.815 +08:00 [INF] Request finished in 5.0101ms 404 
+2019-10-06 10:52:43.933 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/sockjs-node/950/nwtmbr3y/websocket  
+2019-10-06 10:52:43.934 +08:00 [INF] CORS policy execution failed.
+2019-10-06 10:52:43.936 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 10:52:43.938 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 10:52:43.941 +08:00 [INF] Request finished in 8.188ms 404 
+2019-10-06 10:52:45.076 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/sockjs-node/098/ecaacjsc/websocket  
+2019-10-06 10:52:45.078 +08:00 [INF] CORS policy execution failed.
+2019-10-06 10:52:45.081 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 10:52:45.085 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 10:52:45.088 +08:00 [INF] Request finished in 11.9951ms 404 
+2019-10-06 10:52:46.234 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/sockjs-node/584/g1tjbonf/websocket  
+2019-10-06 10:52:46.235 +08:00 [INF] CORS policy execution failed.
+2019-10-06 10:52:46.236 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 10:52:46.238 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 10:52:46.239 +08:00 [INF] Request finished in 5.2051ms 404 
+2019-10-06 10:52:47.366 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/sockjs-node/815/cqhbctzj/websocket  
+2019-10-06 10:52:47.367 +08:00 [INF] CORS policy execution failed.
+2019-10-06 10:52:47.368 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 10:52:47.369 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 10:52:47.371 +08:00 [INF] Request finished in 5.0901ms 404 
+2019-10-06 10:52:48.490 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/sockjs-node/918/a30egrii/websocket  
+2019-10-06 10:52:48.491 +08:00 [INF] CORS policy execution failed.
+2019-10-06 10:52:48.492 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 10:52:48.493 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 10:52:48.495 +08:00 [INF] Request finished in 4.726ms 404 
+2019-10-06 10:52:49.633 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/sockjs-node/806/gccu3ykp/websocket  
+2019-10-06 10:52:49.635 +08:00 [INF] CORS policy execution failed.
+2019-10-06 10:52:49.636 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 10:52:49.637 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 10:52:49.638 +08:00 [INF] Request finished in 4.7898ms 404 
+2019-10-06 10:52:50.758 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/sockjs-node/646/d3uehu5y/websocket  
+2019-10-06 10:52:50.760 +08:00 [INF] CORS policy execution failed.
+2019-10-06 10:52:50.761 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 10:52:50.762 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 10:52:50.763 +08:00 [INF] Request finished in 4.8142ms 404 
+2019-10-06 10:52:51.926 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/sockjs-node/584/5nm4alyp/websocket  
+2019-10-06 10:52:51.927 +08:00 [INF] CORS policy execution failed.
+2019-10-06 10:52:51.928 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 10:52:51.930 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 10:52:51.931 +08:00 [INF] Request finished in 4.7156ms 404 
+2019-10-06 10:52:53.028 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/sockjs-node/229/ly1gdqmc/websocket  
+2019-10-06 10:52:53.029 +08:00 [INF] CORS policy execution failed.
+2019-10-06 10:52:53.030 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 10:52:53.031 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 10:52:53.032 +08:00 [INF] Request finished in 3.6573ms 404 
+2019-10-06 10:52:54.089 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/sockjs-node/970/ialch31r/websocket  
+2019-10-06 10:52:54.090 +08:00 [INF] CORS policy execution failed.
+2019-10-06 10:52:54.091 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 10:52:54.092 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 10:52:54.093 +08:00 [INF] Request finished in 3.8809ms 404 
+2019-10-06 10:52:55.242 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/sockjs-node/162/2b5frx1r/websocket  
+2019-10-06 10:52:55.243 +08:00 [INF] CORS policy execution failed.
+2019-10-06 10:52:55.243 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 10:52:55.244 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 10:52:55.245 +08:00 [INF] Request finished in 3.4123ms 404 
+2019-10-06 10:52:56.296 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/sockjs-node/338/3rrdpmiu/websocket  
+2019-10-06 10:52:56.297 +08:00 [INF] CORS policy execution failed.
+2019-10-06 10:52:56.298 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 10:52:56.299 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 10:52:56.300 +08:00 [INF] Request finished in 3.5308ms 404 
+2019-10-06 10:52:57.403 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/sockjs-node/689/rjay2xwj/websocket  
+2019-10-06 10:52:57.404 +08:00 [INF] CORS policy execution failed.
+2019-10-06 10:52:57.405 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 10:52:57.406 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 10:52:57.407 +08:00 [INF] Request finished in 4.6216ms 404 
+2019-10-06 10:52:58.506 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/sockjs-node/483/bijauyde/websocket  
+2019-10-06 10:52:58.507 +08:00 [INF] CORS policy execution failed.
+2019-10-06 10:52:58.508 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 10:52:58.510 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 10:52:58.511 +08:00 [INF] Request finished in 5.0586ms 404 
+2019-10-06 10:52:59.595 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/sockjs-node/586/qzqblw5w/websocket  
+2019-10-06 10:52:59.595 +08:00 [INF] CORS policy execution failed.
+2019-10-06 10:52:59.596 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 10:52:59.597 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 10:52:59.599 +08:00 [INF] Request finished in 4.0077ms 404 
+2019-10-06 11:15:02.356 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/posts?ID=12  
+2019-10-06 11:15:02.358 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 11:15:02.360 +08:00 [INF] Request finished in 5.4764ms 404 
+2019-10-06 11:15:33.648 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/posts?ID=12  
+2019-10-06 11:15:33.649 +08:00 [INF] CORS policy execution failed.
+2019-10-06 11:15:33.650 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 11:15:33.651 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 11:15:33.652 +08:00 [INF] Request finished in 4.2964ms 404 
+2019-10-06 11:16:15.555 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/posts/12  
+2019-10-06 11:16:15.556 +08:00 [INF] CORS policy execution failed.
+2019-10-06 11:16:15.557 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 11:16:15.558 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 11:16:15.559 +08:00 [INF] Request finished in 5.0542ms 404 
+2019-10-06 11:16:33.145 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/posts/12  
+2019-10-06 11:16:33.147 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 11:16:33.154 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API)
+2019-10-06 11:16:33.180 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) with arguments (["12",""]) - Validation state: "Valid"
+2019-10-06 11:16:38.150 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-10-06 11:16:44.798 +08:00 [INF] Executed DbCommand (183ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[Author], [e].[Body], [e].[LastModified], [e].[Title]
+FROM [Posts] AS [e]
+WHERE [e].[Id] = @__get_Item_0
+2019-10-06 11:16:44.806 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 11621.601ms.
+2019-10-06 11:16:44.808 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Dynamic.ExpandoObject'.
+2019-10-06 11:16:44.813 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) in 11656.1083ms
+2019-10-06 11:16:44.837 +08:00 [INF] Request finished in 11692.4931ms 200 application/json; charset=utf-8
+2019-10-06 11:16:55.882 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/posts/12  
+2019-10-06 11:16:55.883 +08:00 [INF] CORS policy execution failed.
+2019-10-06 11:16:55.884 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 11:16:55.886 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 11:16:55.887 +08:00 [INF] Request finished in 5.2353ms 404 
+2019-10-06 11:19:10.342 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/posts/12  
+2019-10-06 11:19:10.343 +08:00 [INF] CORS policy execution failed.
+2019-10-06 11:19:10.344 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 11:19:10.345 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 11:19:10.346 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API)
+2019-10-06 11:19:10.349 +08:00 [INF] CORS policy execution failed.
+2019-10-06 11:19:10.350 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 11:19:10.353 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) with arguments (["12",""]) - Validation state: "Valid"
+2019-10-06 11:19:12.962 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-10-06 11:19:12.994 +08:00 [INF] Executed DbCommand (13ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[Author], [e].[Body], [e].[LastModified], [e].[Title]
+FROM [Posts] AS [e]
+WHERE [e].[Id] = @__get_Item_0
+2019-10-06 11:19:12.998 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 2642.9026000000003ms.
+2019-10-06 11:19:13.001 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Dynamic.ExpandoObject'.
+2019-10-06 11:19:13.003 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) in 2656.012ms
+2019-10-06 11:19:13.016 +08:00 [INF] Request finished in 2673.7652ms 200 application/json; charset=utf-8
+2019-10-06 15:14:09.096 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/Posts/get  
+2019-10-06 15:14:09.115 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 15:14:09.130 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API)
+2019-10-06 15:14:09.222 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) with arguments (["0",""]) - Validation state: "Invalid"
+2019-10-06 15:14:14.166 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-10-06 15:14:19.448 +08:00 [INF] Executed DbCommand (9ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[Author], [e].[Body], [e].[LastModified], [e].[Title]
+FROM [Posts] AS [e]
+WHERE [e].[Id] = @__get_Item_0
+2019-10-06 15:14:19.467 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.NotFoundResult in 10241.203300000001ms.
+2019-10-06 15:14:19.498 +08:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 404
+2019-10-06 15:14:19.503 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) in 10371.2726ms
+2019-10-06 15:14:19.507 +08:00 [INF] Request finished in 10420.9402ms 404 
+2019-10-06 15:16:22.348 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/Posts?pageindex=6&pagesize=5  
+2019-10-06 15:16:22.350 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 15:16:22.420 +08:00 [INF] Route matched with {action = "GetHateoas", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.GetHateoas (MyWebAPI.API)
+2019-10-06 15:16:22.461 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.GetHateoas (MyWebAPI.API) with arguments (["MyWebAPI.Core.EntityParameters.PostParameter"]) - Validation state: "Valid"
+2019-10-06 15:16:25.522 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-10-06 15:16:25.619 +08:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Posts] AS [p]
+2019-10-06 15:16:25.660 +08:00 [WRN] Query: '(from Post <generated>_2 in DbSet<Post> select [<generated>_2]).Skip(__p_0).Take(__p_1)' uses a row limiting operation (Skip/Take) without OrderBy which may lead to unpredictable results.
+2019-10-06 15:16:25.678 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Author], [p].[Body], [p].[LastModified], [p].[Title]
+FROM [Posts] AS [p]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2019-10-06 15:16:25.746 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.GetHateoas (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 3283.0881ms.
+2019-10-06 15:16:25.750 +08:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Collections.Generic.IEnumerable`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IEnumerable`1[[MyWebAPI.Infrastructure.Resources.LinkResource, MyWebAPI.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2019-10-06 15:16:25.761 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.GetHateoas (MyWebAPI.API) in 3339.3700000000003ms
+2019-10-06 15:16:25.762 +08:00 [INF] Request finished in 3414.1428ms 200 application/vnd.sen.hateoas+json; charset=utf-8
+2019-10-06 15:25:00.704 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/posts/12  
+2019-10-06 15:25:00.706 +08:00 [INF] CORS policy execution failed.
+2019-10-06 15:25:00.707 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 15:25:00.710 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 15:25:00.712 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API)
+2019-10-06 15:25:00.715 +08:00 [INF] CORS policy execution failed.
+2019-10-06 15:25:00.716 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 15:25:00.719 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) with arguments (["12",""]) - Validation state: "Valid"
+2019-10-06 15:25:08.177 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-10-06 15:25:11.971 +08:00 [INF] Executed DbCommand (7ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[Author], [e].[Body], [e].[LastModified], [e].[Title]
+FROM [Posts] AS [e]
+WHERE [e].[Id] = @__get_Item_0
+2019-10-06 15:25:11.980 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 11258.138200000001ms.
+2019-10-06 15:25:11.982 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Dynamic.ExpandoObject'.
+2019-10-06 15:25:11.983 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) in 11268.6968ms
+2019-10-06 15:25:11.985 +08:00 [INF] Request finished in 11281.8202ms 200 application/json; charset=utf-8
+2019-10-06 15:25:30.212 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/posts/12  
+2019-10-06 15:25:30.213 +08:00 [INF] CORS policy execution failed.
+2019-10-06 15:25:30.214 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 15:25:30.215 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 15:25:30.217 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API)
+2019-10-06 15:25:30.218 +08:00 [INF] CORS policy execution failed.
+2019-10-06 15:25:30.220 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 15:25:30.222 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) with arguments (["12",""]) - Validation state: "Valid"
+2019-10-06 15:25:30.224 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-10-06 15:25:30.230 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[Author], [e].[Body], [e].[LastModified], [e].[Title]
+FROM [Posts] AS [e]
+WHERE [e].[Id] = @__get_Item_0
+2019-10-06 15:25:30.234 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 9.8022000000000009ms.
+2019-10-06 15:25:30.236 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Dynamic.ExpandoObject'.
+2019-10-06 15:25:30.237 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) in 19.0093ms
+2019-10-06 15:25:30.239 +08:00 [INF] Request finished in 26.6394ms 200 application/json; charset=utf-8
+2019-10-06 15:26:07.461 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/Posts?pageindex=6&pagesize=5  
+2019-10-06 15:26:07.478 +08:00 [INF] CORS policy execution failed.
+2019-10-06 15:26:07.480 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 15:26:07.482 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 15:26:07.483 +08:00 [INF] Request finished in 22.2327ms 404 
+2019-10-06 15:26:35.974 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/Posts?pageindex=6&pagesize=5  
+2019-10-06 15:26:35.975 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 15:26:35.976 +08:00 [INF] Request finished in 2.3247ms 404 
+2019-10-06 15:28:26.119 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/Posts?pageindex=6&pagesize=5  
+2019-10-06 15:28:26.119 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 15:28:26.120 +08:00 [INF] Request finished in 1.9299ms 404 
+2019-10-06 15:29:34.375 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/Posts?pageindex=6&pagesize=5  
+2019-10-06 15:29:34.376 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 15:29:34.379 +08:00 [INF] Request finished in 3.4218ms 404 
+2019-10-06 15:30:09.027 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/Posts?pageindex=6&pagesize=5  
+2019-10-06 15:30:09.028 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 15:30:09.045 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API)
+2019-10-06 15:30:09.049 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) with arguments (["MyWebAPI.Core.EntityParameters.PostParameter"]) - Validation state: "Valid"
+2019-10-06 15:30:12.110 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-10-06 15:30:12.171 +08:00 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Posts] AS [p]
+2019-10-06 15:30:12.187 +08:00 [INF] Executed DbCommand (11ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Author], [p].[Body], [p].[LastModified], [p].[Title]
+FROM [Posts] AS [p]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2019-10-06 15:30:12.198 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 3147.1146000000003ms.
+2019-10-06 15:30:12.201 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2019-10-06 15:30:12.202 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) in 3154.7072000000003ms
+2019-10-06 15:30:12.203 +08:00 [INF] Request finished in 3179.0617ms 200 application/json; charset=utf-8
+2019-10-06 15:30:27.228 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/Posts?pageindex=6&pagesize=5 application/json 
+2019-10-06 15:30:27.230 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 15:30:27.231 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API)
+2019-10-06 15:30:27.235 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) with arguments (["MyWebAPI.Core.EntityParameters.PostParameter"]) - Validation state: "Valid"
+2019-10-06 15:30:30.303 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-10-06 15:30:30.308 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Posts] AS [p]
+2019-10-06 15:30:30.312 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Author], [p].[Body], [p].[LastModified], [p].[Title]
+FROM [Posts] AS [p]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2019-10-06 15:30:30.324 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 3087.1835ms.
+2019-10-06 15:30:30.326 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2019-10-06 15:30:30.327 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) in 3094.7216000000003ms
+2019-10-06 15:30:30.328 +08:00 [INF] Request finished in 3099.6377ms 200 application/json; charset=utf-8
+2019-10-06 15:30:37.978 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/Posts?pageindex=6&pagesize=1 application/json 
+2019-10-06 15:30:37.980 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 15:30:37.981 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API)
+2019-10-06 15:30:37.983 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) with arguments (["MyWebAPI.Core.EntityParameters.PostParameter"]) - Validation state: "Valid"
+2019-10-06 15:30:37.985 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-10-06 15:30:37.989 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Posts] AS [p]
+2019-10-06 15:30:37.993 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Author], [p].[Body], [p].[LastModified], [p].[Title]
+FROM [Posts] AS [p]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2019-10-06 15:30:37.995 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 10.59ms.
+2019-10-06 15:30:37.997 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2019-10-06 15:30:37.999 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) in 16.8636ms
+2019-10-06 15:30:38.001 +08:00 [INF] Request finished in 22.1584ms 200 application/json; charset=utf-8
+2019-10-06 15:30:44.076 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/Posts?pageindex=6&pagesize=10 application/json 
+2019-10-06 15:30:44.077 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 15:30:44.078 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API)
+2019-10-06 15:30:44.080 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) with arguments (["MyWebAPI.Core.EntityParameters.PostParameter"]) - Validation state: "Valid"
+2019-10-06 15:30:44.082 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-10-06 15:30:44.086 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Posts] AS [p]
+2019-10-06 15:30:44.090 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Author], [p].[Body], [p].[LastModified], [p].[Title]
+FROM [Posts] AS [p]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2019-10-06 15:30:44.094 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 11.846300000000001ms.
+2019-10-06 15:30:44.096 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2019-10-06 15:30:44.099 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) in 19.5313ms
+2019-10-06 15:30:44.100 +08:00 [INF] Request finished in 24.7465ms 200 application/json; charset=utf-8
+2019-10-06 15:30:52.988 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/Posts?pageindex=1&pagesize=10 application/json 
+2019-10-06 15:30:52.990 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 15:30:52.992 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API)
+2019-10-06 15:30:52.994 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) with arguments (["MyWebAPI.Core.EntityParameters.PostParameter"]) - Validation state: "Valid"
+2019-10-06 15:30:52.997 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-10-06 15:30:53.001 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Posts] AS [p]
+2019-10-06 15:30:53.007 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Author], [p].[Body], [p].[LastModified], [p].[Title]
+FROM [Posts] AS [p]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2019-10-06 15:30:53.011 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 14.2133ms.
+2019-10-06 15:30:53.013 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2019-10-06 15:30:53.016 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) in 22.0881ms
+2019-10-06 15:30:53.018 +08:00 [INF] Request finished in 29.9867ms 200 application/json; charset=utf-8
+2019-10-06 15:31:38.247 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/Posts?pageindex=6&pagesize=5  
+2019-10-06 15:31:38.248 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 15:31:38.250 +08:00 [INF] Request finished in 2.3629ms 404 
+2019-10-06 15:32:58.428 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/Posts?pageindex=6&pagesize=5 application/json 
+2019-10-06 15:32:58.433 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 15:32:58.434 +08:00 [INF] Request finished in 5.4586ms 404 
+2019-10-06 15:33:52.663 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/Posts?pageindex=6&pagesize=5 application/json 
+2019-10-06 15:33:52.670 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 15:33:52.674 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API)
+2019-10-06 15:33:52.676 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) with arguments (["MyWebAPI.Core.EntityParameters.PostParameter"]) - Validation state: "Valid"
+2019-10-06 15:33:52.678 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-10-06 15:33:52.681 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Posts] AS [p]
+2019-10-06 15:33:52.686 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Author], [p].[Body], [p].[LastModified], [p].[Title]
+FROM [Posts] AS [p]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2019-10-06 15:33:52.689 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 11.348700000000001ms.
+2019-10-06 15:33:52.691 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2019-10-06 15:33:52.693 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) in 17.8212ms
+2019-10-06 15:33:52.694 +08:00 [INF] Request finished in 31.523ms 200 application/json; charset=utf-8
+2019-10-06 15:34:35.330 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/Posts?pageindex=6&pagesize=5 application/json 
+2019-10-06 15:34:35.333 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 15:34:35.334 +08:00 [INF] Request finished in 5.4626ms 404 
+2019-10-06 15:45:51.603 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/Posts?pageindex=6&pagesize=5  
+2019-10-06 15:45:51.606 +08:00 [INF] CORS policy execution failed.
+2019-10-06 15:45:51.607 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 15:45:51.609 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 15:45:51.611 +08:00 [INF] Request finished in 8.1949ms 404 
+2019-10-06 15:47:35.712 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/Posts?pageindex=6&pagesize=5 application/json 
+2019-10-06 15:47:35.716 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 15:47:35.717 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API)
+2019-10-06 15:47:35.722 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) with arguments (["MyWebAPI.Core.EntityParameters.PostParameter"]) - Validation state: "Valid"
+2019-10-06 15:47:35.727 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-10-06 15:47:39.527 +08:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Posts] AS [p]
+2019-10-06 15:47:39.546 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Author], [p].[Body], [p].[LastModified], [p].[Title]
+FROM [Posts] AS [p]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2019-10-06 15:47:39.552 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 3827.994ms.
+2019-10-06 15:47:39.554 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2019-10-06 15:47:39.556 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) in 3837.0851000000002ms
+2019-10-06 15:47:39.557 +08:00 [INF] Request finished in 3845.9449ms 200 application/json; charset=utf-8
+2019-10-06 15:48:03.899 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/Posts?pageindex=6&pagesize=5  
+2019-10-06 15:48:03.900 +08:00 [INF] CORS policy execution failed.
+2019-10-06 15:48:03.902 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 15:48:03.903 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 15:48:03.906 +08:00 [INF] Request finished in 6.3505ms 404 
+2019-10-06 15:48:51.030 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/Posts?pageindex=6&pagesize=5  
+2019-10-06 15:48:51.031 +08:00 [INF] CORS policy execution failed.
+2019-10-06 15:48:51.033 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 15:48:51.034 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 15:48:51.036 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API)
+2019-10-06 15:48:51.037 +08:00 [INF] CORS policy execution failed.
+2019-10-06 15:48:51.038 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 15:48:51.040 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) with arguments (["MyWebAPI.Core.EntityParameters.PostParameter"]) - Validation state: "Valid"
+2019-10-06 15:48:51.044 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-10-06 15:48:51.048 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Posts] AS [p]
+2019-10-06 15:48:51.055 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Author], [p].[Body], [p].[LastModified], [p].[Title]
+FROM [Posts] AS [p]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2019-10-06 15:48:51.058 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 14.020900000000001ms.
+2019-10-06 15:48:51.059 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2019-10-06 15:48:51.061 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) in 23.718400000000003ms
+2019-10-06 15:48:51.062 +08:00 [INF] Request finished in 31.9223ms 200 application/json; charset=utf-8
+2019-10-06 15:49:17.859 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/Posts?pageindex=6&pagesize=5  
+2019-10-06 15:49:17.861 +08:00 [INF] CORS policy execution failed.
+2019-10-06 15:49:17.862 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 15:49:17.863 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 15:49:17.864 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API)
+2019-10-06 15:49:17.866 +08:00 [INF] CORS policy execution failed.
+2019-10-06 15:49:17.867 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 15:49:17.868 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) with arguments (["MyWebAPI.Core.EntityParameters.PostParameter"]) - Validation state: "Valid"
+2019-10-06 15:49:17.871 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-10-06 15:49:17.875 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Posts] AS [p]
+2019-10-06 15:49:17.891 +08:00 [INF] Executed DbCommand (3ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Author], [p].[Body], [p].[LastModified], [p].[Title]
+FROM [Posts] AS [p]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2019-10-06 15:49:17.895 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 24.7698ms.
+2019-10-06 15:49:17.898 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2019-10-06 15:49:17.900 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) in 33.9132ms
+2019-10-06 15:49:17.901 +08:00 [INF] Request finished in 42.1372ms 200 application/json; charset=utf-8
+2019-10-06 15:50:43.150 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/Posts?pageindex=6&pagesize=5  
+2019-10-06 15:50:43.159 +08:00 [INF] CORS policy execution failed.
+2019-10-06 15:50:43.160 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 15:50:43.161 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 15:50:43.163 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API)
+2019-10-06 15:50:43.164 +08:00 [INF] CORS policy execution failed.
+2019-10-06 15:50:43.165 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 15:50:43.166 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) with arguments (["MyWebAPI.Core.EntityParameters.PostParameter"]) - Validation state: "Valid"
+2019-10-06 15:50:43.168 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-10-06 15:50:43.172 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Posts] AS [p]
+2019-10-06 15:50:43.177 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Author], [p].[Body], [p].[LastModified], [p].[Title]
+FROM [Posts] AS [p]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2019-10-06 15:50:43.180 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 11.994800000000001ms.
+2019-10-06 15:50:43.182 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2019-10-06 15:50:43.185 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) in 20.6961ms
+2019-10-06 15:50:43.186 +08:00 [INF] Request finished in 35.7085ms 200 application/json; charset=utf-8
+2019-10-06 15:50:48.609 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/Posts?pageindex=6&pagesize=5  
+2019-10-06 15:50:48.610 +08:00 [INF] CORS policy execution failed.
+2019-10-06 15:50:48.611 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 15:50:48.613 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 15:50:48.614 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API)
+2019-10-06 15:50:48.616 +08:00 [INF] CORS policy execution failed.
+2019-10-06 15:50:48.617 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 15:50:48.620 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) with arguments (["MyWebAPI.Core.EntityParameters.PostParameter"]) - Validation state: "Valid"
+2019-10-06 15:50:48.622 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-10-06 15:50:48.626 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Posts] AS [p]
+2019-10-06 15:50:48.634 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Author], [p].[Body], [p].[LastModified], [p].[Title]
+FROM [Posts] AS [p]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2019-10-06 15:50:48.638 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 16.7833ms.
+2019-10-06 15:50:48.640 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2019-10-06 15:50:48.642 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) in 26.623ms
+2019-10-06 15:50:48.644 +08:00 [INF] Request finished in 34.843ms 200 application/json; charset=utf-8
+2019-10-06 15:51:32.382 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/Posts?pageindex=6&pagesize=5  
+2019-10-06 15:51:32.385 +08:00 [INF] CORS policy execution failed.
+2019-10-06 15:51:32.386 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 15:51:32.388 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 15:51:32.389 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API)
+2019-10-06 15:51:32.392 +08:00 [INF] CORS policy execution failed.
+2019-10-06 15:51:32.392 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 15:51:32.394 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) with arguments (["MyWebAPI.Core.EntityParameters.PostParameter"]) - Validation state: "Valid"
+2019-10-06 15:51:32.396 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-10-06 15:51:32.400 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Posts] AS [p]
+2019-10-06 15:51:32.403 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Author], [p].[Body], [p].[LastModified], [p].[Title]
+FROM [Posts] AS [p]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2019-10-06 15:51:32.408 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 12.0555ms.
+2019-10-06 15:51:32.411 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2019-10-06 15:51:32.416 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) in 24.602700000000002ms
+2019-10-06 15:51:32.417 +08:00 [INF] Request finished in 35.9559ms 200 application/json; charset=utf-8
+2019-10-06 15:51:35.586 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/Posts?pageindex=6&pagesize=5  
+2019-10-06 15:51:35.587 +08:00 [INF] CORS policy execution failed.
+2019-10-06 15:51:35.588 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 15:51:35.589 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 15:51:35.590 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API)
+2019-10-06 15:51:35.591 +08:00 [INF] CORS policy execution failed.
+2019-10-06 15:51:35.592 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 15:51:35.593 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) with arguments (["MyWebAPI.Core.EntityParameters.PostParameter"]) - Validation state: "Valid"
+2019-10-06 15:51:35.596 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-10-06 15:51:35.599 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Posts] AS [p]
+2019-10-06 15:51:35.604 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Author], [p].[Body], [p].[LastModified], [p].[Title]
+FROM [Posts] AS [p]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2019-10-06 15:51:35.609 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 12.753400000000001ms.
+2019-10-06 15:51:35.611 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2019-10-06 15:51:35.613 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) in 21.923000000000002ms
+2019-10-06 15:51:35.615 +08:00 [INF] Request finished in 28.895ms 200 application/json; charset=utf-8
+2019-10-06 15:51:55.394 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/Posts?pageindex=6&pagesize=5  
+2019-10-06 15:51:55.395 +08:00 [INF] CORS policy execution failed.
+2019-10-06 15:51:55.397 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 15:51:55.398 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 15:51:55.400 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API)
+2019-10-06 15:51:55.402 +08:00 [INF] CORS policy execution failed.
+2019-10-06 15:51:55.403 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 15:51:55.405 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) with arguments (["MyWebAPI.Core.EntityParameters.PostParameter"]) - Validation state: "Valid"
+2019-10-06 15:51:55.408 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-10-06 15:51:55.412 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Posts] AS [p]
+2019-10-06 15:51:55.417 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Author], [p].[Body], [p].[LastModified], [p].[Title]
+FROM [Posts] AS [p]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2019-10-06 15:51:55.421 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 13.927100000000001ms.
+2019-10-06 15:51:55.424 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2019-10-06 15:51:55.428 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) in 25.561ms
+2019-10-06 15:51:55.429 +08:00 [INF] Request finished in 35.047ms 200 application/json; charset=utf-8
+2019-10-06 15:52:01.469 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/Posts?pageindex=6&pagesize=5  
+2019-10-06 15:52:01.470 +08:00 [INF] CORS policy execution failed.
+2019-10-06 15:52:01.472 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 15:52:01.473 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 15:52:01.474 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API)
+2019-10-06 15:52:01.476 +08:00 [INF] CORS policy execution failed.
+2019-10-06 15:52:01.477 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 15:52:01.480 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) with arguments (["MyWebAPI.Core.EntityParameters.PostParameter"]) - Validation state: "Valid"
+2019-10-06 15:52:01.482 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-10-06 15:52:01.485 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Posts] AS [p]
+2019-10-06 15:52:01.490 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Author], [p].[Body], [p].[LastModified], [p].[Title]
+FROM [Posts] AS [p]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2019-10-06 15:52:01.494 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 12.729600000000001ms.
+2019-10-06 15:52:01.496 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2019-10-06 15:52:01.498 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) in 21.5595ms
+2019-10-06 15:52:01.499 +08:00 [INF] Request finished in 29.9398ms 200 application/json; charset=utf-8
+2019-10-06 15:53:21.718 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/Posts?pageindex=6&pagesize=5  
+2019-10-06 15:53:21.720 +08:00 [INF] CORS policy execution failed.
+2019-10-06 15:53:21.722 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 15:53:21.723 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 15:53:21.725 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API)
+2019-10-06 15:53:21.727 +08:00 [INF] CORS policy execution failed.
+2019-10-06 15:53:21.728 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 15:53:21.730 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) with arguments (["MyWebAPI.Core.EntityParameters.PostParameter"]) - Validation state: "Valid"
+2019-10-06 15:53:21.734 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-10-06 15:53:21.738 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Posts] AS [p]
+2019-10-06 15:53:21.743 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Author], [p].[Body], [p].[LastModified], [p].[Title]
+FROM [Posts] AS [p]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2019-10-06 15:53:21.746 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 13.8908ms.
+2019-10-06 15:53:21.748 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2019-10-06 15:53:21.751 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) in 24.000300000000003ms
+2019-10-06 15:53:21.753 +08:00 [INF] Request finished in 34.7313ms 200 application/json; charset=utf-8
+2019-10-06 15:54:22.526 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/Posts?pageindex=6&pagesize=5  
+2019-10-06 15:54:22.527 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 15:54:22.529 +08:00 [INF] Request finished in 2.6916ms 404 
+2019-10-06 15:54:22.571 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/favicon.ico  
+2019-10-06 15:54:22.572 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 15:54:22.579 +08:00 [INF] Request finished in 8.0534ms 404 
+2019-10-06 15:55:26.362 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/Posts?pageindex=6&pagesize=5  
+2019-10-06 15:55:26.363 +08:00 [INF] CORS policy execution failed.
+2019-10-06 15:55:26.364 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 15:55:26.366 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 15:55:26.367 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API)
+2019-10-06 15:55:26.369 +08:00 [INF] CORS policy execution failed.
+2019-10-06 15:55:26.370 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 15:55:26.372 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) with arguments (["MyWebAPI.Core.EntityParameters.PostParameter"]) - Validation state: "Valid"
+2019-10-06 15:55:26.375 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-10-06 15:55:26.380 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Posts] AS [p]
+2019-10-06 15:55:26.389 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Author], [p].[Body], [p].[LastModified], [p].[Title]
+FROM [Posts] AS [p]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2019-10-06 15:55:26.393 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 18.4958ms.
+2019-10-06 15:55:26.395 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2019-10-06 15:55:26.398 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) in 28.6275ms
+2019-10-06 15:55:26.399 +08:00 [INF] Request finished in 37.3913ms 200 application/json; charset=utf-8
+2019-10-06 15:58:20.302 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/Posts?pageindex=6&pagesize=5  
+2019-10-06 15:58:20.303 +08:00 [INF] CORS policy execution failed.
+2019-10-06 15:58:20.304 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 15:58:20.305 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 15:58:20.306 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API)
+2019-10-06 15:58:20.307 +08:00 [INF] CORS policy execution failed.
+2019-10-06 15:58:20.308 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 15:58:20.309 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) with arguments (["MyWebAPI.Core.EntityParameters.PostParameter"]) - Validation state: "Valid"
+2019-10-06 15:58:20.312 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-10-06 15:58:20.316 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Posts] AS [p]
+2019-10-06 15:58:20.321 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Author], [p].[Body], [p].[LastModified], [p].[Title]
+FROM [Posts] AS [p]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2019-10-06 15:58:20.324 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 12.799100000000001ms.
+2019-10-06 15:58:20.327 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2019-10-06 15:58:20.328 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) in 20.8977ms
+2019-10-06 15:58:20.330 +08:00 [INF] Request finished in 28.0246ms 200 application/json; charset=utf-8
+2019-10-06 15:59:05.215 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/Posts?pageindex=6&pagesize=5  
+2019-10-06 15:59:05.219 +08:00 [INF] CORS policy execution failed.
+2019-10-06 15:59:05.221 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 15:59:05.223 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 15:59:05.225 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API)
+2019-10-06 15:59:05.226 +08:00 [INF] CORS policy execution failed.
+2019-10-06 15:59:05.227 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 15:59:05.229 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) with arguments (["MyWebAPI.Core.EntityParameters.PostParameter"]) - Validation state: "Valid"
+2019-10-06 15:59:05.231 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-10-06 15:59:05.235 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Posts] AS [p]
+2019-10-06 15:59:05.239 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Author], [p].[Body], [p].[LastModified], [p].[Title]
+FROM [Posts] AS [p]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2019-10-06 15:59:05.242 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 11.3163ms.
+2019-10-06 15:59:05.244 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2019-10-06 15:59:05.245 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) in 19.5945ms
+2019-10-06 15:59:05.251 +08:00 [INF] Request finished in 35.4794ms 200 application/json; charset=utf-8
+2019-10-06 15:59:12.057 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/Posts?pageindex=6&pagesize=5  
+2019-10-06 15:59:12.058 +08:00 [INF] CORS policy execution failed.
+2019-10-06 15:59:12.058 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 15:59:12.059 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 15:59:12.061 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API)
+2019-10-06 15:59:12.063 +08:00 [INF] CORS policy execution failed.
+2019-10-06 15:59:12.064 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 15:59:12.067 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) with arguments (["MyWebAPI.Core.EntityParameters.PostParameter"]) - Validation state: "Valid"
+2019-10-06 15:59:12.069 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-10-06 15:59:12.074 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Posts] AS [p]
+2019-10-06 15:59:12.080 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Author], [p].[Body], [p].[LastModified], [p].[Title]
+FROM [Posts] AS [p]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2019-10-06 15:59:12.084 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 14.8436ms.
+2019-10-06 15:59:12.085 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2019-10-06 15:59:12.087 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) in 23.7602ms
+2019-10-06 15:59:12.088 +08:00 [INF] Request finished in 31.4045ms 200 application/json; charset=utf-8
+2019-10-06 15:59:30.724 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/Posts?pageindex=6&pagesize=5  
+2019-10-06 15:59:30.726 +08:00 [INF] CORS policy execution failed.
+2019-10-06 15:59:30.727 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 15:59:30.729 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 15:59:30.731 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API)
+2019-10-06 15:59:30.732 +08:00 [INF] CORS policy execution failed.
+2019-10-06 15:59:30.734 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 15:59:30.735 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) with arguments (["MyWebAPI.Core.EntityParameters.PostParameter"]) - Validation state: "Valid"
+2019-10-06 15:59:30.738 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-10-06 15:59:30.742 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Posts] AS [p]
+2019-10-06 15:59:30.753 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Author], [p].[Body], [p].[LastModified], [p].[Title]
+FROM [Posts] AS [p]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2019-10-06 15:59:30.756 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 18.575400000000002ms.
+2019-10-06 15:59:30.758 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2019-10-06 15:59:30.761 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) in 28.665100000000002ms
+2019-10-06 15:59:30.763 +08:00 [INF] Request finished in 39.0935ms 200 application/json; charset=utf-8
+2019-10-06 16:00:00.263 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/Posts?pageindex=1&pagesize=5  
+2019-10-06 16:00:00.265 +08:00 [INF] CORS policy execution failed.
+2019-10-06 16:00:00.266 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 16:00:00.267 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 16:00:00.269 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API)
+2019-10-06 16:00:00.271 +08:00 [INF] CORS policy execution failed.
+2019-10-06 16:00:00.271 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 16:00:00.273 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) with arguments (["MyWebAPI.Core.EntityParameters.PostParameter"]) - Validation state: "Valid"
+2019-10-06 16:00:00.276 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-10-06 16:00:00.281 +08:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Posts] AS [p]
+2019-10-06 16:00:00.288 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Author], [p].[Body], [p].[LastModified], [p].[Title]
+FROM [Posts] AS [p]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2019-10-06 16:00:00.293 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 17.088ms.
+2019-10-06 16:00:00.294 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2019-10-06 16:00:00.297 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) in 26.065800000000003ms
+2019-10-06 16:00:00.298 +08:00 [INF] Request finished in 34.9049ms 200 application/json; charset=utf-8
+2019-10-06 16:00:02.285 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/Posts?pageindex=1&pagesize=5  
+2019-10-06 16:00:02.286 +08:00 [INF] CORS policy execution failed.
+2019-10-06 16:00:02.287 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 16:00:02.288 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 16:00:02.289 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API)
+2019-10-06 16:00:02.292 +08:00 [INF] CORS policy execution failed.
+2019-10-06 16:00:02.294 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 16:00:02.295 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) with arguments (["MyWebAPI.Core.EntityParameters.PostParameter"]) - Validation state: "Valid"
+2019-10-06 16:00:02.298 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-10-06 16:00:02.302 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Posts] AS [p]
+2019-10-06 16:00:02.305 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Author], [p].[Body], [p].[LastModified], [p].[Title]
+FROM [Posts] AS [p]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2019-10-06 16:00:02.309 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 11.001000000000001ms.
+2019-10-06 16:00:02.311 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2019-10-06 16:00:02.313 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) in 20.3611ms
+2019-10-06 16:00:02.314 +08:00 [INF] Request finished in 28.8114ms 200 application/json; charset=utf-8
+2019-10-06 16:00:10.370 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/Posts?pageindex=1&pagesize=5  
+2019-10-06 16:00:10.371 +08:00 [INF] CORS policy execution failed.
+2019-10-06 16:00:10.372 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 16:00:10.373 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 16:00:10.374 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API)
+2019-10-06 16:00:10.376 +08:00 [INF] CORS policy execution failed.
+2019-10-06 16:00:10.377 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 16:00:10.380 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) with arguments (["MyWebAPI.Core.EntityParameters.PostParameter"]) - Validation state: "Valid"
+2019-10-06 16:00:10.382 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-10-06 16:00:10.394 +08:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Posts] AS [p]
+2019-10-06 16:00:10.398 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Author], [p].[Body], [p].[LastModified], [p].[Title]
+FROM [Posts] AS [p]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2019-10-06 16:00:10.402 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 19.9663ms.
+2019-10-06 16:00:10.404 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2019-10-06 16:00:10.406 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) in 30.033800000000003ms
+2019-10-06 16:00:10.408 +08:00 [INF] Request finished in 38.7722ms 200 application/json; charset=utf-8
+2019-10-06 16:03:47.215 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/Posts?pageindex=6&pagesize=5  
+2019-10-06 16:03:47.216 +08:00 [INF] CORS policy execution failed.
+2019-10-06 16:03:47.217 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 16:03:47.220 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 16:03:47.221 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API)
+2019-10-06 16:03:47.223 +08:00 [INF] CORS policy execution failed.
+2019-10-06 16:03:47.225 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 16:03:47.227 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) with arguments (["MyWebAPI.Core.EntityParameters.PostParameter"]) - Validation state: "Valid"
+2019-10-06 16:03:47.230 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-10-06 16:03:47.234 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Posts] AS [p]
+2019-10-06 16:03:47.240 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Author], [p].[Body], [p].[LastModified], [p].[Title]
+FROM [Posts] AS [p]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2019-10-06 16:03:47.246 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 16.834400000000002ms.
+2019-10-06 16:03:47.248 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2019-10-06 16:03:47.250 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) in 27.0818ms
+2019-10-06 16:03:47.252 +08:00 [INF] Request finished in 36.8873ms 200 application/json; charset=utf-8
+2019-10-06 16:03:50.337 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/Posts?pageindex=6&pagesize=5  
+2019-10-06 16:03:50.338 +08:00 [INF] CORS policy execution failed.
+2019-10-06 16:03:50.339 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 16:03:50.340 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 16:03:50.342 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API)
+2019-10-06 16:03:50.344 +08:00 [INF] CORS policy execution failed.
+2019-10-06 16:03:50.347 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 16:03:50.348 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) with arguments (["MyWebAPI.Core.EntityParameters.PostParameter"]) - Validation state: "Valid"
+2019-10-06 16:03:50.350 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-10-06 16:03:50.354 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Posts] AS [p]
+2019-10-06 16:03:50.359 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Author], [p].[Body], [p].[LastModified], [p].[Title]
+FROM [Posts] AS [p]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2019-10-06 16:03:50.363 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 12.6035ms.
+2019-10-06 16:03:50.365 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2019-10-06 16:03:50.366 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) in 22.0466ms
+2019-10-06 16:03:50.367 +08:00 [INF] Request finished in 30.4507ms 200 application/json; charset=utf-8
+2019-10-06 16:07:40.987 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/Posts?pageindex=6&pagesize=5  
+2019-10-06 16:07:40.988 +08:00 [INF] CORS policy execution failed.
+2019-10-06 16:07:40.989 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 16:07:40.990 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 16:07:40.992 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API)
+2019-10-06 16:07:40.994 +08:00 [INF] CORS policy execution failed.
+2019-10-06 16:07:40.995 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 16:07:40.998 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) with arguments (["MyWebAPI.Core.EntityParameters.PostParameter"]) - Validation state: "Valid"
+2019-10-06 16:07:41.000 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-10-06 16:07:41.640 +08:00 [INF] Executed DbCommand (260ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Posts] AS [p]
+2019-10-06 16:07:41.645 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Author], [p].[Body], [p].[LastModified], [p].[Title]
+FROM [Posts] AS [p]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2019-10-06 16:07:41.648 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 648.8966ms.
+2019-10-06 16:07:41.650 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2019-10-06 16:07:41.652 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) in 658.18410000000006ms
+2019-10-06 16:07:41.653 +08:00 [INF] Request finished in 666.4908ms 200 application/json; charset=utf-8
+2019-10-06 16:07:47.769 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/Posts?pageindex=6&pagesize=5  
+2019-10-06 16:07:47.771 +08:00 [INF] CORS policy execution failed.
+2019-10-06 16:07:47.772 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 16:07:47.773 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 16:07:47.774 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API)
+2019-10-06 16:07:47.775 +08:00 [INF] CORS policy execution failed.
+2019-10-06 16:07:47.776 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 16:07:47.779 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) with arguments (["MyWebAPI.Core.EntityParameters.PostParameter"]) - Validation state: "Valid"
+2019-10-06 16:07:47.782 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-10-06 16:07:47.786 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Posts] AS [p]
+2019-10-06 16:07:47.792 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Author], [p].[Body], [p].[LastModified], [p].[Title]
+FROM [Posts] AS [p]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2019-10-06 16:07:47.796 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 14.9108ms.
+2019-10-06 16:07:47.799 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2019-10-06 16:07:47.801 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) in 25.1831ms
+2019-10-06 16:07:47.802 +08:00 [INF] Request finished in 33.328ms 200 application/json; charset=utf-8
+2019-10-06 16:08:16.232 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/Posts?pageindex=1&pagesize=5  
+2019-10-06 16:08:16.234 +08:00 [INF] CORS policy execution failed.
+2019-10-06 16:08:16.235 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 16:08:16.236 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 16:08:16.238 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API)
+2019-10-06 16:08:16.239 +08:00 [INF] CORS policy execution failed.
+2019-10-06 16:08:16.240 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 16:08:16.243 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) with arguments (["MyWebAPI.Core.EntityParameters.PostParameter"]) - Validation state: "Valid"
+2019-10-06 16:08:16.245 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-10-06 16:08:16.249 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Posts] AS [p]
+2019-10-06 16:08:16.255 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Author], [p].[Body], [p].[LastModified], [p].[Title]
+FROM [Posts] AS [p]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2019-10-06 16:08:16.258 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 13.2797ms.
+2019-10-06 16:08:16.261 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2019-10-06 16:08:16.263 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) in 23.7128ms
+2019-10-06 16:08:16.265 +08:00 [INF] Request finished in 32.5299ms 200 application/json; charset=utf-8
+2019-10-06 16:08:24.201 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/Posts?pageindex=1&pagesize=5  
+2019-10-06 16:08:24.202 +08:00 [INF] CORS policy execution failed.
+2019-10-06 16:08:24.203 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 16:08:24.204 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 16:08:24.205 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API)
+2019-10-06 16:08:24.207 +08:00 [INF] CORS policy execution failed.
+2019-10-06 16:08:24.207 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 16:08:24.210 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) with arguments (["MyWebAPI.Core.EntityParameters.PostParameter"]) - Validation state: "Valid"
+2019-10-06 16:08:24.212 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-10-06 16:08:24.216 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Posts] AS [p]
+2019-10-06 16:08:24.222 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Author], [p].[Body], [p].[LastModified], [p].[Title]
+FROM [Posts] AS [p]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2019-10-06 16:08:24.226 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 13.596200000000001ms.
+2019-10-06 16:08:24.227 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2019-10-06 16:08:24.229 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) in 22.688000000000002ms
+2019-10-06 16:08:24.231 +08:00 [INF] Request finished in 29.8928ms 200 application/json; charset=utf-8
+2019-10-06 16:08:33.368 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/Posts?pageindex=1&pagesize=5  
+2019-10-06 16:08:33.369 +08:00 [INF] CORS policy execution failed.
+2019-10-06 16:08:33.370 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 16:08:33.372 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 16:08:33.373 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API)
+2019-10-06 16:08:33.375 +08:00 [INF] CORS policy execution failed.
+2019-10-06 16:08:33.376 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 16:08:33.379 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) with arguments (["MyWebAPI.Core.EntityParameters.PostParameter"]) - Validation state: "Valid"
+2019-10-06 16:08:33.383 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-10-06 16:08:33.387 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Posts] AS [p]
+2019-10-06 16:08:33.393 +08:00 [INF] Executed DbCommand (3ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Author], [p].[Body], [p].[LastModified], [p].[Title]
+FROM [Posts] AS [p]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2019-10-06 16:08:33.398 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 15.9564ms.
+2019-10-06 16:08:33.400 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2019-10-06 16:08:33.402 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) in 26.401300000000003ms
+2019-10-06 16:08:33.403 +08:00 [INF] Request finished in 34.7129ms 200 application/json; charset=utf-8
+2019-10-06 16:09:23.256 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/Posts?pageindex=1&pagesize=5  
+2019-10-06 16:09:23.258 +08:00 [INF] CORS policy execution failed.
+2019-10-06 16:09:23.259 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 16:09:23.261 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 16:09:23.263 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API)
+2019-10-06 16:09:23.265 +08:00 [INF] CORS policy execution failed.
+2019-10-06 16:09:23.266 +08:00 [INF] Request origin https://localhost:8020 does not have permission to access the resource.
+2019-10-06 16:09:23.268 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) with arguments (["MyWebAPI.Core.EntityParameters.PostParameter"]) - Validation state: "Valid"
+2019-10-06 16:09:23.270 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-10-06 16:09:23.286 +08:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Posts] AS [p]
+2019-10-06 16:09:23.297 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Author], [p].[Body], [p].[LastModified], [p].[Title]
+FROM [Posts] AS [p]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2019-10-06 16:09:23.301 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 31.0727ms.
+2019-10-06 16:09:23.304 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2019-10-06 16:09:23.307 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) in 41.9303ms
+2019-10-06 16:09:23.309 +08:00 [INF] Request finished in 52.6317ms 200 application/json; charset=utf-8
+2019-10-06 16:15:07.274 +08:00 [INF] User profile is available. Using 'C:\Users\陈彦森\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-10-06 16:15:08.541 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/  
+2019-10-06 16:15:08.571 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 16:15:08.681 +08:00 [INF] Request finished in 141.9691ms 404 
+2019-10-06 16:15:08.728 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/favicon.ico  
+2019-10-06 16:15:08.730 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 16:15:08.731 +08:00 [INF] Request finished in 3.2125ms 404 
+2019-10-06 16:15:26.660 +08:00 [INF] User profile is available. Using 'C:\Users\陈彦森\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-10-06 16:15:28.928 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/  
+2019-10-06 16:15:28.957 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 16:15:29.135 +08:00 [INF] Request finished in 208.3693ms 404 
+2019-10-06 16:15:29.170 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/favicon.ico  
+2019-10-06 16:15:29.171 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 16:15:29.172 +08:00 [INF] Request finished in 2.7659ms 404 
+2019-10-06 16:15:37.702 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/Posts?pageindex=1&pagesize=5  
+2019-10-06 16:15:37.706 +08:00 [INF] CORS policy execution successful.
+2019-10-06 16:15:37.708 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 16:15:37.777 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API)
+2019-10-06 16:15:37.783 +08:00 [INF] CORS policy execution successful.
+2019-10-06 16:15:38.541 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) with arguments (["MyWebAPI.Core.EntityParameters.PostParameter"]) - Validation state: "Valid"
+2019-10-06 16:15:39.144 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-10-06 16:15:40.371 +08:00 [INF] Executed DbCommand (323ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Posts] AS [p]
+2019-10-06 16:15:40.463 +08:00 [WRN] Query: '(from Post <generated>_2 in DbSet<Post> select [<generated>_2]).Skip(__p_0).Take(__p_1)' uses a row limiting operation (Skip/Take) without OrderBy which may lead to unpredictable results.
+2019-10-06 16:15:40.592 +08:00 [INF] Executed DbCommand (53ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Author], [p].[Body], [p].[LastModified], [p].[Title]
+FROM [Posts] AS [p]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2019-10-06 16:15:40.835 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 2278.9235000000003ms.
+2019-10-06 16:15:40.855 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2019-10-06 16:15:40.885 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) in 3102.4917ms
+2019-10-06 16:15:40.897 +08:00 [INF] Request finished in 3195.264ms 200 application/json; charset=utf-8
+2019-10-06 16:15:42.430 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/Posts?pageindex=1&pagesize=5  
+2019-10-06 16:15:42.431 +08:00 [INF] CORS policy execution successful.
+2019-10-06 16:15:42.433 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-10-06 16:15:42.436 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API)
+2019-10-06 16:15:42.438 +08:00 [INF] CORS policy execution successful.
+2019-10-06 16:15:42.444 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) with arguments (["MyWebAPI.Core.EntityParameters.PostParameter"]) - Validation state: "Valid"
+2019-10-06 16:15:42.467 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-10-06 16:15:42.477 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Posts] AS [p]
+2019-10-06 16:15:42.486 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Author], [p].[Body], [p].[LastModified], [p].[Title]
+FROM [Posts] AS [p]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2019-10-06 16:15:42.495 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 42.8962ms.
+2019-10-06 16:15:42.499 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2019-10-06 16:15:42.504 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) in 66.4097ms
+2019-10-06 16:15:42.506 +08:00 [INF] Request finished in 76.2495ms 200 application/json; charset=utf-8

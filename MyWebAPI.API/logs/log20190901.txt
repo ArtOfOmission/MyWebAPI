@@ -1,0 +1,67 @@
+2019-09-01 14:45:03.575 +08:00 [INF] User profile is available. Using 'C:\Users\陈彦森\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-09-01 14:45:04.325 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/  
+2019-09-01 14:45:04.325 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/robots.txt  
+2019-09-01 14:45:04.357 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-09-01 14:45:04.357 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-09-01 14:45:04.451 +08:00 [INF] Request finished in 128.5685ms 404 
+2019-09-01 14:45:04.451 +08:00 [INF] Request finished in 128.5666ms 404 
+2019-09-01 14:45:04.480 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/favicon.ico  
+2019-09-01 14:45:04.482 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-09-01 14:45:04.483 +08:00 [INF] Request finished in 2.4208ms 404 
+2019-09-01 14:45:30.066 +08:00 [INF] User profile is available. Using 'C:\Users\陈彦森\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-09-01 14:45:30.964 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/  
+2019-09-01 14:45:30.985 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-09-01 14:45:31.063 +08:00 [INF] Request finished in 99.8553ms 404 
+2019-09-01 14:45:47.966 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/posts/12  
+2019-09-01 14:45:47.967 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-09-01 14:45:48.000 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API)
+2019-09-01 14:45:48.378 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) with arguments (["12",""]) - Validation state: "Valid"
+2019-09-01 14:45:48.828 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-09-01 14:45:50.580 +08:00 [INF] Executed DbCommand (105ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[Author], [e].[Body], [e].[LastModified], [e].[Title]
+FROM [Posts] AS [e]
+WHERE [e].[Id] = @__get_Item_0
+2019-09-01 14:45:50.736 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 2342.4567ms.
+2019-09-01 14:45:50.748 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Dynamic.ExpandoObject'.
+2019-09-01 14:45:50.800 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) in 2797.1733ms
+2019-09-01 14:45:50.809 +08:00 [INF] Request finished in 2843.0989ms 200 application/json; charset=utf-8
+2019-09-01 14:46:33.863 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/posts/12  
+2019-09-01 14:46:34.030 +08:00 [INF] Successfully validated the token.
+2019-09-01 14:46:34.035 +08:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2019-09-01 14:46:34.036 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API)
+2019-09-01 14:46:34.039 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) with arguments (["12",""]) - Validation state: "Valid"
+2019-09-01 14:46:34.043 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-09-01 14:46:34.056 +08:00 [INF] Executed DbCommand (3ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[Author], [e].[Body], [e].[LastModified], [e].[Title]
+FROM [Posts] AS [e]
+WHERE [e].[Id] = @__get_Item_0
+2019-09-01 14:46:34.060 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 17.6441ms.
+2019-09-01 14:46:34.062 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Dynamic.ExpandoObject'.
+2019-09-01 14:46:34.063 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) in 25.4617ms
+2019-09-01 14:46:34.064 +08:00 [INF] Request finished in 200.9701ms 200 application/vnd.sen.hateoas+json; charset=utf-8
+2019-09-01 14:51:13.489 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/posts/12  
+2019-09-01 14:51:13.491 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-09-01 14:51:13.493 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API)
+2019-09-01 14:51:13.495 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) with arguments (["12",""]) - Validation state: "Valid"
+2019-09-01 14:51:13.498 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-09-01 14:51:13.503 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[Author], [e].[Body], [e].[LastModified], [e].[Title]
+FROM [Posts] AS [e]
+WHERE [e].[Id] = @__get_Item_0
+2019-09-01 14:51:13.506 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 8.9488ms.
+2019-09-01 14:51:13.508 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Dynamic.ExpandoObject'.
+2019-09-01 14:51:13.509 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) in 14.362ms
+2019-09-01 14:51:13.510 +08:00 [INF] Request finished in 21.2919ms 200 application/json; charset=utf-8
+2019-09-01 14:51:17.266 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/posts/12  
+2019-09-01 14:51:17.267 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-09-01 14:51:17.269 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API)
+2019-09-01 14:51:17.271 +08:00 [INF] Executing action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) with arguments (["12",""]) - Validation state: "Valid"
+2019-09-01 14:51:17.273 +08:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-09-01 14:51:17.276 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[Author], [e].[Body], [e].[LastModified], [e].[Title]
+FROM [Posts] AS [e]
+WHERE [e].[Id] = @__get_Item_0
+2019-09-01 14:51:17.279 +08:00 [INF] Executed action method MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 6.2791000000000006ms.
+2019-09-01 14:51:17.281 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Dynamic.ExpandoObject'.
+2019-09-01 14:51:17.282 +08:00 [INF] Executed action MyWebAPI.API.Controllers.PostController.Get (MyWebAPI.API) in 11.397400000000001ms
+2019-09-01 14:51:17.283 +08:00 [INF] Request finished in 16.9386ms 200 application/json; charset=utf-8
